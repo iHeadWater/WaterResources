@@ -20,7 +20,7 @@ https://github.com/fsjwlf/WaterResources/blob/master/WaterResourcesBooks.md
 **推荐原则**  
 1.	按照学科进行分类，每一类别推荐1~3本经典书籍；
 2.	所列书籍在未来5~10年内仍具有较大的参考价值；
-3.	简要**书籍介绍**，**您的评价**，**适宜对象**，并给出**获取方式**；
+3. **书籍介绍**，**读者评价**，**适宜对象**，**获取方式**，**目录**；
 
 **本文附件**  
 https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA  

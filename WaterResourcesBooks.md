@@ -37,7 +37,7 @@
 
 1. 按照学科进行分类，每一类别推荐1~3本经典书籍；
 2. 所列书籍在未来5~10年内仍具有较大的参考价值；
-3. 简要**书籍介绍**，**您的评价**，**适宜对象**，并给出**获取方式**；
+3. **书籍介绍**，**读者评价**，**适宜对象**，**获取方式**，**目录**；
 
 **本文附件**  
 
@@ -72,17 +72,18 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 作者：邱锡鹏  
 年份：2019  
 介绍：本课程主要介绍神经网络与深度学习中的基础知识  
-目录：  绪论; 机器学习概述 ; 线性模型 ; 前馈神经网络 ; 卷积神经网络 ; 循环神经网络 ; 网络优化与正则化 ; 注意力机制与外部记忆 ; 无监督学习 ; 模型独立的学习方式 ; 概率图模型 ; 深度信念网络 ; 深度生成模型; 深度强化学习 ; 序列生成模型; 数学基础  
 适合：入门  
-获取：https://nndl.github.io/  
+获取：https://nndl.github.io/    
+目录：  绪论; 机器学习概述 ; 线性模型 ; 前馈神经网络 ; 卷积神经网络 ; 循环神经网络 ; 网络优化与正则化 ; 注意力机制与外部记忆 ; 无监督学习 ; 模型独立的学习方式 ; 概率图模型 ; 深度信念网络 ; 深度生成模型; 深度强化学习 ; 序列生成模型; 数学基础  
 
 1. Deep Learning （深度学习）  
 作者：Ian Goodfellow  
 年份：2016  
 介绍：深度学习经典教材    
-目录：1 Introduction; 2 Linear Algebra; 3 Probability and Information Theory; 4 Numerical Computation; 5 Machine Learning Basics; 6 Deep Feedforward Networks; 7 Regularization for Deep Learning; 8 Optimization for Training Deep Models; 9 Convolutional Networks; 10 Sequence Modeling: Recurrent and Recursive Nets; 11 Practical Methodology; 12 Applications; 13 Linear Factor Models; 14 Autoencoders; 15 Representation Learning; 16 Structured Probabilistic Models for Deep Learning; 17 Monte Carlo Methods; 18 Confronting the Partition Function; 19 Approximate Inference; 20 Deep Generative Models  
 适合：专业  
-获取：1）英文原版 http://www.deeplearningbook.org/ 2）中文翻译 https://github.com/exacity/deeplearningbook-chinese 3）令希图书馆601室TP181 G651
+获取：1）英文原版 http://www.deeplearningbook.org/ 2）中文翻译 https://github.com/exacity/deeplearningbook-chinese 3）令希图书馆601室TP181 G651  
+目录：1 Introduction; 2 Linear Algebra; 3 Probability and Information Theory; 4 Numerical Computation; 5 Machine Learning Basics; 6 Deep Feedforward Networks; 7 Regularization for Deep Learning; 8 Optimization for Training Deep Models; 9 Convolutional Networks; 10 Sequence Modeling: Recurrent and Recursive Nets; 11 Practical Methodology; 12 Applications; 13 Linear Factor Models; 14 Autoencoders; 15 Representation Learning; 16 Structured Probabilistic Models for Deep Learning; 17 Monte Carlo Methods; 18 Confronting the Partition Function; 19 Approximate Inference; 20 Deep Generative Models  
+
 
 1. Learning Python （Python学习手册）  
 作者：Mark Lutz  
@@ -99,28 +100,29 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 作者：Daniel P. Loucks；Eelco van Beek  
 年份：2017，Second Edition  
 介绍：水资源经典教材  
-目录：Water Resources Planning and Management; Water Resource Systems Modeling; Models for Identifying and Evaluating Alternatives; An Introduction to Optimization Models and Methods; Data-Fitting, Evolutionary, and Qualitative Modeling; An Introduction to Probability, Statistics, and Uncertainty; Modeling Uncertainty; System Sensitivity and Uncertainty Analysis; Performance Criteria; Water Quality Modeling and Prediction; River Basin Modeling; Urban Water Systems; Project Planning  
 适合：入门、专业  
-获取：https://link.springer.com/book/10.1007%2F978-3-319-44234-1  
+获取：https://link.springer.com/book/10.1007%2F978-3-319-44234-1    
+目录：Water Resources Planning and Management; Water Resource Systems Modeling; Models for Identifying and Evaluating Alternatives; An Introduction to Optimization Models and Methods; Data-Fitting, Evolutionary, and Qualitative Modeling; An Introduction to Probability, Statistics, and Uncertainty; Modeling Uncertainty; System Sensitivity and Uncertainty Analysis; Performance Criteria; Water Quality Modeling and Prediction; River Basin Modeling; Urban Water Systems; Project Planning  
 
 ##  水文学
 
 1. 水文学原理  
 作者：芮孝芳  
 年份：2004  
-介绍：水文学经典教材  
-目录：绪论; 水文循环; 流域和水系; 降水; 土壤水; 下渗; 蒸发和散发; 产流机制; 地下水流; 地表水流; 洪水演算; 流域产流; 流域汇流; 冰雪水文; 水质及河流生态环境   
+介绍：水文学经典教材   
 适合：入门、专业  
 获取：1）仅供内部学习交流使用；2）令希图书馆401室56.3 R319；  
+目录：绪论; 水文循环; 流域和水系; 降水; 土壤水; 下渗; 蒸发和散发; 产流机制; 地下水流; 地表水流; 洪水演算; 流域产流; 流域汇流; 冰雪水文; 水质及河流生态环境  
 
 ## 水动力学与水质
 1. Hydrodynamics and Water Quality: Modeling Rivers, Lakes, and Estuaries  
 作者：Ji Zhengang  
 年份：2017，第二版  
 介绍：较全面地介绍地表水水动力学及水质原理、过程、案例，以及在河流、湖泊、河口、沿海水域和湿地中的应用。推荐阅读英文版，了解专业词汇，有助于英文写作。  
-目录：Introduction; Hydrodynamics; Sediment Transport; Pathogens and Toxics; Water Quality and Eutrophication; External Sources and TMDL; Mathematical Modeling and Statistical Analyses; Rivers; Lakes and Reservoirs; Estuaries and Coastal Waters; Wetlands; Risk Analysis;    
 适合：入门、专业  
 获取：1）英文原版校内访问https://onlinelibrary.wiley.com/doi/book/10.1002/9781119371946  2）中文第一版《水动力学和水质》可网购；  
+目录：Introduction; Hydrodynamics; Sediment Transport; Pathogens and Toxics; Water Quality and Eutrophication; External Sources and TMDL; Mathematical Modeling and Statistical Analyses; Rivers; Lakes and Reservoirs; Estuaries and Coastal Waters; Wetlands; Risk Analysis;    
+
 
 2. Surface Water Quality Modeling  
 作者：Chapra, Steven C.  
@@ -158,7 +160,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 本文由张老师教授发起，隆凡博士撰写初稿并提供大量电子资源。此外，也感谢以下教师的热心帮助：周老师协助搭建本文框架；刘老师、叶老师、辛老师提供书籍；
 
 **更新**  
-科学发展日新月异，希望师生们能主动将新的专著信息，直接在Github上提交issues，或发送邮件至fsjwlf@126.com，邮件标题为“水资源专著共享”，邮件内容包括：书名；作者；年份（出版时间与版本号）；介绍（书籍内容，特点，评价）；适合（入门，专业）；获取（开放获取地址、电子书链接、图书馆索书号、购买链接等）
+科学发展日新月异，希望师生们能主动将新的专著信息，直接在Github上提交issues，或发送邮件至fsjwlf@126.com，邮件标题为“水资源专著共享”，邮件内容包括：书名；作者；年份（出版时间与版本号）；介绍（书籍内容，特点，评价）；适合（入门，专业）；获取（开放获取地址、电子书链接、图书馆索书号、购买链接等）；简要目录；  
 
 **征求**
 1. Applied Hydrology (Ven Te Chow) 第二版

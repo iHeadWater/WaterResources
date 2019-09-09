@@ -161,7 +161,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 
 **更新**  
 科学发展日新月异，希望师生们能主动提供新的专著信息，方式如下：  
-1. Github项目 https://github.com/fsjwlf/WaterResources 提交issues，按照模板进行填写；  
+1. [Github项目](https://github.com/fsjwlf/WaterResources) 提交issues，按照模板进行填写；  
 2. 发送邮件至fsjwlf@126.com，标题为“水资源专著新书推荐”  
 邮件内容包括：书名；作者；年份（出版时间与版本号）；介绍（书籍内容，特点，评价）；适合（入门，专业）；获取（开放获取地址、电子书链接、图书馆索书号、购买链接等）；简要目录；  
 

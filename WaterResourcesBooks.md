@@ -16,15 +16,16 @@
 <!-- /TOC -->
 
 # 1 前言
+
 本文旨在向你推荐水资源领域及其相关领域的**优秀专著**。
 
 **为什么要读专著？**  
 
-1.	夯实专业基础；
-2.	跨学科交叉，进入其他领域的有效方式，帮助更加系统地、全面地了解这个学科的研究内容、发展历程、基本假定以及研究方法；
-3.	以前所学知识基于大量的简化，重新阅读可能会发现值得深入研究的点；
-4.	字典工具类书籍，随时查阅；
-5.	……
+1. 夯实专业基础；
+2. 跨学科交叉，进入其他领域的有效方式，帮助更加系统地、全面地了解这个学科的研究内容、发展历程、基本假定以及研究方法；
+3. 以前所学知识基于大量的简化，重新阅读可能会发现值得深入研究的点；
+4. 字典工具类书籍，随时查阅；
+5. ……
 
 **如何阅读专著？**   
 
@@ -34,9 +35,9 @@
 
 **推荐原则**  
 
-1.	按照学科进行分类，每一类别推荐1~3本经典书籍；
-2.	所列书籍在未来5~10年内仍具有较大的参考价值；
-3.	简要**书籍介绍**，**您的评价**，**适宜对象**，并给出**获取方式**；
+1. 按照学科进行分类，每一类别推荐1~3本经典书籍；
+2. 所列书籍在未来5~10年内仍具有较大的参考价值；
+3. 简要**书籍介绍**，**您的评价**，**适宜对象**，并给出**获取方式**；
 
 **本文附件**  
 
@@ -50,14 +51,14 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 
 ## 数学
 
-1.	Introduction to Probability Models  
+1. Introduction to Probability Models  
 作者：Sheldon M.Ross  
 年份：2010，Tenth Edition  
 介绍：基本概率论和随机过程，并展示了概率论如何应用于工程，计算机科学，管理科学，物理和社会科学以及运筹学等领域  
 适合：专业  
 获取：仅供内部学习交流使用  
 
-1.	Fundamentals of Statistical Hydrology  
+1. Fundamentals of Statistical Hydrology  
 作者：Mauro Naghettini  
 年份：2016  
 介绍：本书全面介绍了概率论在分析水文模型不确定性的应用  
@@ -67,7 +68,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 
 ## 计算机
 
-1.	神经网络与深度学习  
+1. 神经网络与深度学习  
 作者：邱锡鹏  
 年份：2019  
 介绍：本课程主要介绍神经网络与深度学习中的基础知识  
@@ -75,7 +76,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 适合：入门  
 获取：https://nndl.github.io/  
 
-1.	Deep Learning （深度学习）  
+1. Deep Learning （深度学习）  
 作者：Ian Goodfellow  
 年份：2016  
 介绍：深度学习经典教材    
@@ -83,7 +84,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 适合：专业  
 获取：1）英文原版 http://www.deeplearningbook.org/ 2）中文翻译 https://github.com/exacity/deeplearningbook-chinese 3）令希图书馆601室TP181 G651
 
-1.	Learning Python （Python学习手册）  
+1. Learning Python （Python学习手册）  
 作者：Mark Lutz  
 年份：2013  
 介绍：比较全面地介绍Python 3.x语言，从基本语法，到面向对象编程。  
@@ -94,7 +95,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 
 ## 水资源
 
-1.	Water resource systems planning and management  
+1. Water resource systems planning and management  
 作者：Daniel P. Loucks；Eelco van Beek  
 年份：2017，Second Edition  
 介绍：水资源经典教材  
@@ -104,7 +105,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 
 ##  水文学
 
-1.	水文学原理  
+1. 水文学原理  
 作者：芮孝芳  
 年份：2004  
 介绍：水文学经典教材  
@@ -113,7 +114,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 获取：1）仅供内部学习交流使用；2）令希图书馆401室56.3 R319；  
 
 ## 水动力学与水质
-1.	Hydrodynamics and Water Quality: Modeling Rivers, Lakes, and Estuaries  
+1. Hydrodynamics and Water Quality: Modeling Rivers, Lakes, and Estuaries  
 作者：Ji Zhengang  
 年份：2017，第二版  
 介绍：较全面地介绍地表水水动力学及水质原理、过程、案例，以及在河流、湖泊、河口、沿海水域和湿地中的应用。推荐阅读英文版，了解专业词汇，有助于英文写作。  
@@ -121,7 +122,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 适合：入门、专业  
 获取：1）英文原版校内访问https://onlinelibrary.wiley.com/doi/book/10.1002/9781119371946  2）中文第一版《水动力学和水质》可网购；  
 
-2.	Surface Water Quality Modeling  
+2. Surface Water Quality Modeling  
 作者：Chapra, Steven C.  
 年份：1997 First Edition  
 介绍：水质模拟经典教材  
@@ -130,21 +131,21 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 
 # 4 跨学科
 
-1.	Remote Sensing of The Environment: An Earth Resource Perspective   
+1. Remote Sensing of The Environment: An Earth Resource Perspective   
 作者：John R.Jensen  
 年份：2011，Second Edition  
 介绍：详细介绍了各种遥感技术的原理、应用以及现场测量技术  
 适合：专业  
 获取：1）仅供内部学习交流使用，2）中文导读，令希图书馆601室X87 J54A-2  
 
-2.	Principles of Economics  
+2. Principles of Economics  
 作者：N. Gregory Mankiw  
 年份：2012 Seventh Edition  
 介绍：经济学经典教材，建议阅读英文原版。有中文翻译版，分为微观宏观上下册，但配图没有原著丰富。  
 适合：入门、专业  
 获取：仅供内部学习交流使用  
 
-3.	Essentials of Physical Geography  
+3. Essentials of Physical Geography  
 作者：Robert E. Gabler；James F. Petersen；L. Michael Trapasso  
 年份：2007 Eighth Edition  
 介绍：地貌经典教材，插图很赞！  
@@ -157,15 +158,15 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 本文由张老师教授发起，隆凡博士撰写初稿并提供大量电子资源。此外，也感谢以下教师的热心帮助：周老师协助搭建本文框架；刘老师、叶老师、辛老师提供书籍；
 
 **更新**  
-科学发展日新月异，希望师生们能主动将新的专著信息，直接在Github上提交issues，或发送邮件至fsjwlf@126.com，邮件标题为“水资源专著共享”，邮件内容包括：书名，作者，出版时间与版本号，介绍或推荐理由，适宜对象，获取途径（开放获取、电子书、图书馆、购买链接等）。
+科学发展日新月异，希望师生们能主动将新的专著信息，直接在Github上提交issues，或发送邮件至fsjwlf@126.com，邮件标题为“水资源专著共享”，邮件内容包括：书名；作者；年份（出版时间与版本号）；介绍（书籍内容，特点，评价）；适合（入门，专业）；获取（开放获取地址、电子书链接、图书馆索书号、购买链接等）
 
 **征求**
-1.	Applied Hydrology (Ven Te Chow) 第二版
-2.	Surface Water Quality Modeling (Chapra, Steven C.) 第二版
+1. Applied Hydrology (Ven Te Chow) 第二版
+2. Surface Water Quality Modeling (Chapra, Steven C.) 第二版
 
 **注意事项**
-1.	读书是一个漫长的过程，因此，本文每5年更新一次；
-2.	本文所列举的书目，旨在帮助师生夯实基础，或引导师生进入新的领域；对于各学科的细分领域书籍，今后根据情况进行扩展
-3.	尽量不添加软件类书籍，该类书籍更新换代太快，而且使用搜索引擎比看书更加高效。
-4.	本文材料仅供内部交流使用，并且严禁修改、出售；
-5.	在撰写论文、书籍，或制作幻灯片过程中使用到本文材料，请按照规范引用专著。
+1. 读书是一个漫长的过程，因此，本文每5年更新一次；
+2. 本文所列举的书目，旨在帮助师生夯实基础，或引导师生进入新的领域；对于各学科的细分领域书籍，欢迎Fork，或创建新的文章；
+3. 本文尽量不添加软件类书籍，该类书籍更新换代太快，而且使用搜索引擎比看书更加高效；未来可能会创建技术类分享文章；
+4. 本文材料仅供内部交流使用，并且严禁修改、出售；
+5. 在撰写论文、书籍，或制作幻灯片过程中使用到本文材料，请按照规范引用专著。

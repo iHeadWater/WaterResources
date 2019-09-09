@@ -62,7 +62,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 1.	神经网络与深度学习  
 作者：邱锡鹏  
 年份：2019  
-介绍：本课程主要介绍神经网络与深度学习中的基础知识
+介绍：本课程主要介绍神经网络与深度学习中的基础知识  
 目录：  绪论; 机器学习概述 ; 线性模型 ; 前馈神经网络 ; 卷积神经网络 ; 循环神经网络 ; 网络优化与正则化 ; 注意力机制与外部记忆 ; 无监督学习 ; 模型独立的学习方式 ; 概率图模型 ; 深度信念网络 ; 深度生成模型; 深度强化学习 ; 序列生成模型; 数学基础  
 适合：入门  
 获取：https://nndl.github.io/  
@@ -84,7 +84,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 1.	Water resource systems planning and management  
 作者：Daniel P. Loucks；Eelco van Beek  
 年份：2017，Second Edition  
-介绍：水资源经典教材
+介绍：水资源经典教材  
 目录：Water Resources Planning and Management; Water Resource Systems Modeling; Models for Identifying and Evaluating Alternatives; An Introduction to Optimization Models and Methods; Data-Fitting, Evolutionary, and Qualitative Modeling; An Introduction to Probability, Statistics, and Uncertainty; Modeling Uncertainty; System Sensitivity and Uncertainty Analysis; Performance Criteria; Water Quality Modeling and Prediction; River Basin Modeling; Urban Water Systems; Project Planning  
 适合：入门、专业  
 获取：https://link.springer.com/book/10.1007%2F978-3-319-44234-1  

@@ -19,6 +19,7 @@
 本文旨在向你推荐水资源领域及其相关领域的**优秀专著**。
 
 **为什么要读专著？**  
+
 1.	夯实专业基础；
 2.	跨学科交叉，进入其他领域的有效方式，帮助更加系统地、全面地了解这个学科的研究内容、发展历程、基本假定以及研究方法；
 3.	以前所学知识基于大量的简化，重新阅读可能会发现值得深入研究的点；
@@ -26,16 +27,19 @@
 5.	……
 
 **如何阅读专著？**   
+
 1. 本文推荐书籍，均注明了“入门级/专业级”。  
 2. 建议先阅读某一领域的入门书籍，初步了解与认识该领域。  
 3. 然后在科研过程中，将实践与专业书理论相结合，深入学习该领域。
 
 **推荐原则**  
+
 1.	按照学科进行分类，每一类别推荐1~3本经典书籍；
 2.	所列书籍在未来5~10年内仍具有较大的参考价值；
 3.	简要**书籍介绍**，**您的评价**，**适宜对象**，并给出**获取方式**；
 
 **本文附件**  
+
 https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA  
 提取码: 215j
 
@@ -43,13 +47,16 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 希望这些书能够陪伴你成长，在科研的道路上越走越远！
  
 # 2 基础
+
 ## 数学
+
 1.	Introduction to Probability Models  
 作者：Sheldon M.Ross  
 年份：2010，Tenth Edition  
 介绍：基本概率论和随机过程，并展示了概率论如何应用于工程，计算机科学，管理科学，物理和社会科学以及运筹学等领域  
 适合：专业  
 获取：仅供内部学习交流使用  
+
 1.	Fundamentals of Statistical Hydrology  
 作者：Mauro Naghettini  
 年份：2016  
@@ -84,7 +91,9 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 获取：1）英文版仅供内部学习交流使用 2）中文版令希图书馆301室TP311.561 L975  
 
 # 3 水资源
+
 ## 水资源
+
 1.	Water resource systems planning and management  
 作者：Daniel P. Loucks；Eelco van Beek  
 年份：2017，Second Edition  
@@ -94,6 +103,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 获取：https://link.springer.com/book/10.1007%2F978-3-319-44234-1  
 
 ##  水文学
+
 1.	水文学原理  
 作者：芮孝芳  
 年份：2004  
@@ -110,6 +120,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 目录：Introduction; Hydrodynamics; Sediment Transport; Pathogens and Toxics; Water Quality and Eutrophication; External Sources and TMDL; Mathematical Modeling and Statistical Analyses; Rivers; Lakes and Reservoirs; Estuaries and Coastal Waters; Wetlands; Risk Analysis;    
 适合：入门、专业  
 获取：1）英文原版校内访问https://onlinelibrary.wiley.com/doi/book/10.1002/9781119371946  2）中文第一版《水动力学和水质》可网购；  
+
 2.	Surface Water Quality Modeling  
 作者：Chapra, Steven C.  
 年份：1997 First Edition  

@@ -59,6 +59,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 
 
 ## 计算机
+
 1.	神经网络与深度学习  
 作者：邱锡鹏  
 年份：2019  
@@ -66,12 +67,15 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 目录：  绪论; 机器学习概述 ; 线性模型 ; 前馈神经网络 ; 卷积神经网络 ; 循环神经网络 ; 网络优化与正则化 ; 注意力机制与外部记忆 ; 无监督学习 ; 模型独立的学习方式 ; 概率图模型 ; 深度信念网络 ; 深度生成模型; 深度强化学习 ; 序列生成模型; 数学基础  
 适合：入门  
 获取：https://nndl.github.io/  
+
 1.	Deep Learning （深度学习）  
 作者：Ian Goodfellow  
 年份：2016  
-介绍：深度学习经典教材  
+介绍：深度学习经典教材    
+目录：1 Introduction; 2 Linear Algebra; 3 Probability and Information Theory; 4 Numerical Computation; 5 Machine Learning Basics; 6 Deep Feedforward Networks; 7 Regularization for Deep Learning; 8 Optimization for Training Deep Models; 9 Convolutional Networks; 10 Sequence Modeling: Recurrent and Recursive Nets; 11 Practical Methodology; 12 Applications; 13 Linear Factor Models; 14 Autoencoders; 15 Representation Learning; 16 Structured Probabilistic Models for Deep Learning; 17 Monte Carlo Methods; 18 Confronting the Partition Function; 19 Approximate Inference; 20 Deep Generative Models  
 适合：专业  
 获取：1）英文原版 http://www.deeplearningbook.org/ 2）中文翻译 https://github.com/exacity/deeplearningbook-chinese 3）令希图书馆601室TP181 G651
+
 1.	Learning Python （Python学习手册）  
 作者：Mark Lutz  
 年份：2013  
@@ -94,6 +98,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 作者：芮孝芳  
 年份：2004  
 介绍：水文学经典教材  
+目录：绪论; 水文循环; 流域和水系; 降水; 土壤水; 下渗; 蒸发和散发; 产流机制; 地下水流; 地表水流; 洪水演算; 流域产流; 流域汇流; 冰雪水文; 水质及河流生态环境   
 适合：入门、专业  
 获取：1）仅供内部学习交流使用；2）令希图书馆401室56.3 R319；  
 
@@ -102,6 +107,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 作者：Ji Zhengang  
 年份：2017，第二版  
 介绍：较全面地介绍地表水水动力学及水质原理、过程、案例，以及在河流、湖泊、河口、沿海水域和湿地中的应用。推荐阅读英文版，了解专业词汇，有助于英文写作。  
+目录：Introduction; Hydrodynamics; Sediment Transport; Pathogens and Toxics; Water Quality and Eutrophication; External Sources and TMDL; Mathematical Modeling and Statistical Analyses; Rivers; Lakes and Reservoirs; Estuaries and Coastal Waters; Wetlands; Risk Analysis;    
 适合：入门、专业  
 获取：1）英文原版校内访问https://onlinelibrary.wiley.com/doi/book/10.1002/9781119371946  2）中文第一版《水动力学和水质》可网购；  
 2.	Surface Water Quality Modeling  
@@ -112,18 +118,21 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 获取：仅供内部学习交流使用。  
 
 # 4 跨学科
+
 1.	Remote Sensing of The Environment: An Earth Resource Perspective   
 作者：John R.Jensen  
 年份：2011，Second Edition  
 介绍：详细介绍了各种遥感技术的原理、应用以及现场测量技术  
 适合：专业  
 获取：1）仅供内部学习交流使用，2）中文导读，令希图书馆601室X87 J54A-2  
+
 2.	Principles of Economics  
 作者：N. Gregory Mankiw  
 年份：2012 Seventh Edition  
 介绍：经济学经典教材，建议阅读英文原版。有中文翻译版，分为微观宏观上下册，但配图没有原著丰富。  
 适合：入门、专业  
 获取：仅供内部学习交流使用  
+
 3.	Essentials of Physical Geography  
 作者：Robert E. Gabler；James F. Petersen；L. Michael Trapasso  
 年份：2007 Eighth Edition  

@@ -124,7 +124,7 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 目录：Introduction; Hydrodynamics; Sediment Transport; Pathogens and Toxics; Water Quality and Eutrophication; External Sources and TMDL; Mathematical Modeling and Statistical Analyses; Rivers; Lakes and Reservoirs; Estuaries and Coastal Waters; Wetlands; Risk Analysis;    
 
 
-2. Surface Water Quality Modeling  
+1. Surface Water Quality Modeling  
 作者：Chapra, Steven C.  
 年份：1997 First Edition  
 介绍：水质模拟经典教材  
@@ -132,6 +132,13 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 获取：仅供内部学习交流使用。  
 
 # 4 跨学科
+1. 遥感与图像解译  
+作者：Thomas M.Lillesand  
+年份：2015，Seventh Edition  
+介绍：遥感经典教材  
+适合：入门  
+获取：1）仅供内部学习交流使用，2）令希图书馆301室TP7 L729  
+目录：遥感的概念和基础; 摄影系统原理; 摄影测量的基本原理; 多光谱、热红外和高光谱遥感; 地球资源卫星的光谱应用; 微波和激光雷达遥感; 数字图像分析; 遥感应用  
 
 1. Remote Sensing of The Environment: An Earth Resource Perspective   
 作者：John R.Jensen  
@@ -140,14 +147,14 @@ https://pan.baidu.com/s/16TjLNoCRoOq-DEUoKcWwCA
 适合：专业  
 获取：1）仅供内部学习交流使用，2）中文导读，令希图书馆601室X87 J54A-2  
 
-2. Principles of Economics  
+1. Principles of Economics  
 作者：N. Gregory Mankiw  
 年份：2012 Seventh Edition  
 介绍：经济学经典教材，建议阅读英文原版。有中文翻译版，分为微观宏观上下册，但配图没有原著丰富。  
 适合：入门、专业  
 获取：仅供内部学习交流使用  
 
-3. Essentials of Physical Geography  
+1. Essentials of Physical Geography  
 作者：Robert E. Gabler；James F. Petersen；L. Michael Trapasso  
 年份：2007 Eighth Edition  
 介绍：地貌经典教材，插图很赞！  

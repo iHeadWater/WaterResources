@@ -129,13 +129,20 @@
 获取：1）英文原版校内访问<https://onlinelibrary.wiley.com/doi/book/10.1002/9781119371946>  2）中文第一版《水动力学和水质》可网购；  
 目录：Introduction; Hydrodynamics; Sediment Transport; Pathogens and Toxics; Water Quality and Eutrophication; External Sources and TMDL; Mathematical Modeling and Statistical Analyses; Rivers; Lakes and Reservoirs; Estuaries and Coastal Waters; Wetlands; Risk Analysis;    
 
-
 1. Surface Water Quality Modeling  
 作者：Chapra, Steven C.  
 年份：1997 First Edition  
 介绍：水质模拟经典教材  
 适合：专业  
 获取：仅供内部学习交流使用。  
+
+1. Wetlands
+作者：William J.Mitsch, James G.Gosselink
+年份：2015 Fifth Edition
+介绍：湿地经典教材
+适合：入门
+获取：仅供内部学习交流使用
+目录：湿地介绍，湿地环境，湿地生态，湿地管理，生态系统服务
 
 # 4 跨学科
 1. 遥感与图像解译  

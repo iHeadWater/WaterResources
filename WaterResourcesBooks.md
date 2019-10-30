@@ -193,7 +193,7 @@ Version: 2019.10.01
 
 ### 征求
 
-1. Applied Hydrology (Ven Te Chow) 第二版
+1. Applied Hydrology (Ven Te Chow) 第二版（是第二版哦~~第一版有点太老了……2013年有出第二版的）
 2. Surface Water Quality Modeling (Chapra, Steven C.) 第二版
 
 ### 注意事项

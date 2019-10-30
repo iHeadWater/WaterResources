@@ -1,3 +1,9 @@
 # 水资源与防洪研究所资源共享
-共享清单：  
-- [水资源领域优秀专著共享](https://fsjwlf.github.io/WaterResources/WaterResourcesBooks)
+
+已上线：
+
+- [水资源图书馆](https://fsjwlf.github.io/WaterResources/WaterResourcesBooks)  
+
+开发中：
+
+- 水资源云课堂

@@ -10,9 +10,8 @@ DUTWR 目前包括水资源综合调控、流域水文、流域水生态、城�
 
 1. [水资源图书馆](https://fsjwlf.github.io/WaterResources/WaterResourcesBooks)：推荐各方向及相关领域的优秀专著；
 2. 水资源云课堂：推荐各方向研究所需基础技术栈的相关资料，*仍在开发中*，可查看[这里](https://github.com/OuyangWenyu/WaterResources/blob/dev/WaterResourcesWeb.md)；
-3. DUTWR 文献概述：不完全按照研究方向分类，主要以每篇博客的主题分类，*仍在开发中*。
-    - [深度学习与水文水资源的交叉研究概述](https://github.com/OuyangWenyu/WaterResources/blob/dev/papers/hydro-awesome-dl.md)
-    - [结合物理机制的机器学习水文建模概述](https://github.com/OuyangWenyu/WaterResources/blob/dev/papers/hydro-awesome-pgml.md) 
+3. DUTWR 文献概述：不完全按照研究方向分类，主要以每篇博客的主题分类，*仍在开发中*，可查看[这里](https://github.com/OuyangWenyu/WaterResources/blob/dev/papers/readme.md);    
+4. 科研随笔：记录科研方式方法等一些比较个人经验化的内容，分享对学习、研究中面临的各类问题的看法、想法，*仍在开发中*，可查看[这里](https://github.com/OuyangWenyu/WaterResources/blob/dev/notes/readme.md)；
 
 其中，第三部分的文献概述会针对列出的每篇论文，简要介绍其内容，行文通常以介绍大问题为开端，然后引入大问题中的小问题，接着简述经典的问题解决方法，随后是该篇文章的方法及典型结果，最后是主要结论，不求全面描述一篇文章，而重点去表达出其最主要解决的问题。
 

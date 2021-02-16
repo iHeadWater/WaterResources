@@ -1,58 +1,6 @@
 # 大坝水库（湖泊）数据
 
-- Surface Water Body Detection in Polarimetric SAR Data Using Contextual Complex Wishart Classification
-- A reservoir storage estimation algorithm using digital elevation data and image classifications
-- AltEx: An open source web application and toolkit for accessing and exploring altimetry datasets
-- Water-volume variations of Lake Hulun estimated from serial Jason altimeters and Landsat TM/ETM+ images from 2002 to 2017
-- A global lake and reservoir volume analysis using a surface water dataset and satellite altimetry
-- A novel water body extraction neural network ( WBE-NN ) for optical high- resolution multispectral imagery
-- Four decades of wetland changes in Dongting Lake using Landsat observations during 1978–2018
-- Evaluation of a new 18-year MODIS-derived surface water fraction dataset for constructing Mediterranean wetland open surface water dynamics
-- Research and application of flood detention modeling for ponds and small reservoirs based on remote sensing data
-- Dataset of Georeferenced Dams in South America (DDSA)
-- Global Characterization of Inland Water Reservoirs Using ICESat ‐ 2 Altimetry and Climate Reanalysis
-- Mapping and sampling to characterize global inland water dynamics from 1999 to 2018 with full Landsat time-series
-- Remote sensing estimation of catchment-scale reservoir water impoundment in the upper Yellow River and implications for river discharge alteration
-- Surface water monitoring in small water bodies: Potential and limits of multi-sensor Landsat time series
-- Determining watershed response in data poor environments with remotely sensed small reservoirs as runoff gauges
-- Assessment of the geometry and volumes of small surface water reservoirs by remote sensing in a semi-arid region with high reservoir density
-- An approach for global monitoring of surface water extent variations in reservoirs using MODIS data
-- Hydrological model calibration for dammed basins using satellite altimetry information
-- Estimating reservoir evaporation losses for the United States: Fusing remote sensing and modeling approaches
-- Automatic Correction of Contaminated Images for Assessment of Reservoir Surface Area Dynamics
-- Combining Landsat observations with hydrological modelling for improved surface water monitoring of small lakes
-- SOLS: A lake database to monitor in the Near Real Time water level and storage variations from remote sensing data
-- Constructing long-term high-frequency time series of global lake and reservoir areas using Landsat imagery
-- Dynamic Waterline Mapping of Inland Great Lakes Using Time-Series SAR Data from GF-3 and S-1A Satellites: A Case Study of DJK Reservoir, China
-- Monitoring reservoir storage in South Asia from multisatellite remote sensing
-- Spatiotemporal densification of river water level time series by multimission satellite altimetry
-- MAPPING SURFACE WATER IN COMPLEX AND HETEROGENEOUS ENVIRONMENTS USING REMOTE SENSING
-- An improved approach to monitoring Brahmaputra River water levels using retracked altimetry data
-- A global lake and reservoir volume analysis using a surface water dataset and satellite altimetry
-- Potential and limitations of satellite altimetry constellations for monitoring surface water storage changes – A case study in the Mississippi basin
-- Modelling Freshwater Resources at the Global Scale: Challenges and Prospects
-- A predictive model for Lake Chad total surface water area using remotely sensed and modeled hydrological and meteorological parameters and multivariate regression analysis
-- Monthly estimation of the surface water extent in France at a 10-m resolution using Sentinel-2 data
-- Tracking Multidecadal Lake Water Dynamics with Landsat Imagery and Topography/Bathymetry
-- Analysis of water clarity decrease in Xin'anjiang Reservoir, China, from 30-Year Landsat TM, ETM+, and OLI observations
-- Construction of the 500-m Resolution Daily Global Surface Water Change Database (2001–2016)
-- Lake Topography and Active Storage From Satellite Observations of Flood Frequency
-- Detecting, Extracting, and Monitoring Surface Water From Space Using Optical Sensors: A Review
-- Water body extraction from very high spatial resolution remote sensing data based on fully convolutional networks
-- A high-resolution bathymetry dataset for global reservoirs using multi-source satellite imagery and altimetry
-- Surface water detection and delineation using remote sensing images: a review of methods and algorithms
-- Analysis of the Dynamic Changes of the Baiyangdian Lake Surface Based on a Complex Water Extraction Method
-- Assessing the impacts of reservoir operation on downstream water diversions using a simplified flow model
-- A data-driven analysis of frequent patterns and variable importance for streamflow trend attribution
-- Development and evaluation of a physically-based lake level model for water resource management: A case study for Lake Buchanan, Texas
-- Simulating streamflow on regulated rivers using characteristic reservoir storage patterns derived from synthetic remote sensing data
-- Incorporating reservoir impacts into flood frequency distribution functions
-- Improving Reservoir Out flow Estimation for Ungauged Basins Using Satellite Observations and a Hydrological Model Water Resources Research
-- Influence of Reservoir Operation in the Upper Reaches of the Yangtze River (China) on the Inflow and Outflow Regime of the TGR-based on the Improved SWAT Model
-- Water resources management in a reservoir-regulated basin : Implications of reservoir network layout on stream fl ow and hydrologic alteration
-- Recent progresses in incorporating human land-water management into global land surface models toward their integration into Earth system models
-- Estimating Small Reservoir Evaporation Using Machine Learning Models for the Brazilian Savannah
-- The role of satellite-based remote sensing in improving simulated streamflow: A review
+这里简单整理下近年来的关于水库数据的文献，主要是根据遥感数据来提取水体，推算水库的面积，高程，库容，蒸发等信息，以及一些数据集相关的内容。
 
 ## High-resolution mapping of the world's reservoirs and dams for sustainable river-flow management (2011)
 
@@ -84,8 +32,6 @@ DAHITI 是一个水库湖泊水位时间序列数据集。源数据来自 Envisa
 
 一篇综述，介绍了水库 elevation，area，storage 的计算的各类方法，并展望了未来。
 
-
-
 ## Inferring reservoir operating patterns across the Mekong Basin using only space observations （2016）
 
 这篇文章主要根据遥感数据，通过计算两个重要参数：residence time 和flow alteration分析了湄公河流域水库对径流的影响。
@@ -111,6 +57,10 @@ residence time 就是一个月进入水库的水离开水库所花的时间，fl
 ## High-resolution mapping of global surface water and its long-term changes (2016)
 
 这是nature一篇分析全球水面长期变化数据的文章。使用了300万张landsat图片，在30m分辨率上分析了 1984－2015 32年的地表水变化。月尺度和年尺度的数据。数据集可能后续用得上。
+
+## An approach for global monitoring of surface water extent variations in reservoirs using MODIS data（2017）
+
+
 
 ## A remote sensing method for estimating regional reservoir area and evaporative loss (2018)
 
@@ -138,9 +88,31 @@ Landsat的景有可能一个景就包含了水库，也可能两个景才包括�
 
 这篇文章主要是提到了CONUS上水库的库容、水位变化的时间序列数据。
 
-## Measuring River Wetted Width from Remotely Sensed Imagery at the Sub-pixel Scale with a Deep Convolutional Neural Network （2018）
+## Measuring River Wetted Width from Remotely Sensed Imagery at the Sub-pixel Scale with a Deep Convolutional Neural Network（2018）
 
 这篇文章主要是用CNN做了降尺度的分析。其他的暂略描述。
+
+##  Water-volume variations of Lake Hulun estimated from serial Jason altimeters and Landsat TM/ETM+ images from 2002 to 2017（2018）
+
+这篇文章使用了 Jason 1，2，3系列的高程数据，结合Waveform analysis等技术，计算了呼伦湖的高程数据，这篇文章这块讲的还比较细，值得留意。
+
+然后根据Landsat获取水体表面面积的变化数据，使用的指标主要是MNDWI。
+
+最后推算容量的变化。
+
+从图9和10的结果看，水位的估计和地区观测的R2在0.83，面积的总准确率也能达到96%。
+
+## Automatic Correction of Contaminated Images for Assessment of Reservoir Surface Area Dynamics（2018）
+
+这里面的数据集值得关注。
+
+## - Construction of the 500-m Resolution Daily Global Surface Water Change Database (2001–2016)（2018）
+
+这里的数据集值得关注。
+
+## Detecting, Extracting, and Monitoring Surface Water From Space Using Optical Sensors: A Review（2018）
+
+遥感观测地表水的综述文献。
 
 ## Satellite Remote Sensing for Water Resources Management （2018）
 
@@ -258,6 +230,25 @@ table2总结了**WRM需要的变量以及数据源**，也copy一遍。
 |SPOT/PROBA-V|1990-2017|1km|10d|
 |Sentinel-2|2015/2017|10-60m|5/10d|
 
+## Water body extraction from very high spatial resolution remote sensing data based on fully convolutional networks（2019）
+
+卷积神经网络识别水体。
+
+## Lake Topography and Active Storage From Satellite Observations of Flood Frequency（2019）
+
+和flood frequency的联系值得关注。
+
+## MAPPING SURFACE WATER IN COMPLEX AND HETEROGENEOUS ENVIRONMENTS USING REMOTE SENSING（2019）
+
+简单读一读前两章，了解一些综述性质的内容。
+
+## Assessment of the geometry and volumes of small surface water reservoirs by remote sensing in a semi-arid region with high reservoir density（2019）
+
+
+## Dynamic Waterline Mapping of Inland Great Lakes Using Time-Series SAR Data from GF-3 and S-1A Satellites: A Case Study of DJK Reservoir, China (2019)
+
+可以简单了解下高分卫星的情况。
+
 ## Recognizing Global Reservoirs From Landsat 8 Images: A Deep Learning Approach （2019）
 
 这是一篇Deep Learning 来识别一个水体是水库还是湖泊的文章。可参考：[Jack-Chen-435/Reservoirs-Lake-Recognizing](https://github.com/Jack-Chen-435/Reservoirs-Lake-Recognizing)
@@ -265,6 +256,21 @@ table2总结了**WRM需要的变量以及数据源**，也copy一遍。
 ## Evaluation of Sentinel-3 SRAL SAR altimetry over Chinese rivers （2019）
 
 简单说明下，Sentinel-3是第一个 radar altimetry mission operating with a synthetic aperture radar (SAR) altimeter at global scale and with a new on-board tracking system (i.e. open-loop)。有很高的潜力为未来20年提供可靠的内陆水体观测。
+
+## A global lake and reservoir volume analysis using a surface water dataset and satellite altimetry（2019）
+
+这篇文章结合the JRC Global Surface Water (GSW) 数据集和 DAHITI 高程数据库计算了全球137个湖泊水库的库容变化时间序列。
+
+GSW很出名，数据来自Landsat；DAHITI 数据前面也有介绍，不过这篇文章中也介绍了其最新情况，可以关注下。
+
+结果发现高程和面积有很高的线性关系。
+
+
+## Estimating reservoir evaporation losses for the United States: Fusing remote sensing and modeling approaches（2019）
+
+通过整合遥感数据（水面面积）和PM公式（蒸发率计算），这篇文章估计了CONUS上721个水库的月蒸发数据。
+
+数据可以在这里查看：https://dataverse.tdl.org/dataverse/HGao
 
 ## Assimilation of Satellite Altimetry Data for Effective River Bathymetry （2020）
 
@@ -336,8 +342,79 @@ Repeat cycle (day)分别是10、10、369 (subcycle30) 和27
 
 这篇文章提到了一个防洪方面还比较有用的概念：effective reservoir，即防洪库容较多的水库，并使用随机森林的方法识别出区域中的 effective reservoir。这个概念来自一篇更早的文章，是为了梯级防洪联合调度降维运算提出的方法。如果能在流域防洪态势感知里用到这个概念，利用遥感数据分析流域水库库容，进而判断防洪形势，还是不错的。
 
+##  A novel water body extraction neural network ( WBE-NN ) for optical high- resolution multispectral imagery（2020）
+
+这篇是用CNN来提取水体的文章。因为传统的方法还是会面临 阴影误识别等问题，这块可以进一步参考前面提到的一个综述。根据表1的结果可以看到提出的方法的准确性明显高于其他的方法。
+
+## Four decades of wetland changes in Dongting Lake using Landsat observations during 1978–2018（2020）
+
+这篇文章结合支持向量机和Landsat识别了洞庭湖几十年的变化并进行了分析。
+
+遥感图像被sensor、solar、大气、地形等影响，需要前处理来尽可能地减少误差。首先，需要进行多时段图像地pixel registration和 radiometric calibration。
+
+这两个概念简单补充下：根据 https://www-k12.atmos.washington.edu/~ovens/gmt/doc/html/GMT_Docs/node147.html 这个网站的介绍，像素注册就是给每个像素定位坐标。根据[维基百科](https://en.wikipedia.org/wiki/Radiometric_calibration)的介绍，是测量电磁辐射和原子粒子辐射的一套校准技术的总称，这里就是对遥感观测的校准。卫星传感器获取的光谱数据受到大气吸收、散射、传感器-目标-光照几何形状、传感器校准以及图像数据处理程序等诸多因素的影响，这些因素往往随时间而变化。在多日期的场景中，目标是非常多变的，几乎不可能在自动模式下进行比较。为了从多数据卫星图像中检测地表反射率变化所揭示的真实景观变化，需要进行辐射校正。辐射校正有两种方法:绝对法和相对法。绝对方法要求在获取数据时使用地面测量数据进行大气校正和传感器校准。当档案卫星图像数据用于变化分析时，这不仅是昂贵的，而且是不切实际的。因为不需要卫星经过时的现场大气数据，所以首选相对辐射校正方法，即相对辐射归一化(RRN)。这种方法包括将多数据图像的强度或数字(DN)逐条归一化或校正为分析人员选择的参考图像。归一化后的图像看起来就像它们是在与参考图像相似的大气和光照条件下用相同的传感器获取的。
+
+大气校正通过FLAASH 大气校正模块完成。
+
+线性回归方法来完成 相对校正。这篇文章里2017和2018的图像被选择作为dry和wet的reference images。然后通过线性回归将其他图像都处理成和reference images匹配。
+
+然后将洞庭湖的land cover定义为4种类型。选择支持向量机来训练分类模型。利用ENVI软件的NECF模块可以完成这一监督分类任务。
+
+## Evaluation of a new 18-year MODIS-derived surface water fraction dataset for constructing Mediterranean wetland open surface water dynamics（2020）
+
+这篇文章主要是监测MODIS能不能观测0.01平方公里以上的水体。
+
+Landsat的水体图像直接使用了 JRC-GSW数据集。
+
+JRC-GSW数据集是月的图像，共有380个全球水体map。还有8个突出来标注水体变化。
+
+MODIS 的surface water fraction（SWF）数据集提供了8天分辨率的500m空间分辨率的18年时间序列数据。SWF能提供GSW中的数据gap。这个数据也是根据MODIS的land cover产品，使用机器学习分类算法分类出来的。
+
+作者选择了340个0.01-3100平方公里的水体来比较两者。对于不太变化的水体，两者的一致性不好，对于动态的水体，相关系数可以达到0.81
+
+## Global Characterization of Inland Water Reservoirs Using ICESat ‐ 2 Altimetry and Climate Reanalysis（2020）
+
+这篇文章是对ICESat-2数据的分析。笔记可以参考这里：https://docs.google.com/presentation/d/19UsyFlJZwDSLOhi2IfQYbgKUFPFAzauxdQK47djjfL4/edit#slide=id.g885d91bf02_0_0
+
+## Remote sensing estimation of catchment-scale reservoir water impoundment in the upper Yellow River and implications for river discharge alteration（2020）
+
+这篇文章利用Landsat和MODIS分析了黄河中上游两个大流域内的水库存水变化以及其对径流的影响。
+
+MODIS数据使用的是MOD09A1 surface reflectance 产品，该产品提供 surface spectral reflectance of Terra MODIS bands 1–7 at 500-m resolution after the correction for atmospheric conditions such as gasses, aerosols, and Rayleigh scattering. 
+
+Landsat在GEE上获取，GEE上USGS的Landsat Tier 1 有高数据质量的景，很适合做时间序列分析。Tier1 景的georegistration 是一致的，tolerance也较小，在半个像素内，是合适用来做 变化监测的。也参考了 JRC-GSW 数据集。
+
+使用SRTM的DEM数据来估计water storage。ASTER DEM做备用。
+
+从文献中收集一些流域水库的信息。
+
+为了实现这篇文章的目标，做了以下的工作：
+
+1. 在google earth上人工查看流域上各个河段，找到水库
+2. 在Landsat上利用NDWI提取出水库水面面积
+3. 结合DEM估计 annual and seasonal primary inundation outlines对应的库容
+
+后面又分析了两个时期水库建设对径流的影响等，这里不再赘述。
+
+## Potential and limitations of satellite altimetry constellations for monitoring surface water storage changes – A case study in the Mississippi basin (2020)
+
+总结了测高卫星的数据情况。在密西西比河大流域调查了测高卫星的情况，结果表面绝大多数水库（0.1平方公里的80%）还是被miss的。还有很大的进一步发展的空间。
+
+## Monthly estimation of the surface water extent in France at a 10-m resolution using Sentinel-2 data（2020）
+
+利用Sentinel-2的数据，获取了法国全国范围内的陆面水体的月尺度变化数据，结果显示和GSW数据集相比，有相近的趋势。
+
+## Estimating Small Reservoir Evaporation Using Machine Learning Models for the Brazilian Savannah（2020）
+
+这篇文章分别利用PM公式，SVM,RF,ANN等模型计算了水库的蒸发率。
+
+模型输入是日最高、平均、最低气温，相对湿度，太阳辐射，风速以及地外辐射不同组合。训练和验证都有本地的pan观测来检验。
+
+结果发现，综合来看，RF是最稳定的，不同的输入组合下都能维持在0.5-0.75之间。
+
 ## 未读文献
 
+- SOLS: A lake database to monitor in the Near Real Time water level and storage variations from remote sensing data
 - Remote Sensing‐Based Modeling of the Bathymetry and Water Storage for Channel‐Type Reservoirs Worldwide (2020)
 - Lake and reservoir volume variations in South America from radar altimetry, ICESat laser altimetry, and GRACE time-variable gravity (2021)
 - Deep learning technique for fast inference of large-scale riverine bathymetry
@@ -346,3 +423,14 @@ Repeat cycle (day)分别是10、10、369 (subcycle30) 和27
 - Deriving high-resolution reservoir bathymetry from ICESat-2 prototype photon-counting lidar and landsat imagery
 - Synoptic assessment of water resource variability in reservoirs by remote sensing: General approach and application to the runoff harvesting systems of south India
 - Deriving three dimensional reservoir bathymetry from multi-satellite datasets
+- Surface Water Body Detection in Polarimetric SAR Data Using Contextual Complex Wishart Classification
+- A reservoir storage estimation algorithm using digital elevation data and image classifications
+- AltEx: An open source web application and toolkit for accessing and exploring altimetry datasets
+- Mapping and sampling to characterize global inland water dynamics from 1999 to 2018 with full Landsat time-series（2020）
+- Constructing long-term high-frequency time series of global lake and reservoir areas using Landsat imagery
+- Monitoring reservoir storage in South Asia from multisatellite remote sensing
+- A predictive model for Lake Chad total surface water area using remotely sensed and modeled hydrological and meteorological parameters and multivariate regression analysis
+- Tracking Multidecadal Lake Water Dynamics with Landsat Imagery and Topography/Bathymetry
+- Analysis of water clarity decrease in Xin'anjiang Reservoir, China, from 30-Year Landsat TM, ETM+, and OLI observations
+- A high-resolution bathymetry dataset for global reservoirs using multi-source satellite imagery and altimetry
+- Analysis of the Dynamic Changes of the Baiyangdian Lake Surface Based on a Complex Water Extraction Method

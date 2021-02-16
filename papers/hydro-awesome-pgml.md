@@ -109,7 +109,7 @@ loss函数也包含了对流扩散方程中的几项，见原文式6.
 
 这篇文章和 Physics guided RNNs for modeling dynamical systems: A case study in simulating lake temperature profiles 方法基本一致，只是RNN换成了LSTM，所以这里不再赘述。
 
-## []()
+## [A Deep-Learning Hybrid-Predictive-Modeling Approach for Estimating Evapotranspiration and Ecosystem Respiration]()
 
 
 

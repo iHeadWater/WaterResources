@@ -1,70 +1,43 @@
 # 农作物需水估算
 
-- Data-driven estimates of evapotranspiration and its drivers in the Congo Basin
-- Regional actual evapotranspiration estimation with land and meteorological variables derived from multi-source satellite data
-- Evaluating Landsat 8 evapotranspiration for water use mapping in the Colorado River Basin
-- Estimating Net Irrigation Across the North China Plain Through Dual Modeling of Evapotranspiration
-- Hyperspectral narrowband and multispectral broadband indices for remote sensing of crop evapotranspiration and its components (transpiration and soil evaporation)
-- Open-source Google Earth Engine 30-m evapotranspiration rates retrieval: The SEBALIGEE system
-- Evaluation of twelve evapotranspiration products from machine learning, remote sensing and land surface models over conterminous United States
-- Regional crop water use assessment using Landsat-derived evapotranspiration
-- Evaluating a satellite-based seasonal evapotranspiration product and identifying its relationship with other satellite-derived products and crop yield: A case study for Ethiopia
-- Estimating daily reference evapotranspiration based on limited meteorological data using deep learning and classical machine learning methods
-- Evaluation of WaPOR V2 evapotranspiration products across Africa
-- Estimating Small Reservoir Evaporation Using Machine Learning Models for the Brazilian Savannah
-- Potential of satellite and reanalysis evaporation datasets for hydrological modelling under various model calibration strategies
-- A Deep-Learning Hybrid-Predictive-Modeling Approach for Estimating Evapotranspiration and Ecosystem Respiration
-- A meteorological-based crop coefficient model for estimation of daily evapotranspiration
-- Long time series of daily evapotranspiration in China based on the SEBAL model and multisource images and validation
-- Estimating reservoir evaporation losses for the United States: Fusing remote sensing and modeling approaches
-- Improved ET assimilation through incorporating SMAP soil moisture observations using a coupled process model : A study of U . S . arid and semiarid regions
-- Evaluation of hydrologic impact of an irrigation curtailment program using Landsat satellite data
-- Evaluation of global terrestrial evapotranspiration by state-of-the-art approaches in remote sensing , machine learning , and land surface models
-- Evaluation Framework of Landsat 8-Based Actual Evapotranspiration Estimates in Data-Sparse Catchment
-- Hydrologic Observation, Model, and Theory Congruence on Evapotranspiration Variance: Diagnosis of Multiple Observations and Land Surface Models
-- Hydrologic and agricultural Earth observations and modeling for the water-food nexus
-- A daily 0.25° × 0.25° hydrologically based land surface flux dataset for conterminous China, 1961–2017
-- Provincial and gridded population projection for China under shared socioeconomic pathways from 2010 to 2100
-- Evaluating Landsat 8 evapotranspiration for water use mapping in the Colorado River Basin
-- Status of accuracy in remotely sensed and in-situ agricultural water productivity estimates: A review
-- Water use in global livestock production—opportunities and constraints for increasing water productivity
-- Reservoir operation in assigning optimal multi-crop irrigation areas
-- Irrigation water consumption of irrigated cropland and its dominant factor in China from 1982 to 2015
-- Monitoring US agriculture: The US department of agriculture, national agricultural statistics service, cropland data layer program
-- Vegetation index-based crop coefficients to estimate evapotranspiration by remote sensing in agricultural and natural ecosystems
-- On inclusion of water resource management in Earth system models -Part 1: Problem definition and representation of water demand
-- Status of accuracy in remotely sensed and in-situ agricultural water productivity estimates: A review
-- Detecting winter wheat irrigation signals using SMAP gridded soil moisture data
-- Hydrologic and agricultural Earth observations and modeling for the water-food nexus
-- Estimating Net Irrigation Across the North China Plain Through Dual Modeling of Evapotranspiration
-- Merging remote sensing data and national agricultural statistics to model change in irrigated agriculture
-- Comparing remote sensing and tabulated crop coefficients to assess irrigation water use
-- A review of remote sensing applications in agriculture for food security: Crop growth and yield, irrigation, and crop losses
-- Satellite-based global-scale irrigation water use and its contemporary trends
-- The green and blue crop water requirement WATNEEDS model and its global gridded outputs
-- Estimating irrigation water use over the contiguous United States by combining satellite and reanalysis soil moisture data
-- Calculating crop water requirement satisfaction in the West Africa sahel with remotely sensed soil moisture
-- Global rain-fed, irrigated, and paddy croplands: A new high resolution map derived from remote sensing, crop inventories and climate data
-- Monitoring irrigation using landsat observations and climate data over regional scales in the Murray-Darling Basin
-- Connections between the hydrological cycle and crop yield in the rainfed U.S. Corn Belt
-- A land data assimilation system for sub-Saharan Africa food and water security applications
-- Estimating crop coefficients using remote sensing-based vegetation index
-- A cultivated planet in 2010 - Part 1: The global synergy cropland map
-- Satellite‐Based Monitoring of Irrigation Water Use: Assessing Measurement Errors and Their Implications for Agricultural Water Management Policy
-- Mapping of 30-meter resolution tile-drained croplands using a geospatial modeling approach
-- Application of a remote sensing method for estimating monthly blue water evapotranspiration in irrigated agriculture
-- Physical versus economic water footprints in crop production: A spatial and temporal analysis for China
-- Quantification of irrigation water using remote sensing of soil moisture in a semi-arid region
-- Evaluating a satellite-based seasonal evapotranspiration product and identifying its relationship with other satellite-derived products and crop yield: A case study for Ethiopia
-- Hyperspectral narrowband and multispectral broadband indices for remote sensing of crop evapotranspiration and its components (transpiration and soil evaporation)
-- Remote sensing for agricultural applications: A meta-review
-- A review of remote sensing applications in agriculture for food security: Crop growth and yield, irrigation, and crop losses
-
-# Representation of Water Demand
-
 人类活动与地球系统之间的联系应该被量化反映到模拟地球系统过程的模型中以了解人类活动的影响，这也是Earth system modeling中的重要挑战。人类活动关键要素之一就是 水资源管理，其中，一个重要的环节就是water demand的分析。这里就简单记录下review的water demand，尤其是针对水库的需水的建模方法。
 
-## On inclusion of water resource management in Earth system models – Part 1: Problem definition and representation of water demand （2015）
+## Reservoir operation in assigning optimal multi-crop irrigation areas（2007）
+
+简单了解下里面关于水库灌溉和作物之间的关系。
+
+## Monitoring US agriculture: The US department of agriculture, national agricultural statistics service, cropland data layer program（2011）
+
+USDA的农业观测任务。
+
+## Vegetation index-based crop coefficients to estimate evapotranspiration by remote sensing in agricultural and natural ecosystems（2011）
+
+遥感估计作物系数。
+
+## Estimating crop coefficients using remote sensing-based vegetation index（2013）
+
+
+## Merging remote sensing data and national agricultural statistics to model change in irrigated agriculture（2014）
+
+看看灌溉的情况
+
+
+## Application of a remote sensing method for estimating monthly blue water evapotranspiration in irrigated agriculture（2014）
+
+
+
+## Evaluating a satellite-based seasonal evapotranspiration product and identifying its relationship with other satellite-derived products and crop yield: A case study for Ethiopia (2015)
+
+
+## Global rain-fed, irrigated, and paddy croplands: A new high resolution map derived from remote sensing, crop inventories and climate data（2015）
+
+作物map
+
+## Calculating crop water requirement satisfaction in the West Africa sahel with remotely sensed soil moisture（2015）
+
+土壤含水量推测water requirement。
+
+## On inclusion of water resource management in Earth system models -Part 1: Problem definition and representation of water demand（2015）
 
 这是一篇综述性质的文章，总结了在LSM（land surface model）和GHM（global hydrological model）等大尺度模型中的各类型water demand算法的文献，讨论了他们的优缺点，强调了不确定性以及它们的局限。下面就稍微阐述下。
 
@@ -158,6 +131,16 @@ Table 3. Representative examples including irrigation in coupled land-surface mo
 
 第三，host模型的不确定性:模型可以为需求模拟增加大量的不确定性，特别是灌溉。如第3节所述，灌溉需求的计算涉及求解每个模拟时间步的土壤水分平衡，这取决于host模型中有关的自然过程，如实际蒸散和土壤水分，如何参数化。考虑灌溉与大气的反馈效应可以显著地改变潜在的蒸发量，因此，基于GHMs的离线灌溉需求模拟可能存在偏差，因为它们固有地忽略了气候反馈。从这个角度来看，在线LSMs在模拟二氧化碳浓度增加和未来水资源压力方面优于GHMs，因为它们通常包含许多调查气候、碳、植被和水循环之间相互作用所需的计算组件。此外，尽管有人认为host模型的不确定性比气候forcing(2013)更显著，但灌溉算法和大规模宿主模型的不确定性尚未完全分解和区分。这就需要多种需求算法与多种host模型的混合匹配，进行系统的相互比较和敏感性分析。
 
+## Evaluating Landsat 8 evapotranspiration for water use mapping in the Colorado River Basin（2016）
+
+
+## Hyperspectral narrowband and multispectral broadband indices for remote sensing of crop evapotranspiration and its components (transpiration and soil evaporation)（2016）
+
+
+## A land data assimilation system for sub-Saharan Africa food and water security applications（2017）
+
+留意下FLDAS的数据。
+
 ## Effects of spatially distributed sectoral water management on the redistribution of water resources in an integrated water model （2017）
 
 先了解下摘要，记住一些基本名词。sectoral water withdrawals，consumptive demands 和 给surface以及地下水资源的分配 的表示对提升水循环整体建模是重要的。这篇文章加强了水资源管理在**区域地球系统earth system（ES）**的表达，基本内容是用一个针对地表地下水的**区域 integrated assessment（IA）模型**模拟 sectoral water demands ，然后将**sectoral water demands** 进行空间分布式分配。通过分析CONUS主要**水文区域里模拟的regulated flow 和 sectoral supply deficit** 来评价这个 **integrated modeling framework（IA-ES）**，这点和地球系统关注water storage 变化有区别的。**historical supply deficit 的减少**被作为评价IA-ES模型 在表示评估未来adaption和mitigation strategies的复杂sectoral 人类活动方面的improvement的 指标。这篇文章还评估了由地下水和return flow modules的**individual 和 combined addtions** 导致的 灌溉和非灌溉sectors的**regulated flow和unmet demands的空间变化**。结果表明 通过减少water supply deficit，地下水有显著的regional和sectoral 效果。水文模式上，sectoral return flow 展示了清晰的水文模式上的东西对比，因此return flow 和 IA sectoral demands 一起成为一个美国重要的水资源和water deficits的空间分布因素。这篇文章的分析点出了在获取水资源以及deficits的跨流域分配的区域差异方面，对水资源管理的空间分布secroal表示的需要。
@@ -223,3 +206,98 @@ GCAM 灌溉和非灌溉需水是基于预定义好的比例来分配的，这个
 $$C_{gw_{sector}}(lat,lon,t)=C_{GCAM_{sector}}(lat,lon,t)\cdot [\frac{USGS_{groundwater}}{USGS_{total}}]_{sector}$$
 $$C_{sfce_{sector}}(lat,lon,t)=C_{GCAM_{sector}}(lat,lon,t)\cdot [\frac{USGS_{surface\ water}}{USGS_{total}}]_{sector}$$
 其中，$C_{gw}$和$C_{sfce}$分别是GCAM的结果分配给地下水系统和地表水系统的comsumptive use water demand的那部分。$USGS_{groundwater}$,$USGS_{surface\ water}$,$USGS_{total}$ 分别是 USGS地下水，地表水和全部freshwater withdrawals。因为针对irrigation和non-irrigation有两个比例，所以分配的时候对irrigation和non-irrigation要分别处理。这篇文章中分配给地下水supply的那部分假定总是能被满足的。
+
+## Remote sensing for agricultural applications: A meta-review（2019）
+
+review文章。
+
+## Comparing remote sensing and tabulated crop coefficients to assess irrigation water use（2019）
+
+
+## Quantification of irrigation water using remote sensing of soil moisture in a semi-arid region（2019）
+
+
+
+## Evaluation of twelve evapotranspiration products from machine learning, remote sensing and land surface models over conterminous United States（2019）
+
+## Evaluation of hydrologic impact of an irrigation curtailment program using Landsat satellite data（2019）
+
+看看灌溉对径流的影响。
+
+## Evaluation of global terrestrial evapotranspiration by state-of-the-art approaches in remote sensing , machine learning , and land surface models（2019）
+
+一篇综述ET计算的文章，可以看看。
+
+## Hydrologic and agricultural Earth observations and modeling for the water-food nexus（2019）
+
+可以简单了解下 water-food nexus到底是干啥的。
+
+## Status of accuracy in remotely sensed and in-situ agricultural water productivity estimates: A review（2019）
+
+
+
+## Detecting winter wheat irrigation signals using SMAP gridded soil moisture data（2019）
+
+关注下 SMAP的作用。
+
+## Estimating irrigation water use over the contiguous United States by combining satellite and reanalysis soil moisture data（2019）
+
+土壤含水量推测irrigation water use。
+
+## Regional actual evapotranspiration estimation with land and meteorological variables derived from multi-source satellite data（2020）
+
+
+## Estimating Net Irrigation Across the North China Plain Through Dual Modeling of Evapotranspiration（2020）
+
+
+## Open-source Google Earth Engine 30-m evapotranspiration rates retrieval: The SEBALIGEE system（2020）
+
+
+## Regional crop water use assessment using Landsat-derived evapotranspiration（2020）
+
+## Estimating daily reference evapotranspiration based on limited meteorological data using deep learning and classical machine learning methods (2020)
+
+
+## A meteorological-based crop coefficient model for estimation of daily evapotranspiration (2020)
+
+
+## Long time series of daily evapotranspiration in China based on the SEBAL model and multisource images and validation (2020)
+
+## Improved ET assimilation through incorporating SMAP soil moisture observations using a coupled process model : A study of U . S . arid and semiarid regions (2020)
+
+关注下SMAP数据在ET计算中的作用。
+
+## Evaluation Framework of Landsat 8-Based Actual Evapotranspiration Estimates in Data-Sparse Catchment（2020）
+
+
+## Irrigation water consumption of irrigated cropland and its dominant factor in China from 1982 to 2015（2020）
+
+国内灌溉数据。
+
+
+## A review of remote sensing applications in agriculture for food security: Crop growth and yield, irrigation, and crop losses（2020）
+
+
+## Satellite-based global-scale irrigation water use and its contemporary trends（2020）
+
+
+## The green and blue crop water requirement WATNEEDS model and its global gridded outputs（2020）
+
+
+## Monitoring irrigation using landsat observations and climate data over regional scales in the Murray-Darling Basin（2020）
+
+利用landsat观测和气候数据来监测灌溉。
+
+## Connections between the hydrological cycle and crop yield in the rainfed U.S. Corn Belt（2020）
+
+注意下里面的数据量之间的相关性。
+
+## Satellite‐Based Monitoring of Irrigation Water Use: Assessing Measurement Errors and Their Implications for Agricultural Water Management Policy（2020）
+
+
+## Mapping of 30-meter resolution tile-drained croplands using a geospatial modeling approach（2020）
+
+
+## Physical versus economic water footprints in crop production: A spatial and temporal analysis for China（2021）
+
+正好简单了解下footprint。

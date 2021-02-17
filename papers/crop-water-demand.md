@@ -26,9 +26,6 @@ USDA的农业观测任务。
 
 
 
-## Evaluating a satellite-based seasonal evapotranspiration product and identifying its relationship with other satellite-derived products and crop yield: A case study for Ethiopia (2015)
-
-
 ## Global rain-fed, irrigated, and paddy croplands: A new high resolution map derived from remote sensing, crop inventories and climate data（2015）
 
 作物map
@@ -131,12 +128,6 @@ Table 3. Representative examples including irrigation in coupled land-surface mo
 
 第三，host模型的不确定性:模型可以为需求模拟增加大量的不确定性，特别是灌溉。如第3节所述，灌溉需求的计算涉及求解每个模拟时间步的土壤水分平衡，这取决于host模型中有关的自然过程，如实际蒸散和土壤水分，如何参数化。考虑灌溉与大气的反馈效应可以显著地改变潜在的蒸发量，因此，基于GHMs的离线灌溉需求模拟可能存在偏差，因为它们固有地忽略了气候反馈。从这个角度来看，在线LSMs在模拟二氧化碳浓度增加和未来水资源压力方面优于GHMs，因为它们通常包含许多调查气候、碳、植被和水循环之间相互作用所需的计算组件。此外，尽管有人认为host模型的不确定性比气候forcing(2013)更显著，但灌溉算法和大规模宿主模型的不确定性尚未完全分解和区分。这就需要多种需求算法与多种host模型的混合匹配，进行系统的相互比较和敏感性分析。
 
-## Evaluating Landsat 8 evapotranspiration for water use mapping in the Colorado River Basin（2016）
-
-
-## Hyperspectral narrowband and multispectral broadband indices for remote sensing of crop evapotranspiration and its components (transpiration and soil evaporation)（2016）
-
-
 ## A land data assimilation system for sub-Saharan Africa food and water security applications（2017）
 
 留意下FLDAS的数据。
@@ -220,6 +211,12 @@ review文章。
 
 ## Evaluation of twelve evapotranspiration products from machine learning, remote sensing and land surface models over conterminous United States（2019）
 
+这篇文章在CONUS上评估了12种ET数据。
+
+一种是基于机器学习模型的产品（GFET），三种是基于遥感观测的（SSEBop, MOD16和GLEAM），8种是基于LSM的（NLDAS2和3各4种）。用的评价数据是 AmeriFlux 观测站和水量平衡推测的ET（WBET）
+
+结果显示在流域尺度所有的产品都能展示出和WBET较高的相关性（大于0.83）
+
 ## Evaluation of hydrologic impact of an irrigation curtailment program using Landsat satellite data（2019）
 
 看看灌溉对径流的影响。
@@ -244,21 +241,26 @@ review文章。
 
 土壤含水量推测irrigation water use。
 
-## Regional actual evapotranspiration estimation with land and meteorological variables derived from multi-source satellite data（2020）
-
-
 ## Estimating Net Irrigation Across the North China Plain Through Dual Modeling of Evapotranspiration（2020）
-
-
-## Open-source Google Earth Engine 30-m evapotranspiration rates retrieval: The SEBALIGEE system（2020）
-
 
 ## Regional crop water use assessment using Landsat-derived evapotranspiration（2020）
 
 ## Estimating daily reference evapotranspiration based on limited meteorological data using deep learning and classical machine learning methods (2020)
 
+这篇文章利用了几种DL方法来估算日reference evapotranspiration。结果表明，在有 temperature-based 的变量数据的时候，TCN和LSTM能表现的比其他基于温度的经验模型好，个人认为还是能说明温度数据的时间序列规律对ET的影响还是很大的。当radiation-based或humidity-based数据可用的时候，所有ML的模型都比经验方程强。不过验证的对象是PM公式计算的ET0，所以个人感觉这篇文章主要还是看下方法。LSTM和TCN留意下。
 
 ## A meteorological-based crop coefficient model for estimation of daily evapotranspiration (2020)
+
+这篇文章介绍了ETc计算的FAO56方法。
+
+谈到了该方法在regional 尺度的应用上会有的缺点：
+
+1. 首先是该模型在几种常见作物的蒸散发估算上效果并不好
+2. FAO56的PM公式估计ETo也有高估
+3. 此外，Kc和land cover，canopy dynamics，canopy light absorption，soil properties和soil moisture都有关系，因此不确定性很大。
+
+所以计算crop ET的方法就有人研究只依赖于 meteorological forcing的方法。比如 Bouchet's complementary hypothesis
+
 
 
 ## Long time series of daily evapotranspiration in China based on the SEBAL model and multisource images and validation (2020)

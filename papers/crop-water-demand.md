@@ -2,25 +2,22 @@
 
 人类活动与地球系统之间的联系应该被量化反映到模拟地球系统过程的模型中以了解人类活动的影响，这也是Earth system modeling中的重要挑战。人类活动关键要素之一就是 水资源管理，其中，一个重要的环节就是water demand的分析。这里就简单记录下review的water demand，尤其是针对水库的需水的建模方法。
 
-## Reservoir operation in assigning optimal multi-crop irrigation areas（2007）
-
-简单了解下里面关于水库灌溉和作物之间的关系。
-
 ## Monitoring US agriculture: The US department of agriculture, national agricultural statistics service, cropland data layer program（2011）
 
-USDA的农业观测任务。
+USDA的农业观测任务NASS制作了CDL图。用的是Landsat、MODIS等遥感图，结合地面观测，利用机器学习方法做的分类。
 
 ## Vegetation index-based crop coefficients to estimate evapotranspiration by remote sensing in agricultural and natural ecosystems（2011）
 
-遥感估计作物系数。
+这篇文章综述了用遥感数据获得的VI来估算crop coefficients的方法。常见的指标有NDVI、Soil Adjusted VI和Enhanced VI 以及LAI等。方法基本上回归类型方法，详见原文。
 
 ## Estimating crop coefficients using remote sensing-based vegetation index（2013）
 
 
 ## Merging remote sensing data and national agricultural statistics to model change in irrigated agriculture（2014）
 
-看看灌溉的情况
+这篇文章是推求灌溉图的，这里主要看看关于灌溉的一些简单知识。
 
+文中提到通常对灌溉地区会假设灌溉作物相比非灌溉的作物会有更高的NDVI；不同作物不同地区的生长季节的最高NDVI值不同；越是自然缺水条件，灌溉和非灌溉的NDVI值差别就越大。
 
 ## Application of a remote sensing method for estimating monthly blue water evapotranspiration in irrigated agriculture（2014）
 
@@ -200,10 +197,30 @@ $$C_{sfce_{sector}}(lat,lon,t)=C_{GCAM_{sector}}(lat,lon,t)\cdot [\frac{USGS_{su
 
 ## Remote sensing for agricultural applications: A meta-review（2019）
 
-review文章。
+一篇遥感在农业方面应用的综述，这里仅简单了解下。
+
+从遥感数据获取农业变量信息并不是一件直接的事情，大体上有三种方式。
+
+1. 纯粹的经验型方法，即直接率定目标变量和相关观测值之间的相关关系，包括经验公式和机器学习算法
+2. 机理类型的方法，基于radiative transfer理论、麦克斯韦方程，光学几何投影等
+3. contextual 方法
 
 ## Comparing remote sensing and tabulated crop coefficients to assess irrigation water use（2019）
 
+这篇文章的方法应该是相对比较容易实现的，比较适合非灌溉领域，比如水文建模的一些研究领域快速使用。
+
+方法结合了 tabulated crop coefficient method和remote sensing method。
+tabulated crop coefficient method如下。
+
+实际蒸散发使用公式$AET=ET_o*K_c$计算；有效降雨由降雨减去5mm（春夏秋），冬季就是全部降雨，土壤缺水量计算为 $SWD_i=SWD_{i-1}+P_e+Irr-AET$。Irr由一个设置的缺水值激活。
+
+Remote Sensing方法如下。在月尺度计算。假设水量平衡中忽略runoff和深层下渗。
+
+Irr=AET-P
+
+$K_c$值由遥感数据NDVI获取，$K_c=1.37*NDVI-0.086$
+
+结果表明两种方法都会有些高估灌溉。
 
 ## Quantification of irrigation water using remote sensing of soil moisture in a semi-arid region（2019）
 
@@ -223,15 +240,11 @@ review文章。
 
 ## Evaluation of global terrestrial evapotranspiration by state-of-the-art approaches in remote sensing , machine learning , and land surface models（2019）
 
-一篇综述ET计算的文章，可以看看。
+一篇综述ET计算的文章，介绍了估算全球ET的不同方法，包括 基于遥感的物理模型，机器学习算法和LSM。然后运用了6种基于遥感的模型和14种LSMs分析了global 陆面ET的时空变化。
 
-## Hydrologic and agricultural Earth observations and modeling for the water-food nexus（2019）
+遥感物理模型那部分主要是基于遥感数据利用PM公式和Priestley-Taylor方程；
 
-可以简单了解下 water-food nexus到底是干啥的。
-
-## Status of accuracy in remotely sensed and in-situ agricultural water productivity estimates: A review（2019）
-
-
+machine learning的方法主要是将ET和一些变量建立起相关关系。比如 NDVI、enhanced vegetation index（EVI）等ET相关控制变量。还有将站点观测升尺度的研究。
 
 ## Detecting winter wheat irrigation signals using SMAP gridded soil moisture data（2019）
 
@@ -261,27 +274,61 @@ review文章。
 
 所以计算crop ET的方法就有人研究只依赖于 meteorological forcing的方法。比如 Bouchet's complementary hypothesis
 
+之前有研究建立ETa与ETo和RH之间的线性您和观测，受此启发，这篇文章参考PM公式，结合蒸散发的物理过程，认为ETa和 soil moisture，RH，作物类型，ETo都有关系。并且其根据测站的观测数据，也证实了ETa，ETo和RH对特定的crop确实是有相互关系的。相比于15分钟的观测尺度，水文学者更关心日尺度上的蒸散发过程，所以这篇文章在日尺度上建立了一个二阶多项式来表达Kc，并根据实际数据来拟合这一关系。
 
+$$K_c=f(RH,ET_o)=\sum_{i=1}^3\sum_{j=1}^3m_{ij}\cdot RH^{i-1}ET_o^{j-1}$$
+
+其中，f函数是作物相关的。系数需要在不同土壤类型下的不同地区依据观测数据来率定。
+
+所以这篇文章利用观测数据率定了参数并验证，图4结果表面，4种作物的R2在0.58-0.86之间，图9表明和FAO56的方法相比更优越一些。
 
 ## Long time series of daily evapotranspiration in China based on the SEBAL model and multisource images and validation (2020)
+
+这篇文章提供了国内1km分辨率的ET数据，数据可以在文中提到的地址下载。
 
 ## Improved ET assimilation through incorporating SMAP soil moisture observations using a coupled process model : A study of U . S . arid and semiarid regions (2020)
 
 关注下SMAP数据在ET计算中的作用。
 
+这篇文章作者研究了在大尺度上同化SMAP数据在估计ET中的作用。利用$PT-JPL_{SM}$模型建立的soil moisture和ET之间的关系，这样就能利用SMAP数据，然后将其作为“观测”可以来约束另一个模型LPJ-DGVM计算的$ET_{LPJ}$，这样更好地模拟ET。
+
+结果表明同化了SMAP数据的ET更接近实际地面观测值。
+
+此法适合估算global ET。
+
 ## Evaluation Framework of Landsat 8-Based Actual Evapotranspiration Estimates in Data-Sparse Catchment（2020）
 
+这篇文章基于Landsat8的无云天观测数据，利用一些能量平衡模型计算了一个区域的ET，并和MODIS的产品以及GLEAM产品比较，说明了能量平衡模型的选择对于ET的计算也是有影响的。
 
 ## Irrigation water consumption of irrigated cropland and its dominant factor in China from 1982 to 2015（2020）
 
-国内灌溉数据。
+这篇文章综合了 灌溉作物图，土壤水平衡，灌溉作物物候，和蒸散发产品，研究了一个irrigated cropland water model来量化国内的高分辨率长时间灌溉耗水。
 
+作者收集了全国840个气象站点的气象数据，包括降雨、气温、风速、日照、相对湿度等，插值为8km网格数据。NDVI数据也插值为日尺度数据。26种作物的月作物网格图也处理为8km数据。作物的参数、最大作物深度和作物系数都要有。
+
+计算作物耗水的方法是提出一种ET分解法。用现存的ET数据乘以IrrigationnWaterConsumption占total water consumptionn的比例作为irrigated cropland的IWC值。
+
+ET数据是通过upscale站点的ET值获得。而比例是通过运行crop model来获取的。所以这篇文章的大部分工作量就在如何运行crop model上。
+
+这个过程不是太简单，复杂程度和github上美国农垦局的water demand程序其实差不太多。
 
 ## A review of remote sensing applications in agriculture for food security: Crop growth and yield, irrigation, and crop losses（2020）
 
+这里关注下这篇综述的irrigation的部分。
+
+irrigation我们关注 识别灌溉发生的地方和量化灌溉用水。
+
+第一部分主要就是区分灌溉和非灌溉区，或者查看灌溉的时空模式。
+
+第二部分就是估计灌溉需水（irrigation water requirement，IWR）或者灌溉耗水（irrigation water consumption，IWU）。IWR定义为crop water requirement（CWR）和effective precipitation之间的差值。IWR是降水、土壤含水量、土壤属性以及ETc的函数。CWR就是满足ETc的水量。
+
+IWR的估计中重要的变量之一就是ETc，其受气候、作物生长等的影响。通常使用crop coefficient法来计算。也可根据能量平衡结合遥感数据计算。
+
+IWR是作物的需水，而实际的耗水是IWU。分析土壤含水量变化并考虑降水可以推测灌溉耗水IWU。这里值得查看下作者引用的文献，并关注下SMAP和GRACE数据的使用。
 
 ## Satellite-based global-scale irrigation water use and its contemporary trends（2020）
 
+这篇是大尺度0.25度分辨率上利用水量平衡做计算。
 
 ## The green and blue crop water requirement WATNEEDS model and its global gridded outputs（2020）
 
@@ -302,4 +349,4 @@ review文章。
 
 ## Physical versus economic water footprints in crop production: A spatial and temporal analysis for China（2021）
 
-正好简单了解下footprint。
+简单了解下footprint，注意其中计算crop water使用的aquacrop模型。

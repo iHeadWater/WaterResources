@@ -21,15 +21,21 @@ USDA的农业观测任务NASS制作了CDL图。用的是Landsat、MODIS等遥感
 
 ## Application of a remote sensing method for estimating monthly blue water evapotranspiration in irrigated agriculture（2014）
 
+这篇介绍的用微波遥感土壤含水量推求灌溉用水的数据是比较早的一篇用改方法计算的文章。
 
+$$ET_b = \triangle ET - bias$$
+
+其中，bias是rain-fed区域里遥感观测和模型计算的差值，这部分反映了两者之间存在的计算偏差。$\triangle ET$是灌溉区域的差值，这样综合反映出实际灌溉用水的情况。
+
+时间尺度月尺度，空间分辨率国内模型用的是0.1度的。用到GLDAS是0.25度。
 
 ## Global rain-fed, irrigated, and paddy croplands: A new high resolution map derived from remote sensing, crop inventories and climate data（2015）
 
-作物map
+注意在remote sensing和irrigation结合的领域里，作物map，irrigation water requirement/use quantification都是不一样的子领域。这篇文章是map irrigated/rain-fed croplands的，属于第一类，就不细看了。
 
 ## Calculating crop water requirement satisfaction in the West Africa sahel with remotely sensed soil moisture（2015）
 
-土壤含水量推测water requirement。
+这篇文章是用微波遥感数据的土壤含水量推测crop water requirement的，和后面计算irrigation water use的不太一样，这里暂时没细看。
 
 ## On inclusion of water resource management in Earth system models -Part 1: Problem definition and representation of water demand（2015）
 
@@ -224,7 +230,23 @@ $K_c$值由遥感数据NDVI获取，$K_c=1.37*NDVI-0.086$
 
 ## Quantification of irrigation water using remote sensing of soil moisture in a semi-arid region（2019）
 
+这个也是用soil moisture来估算irrigation water use的。使用的是来自AMSR2的soil moisture数据。将soil moisture，rainfall 和ET数据输入到一个SM2RAIN的模型中，来推算irrigation water use。
 
+该模型的方法和soil moisture卫星观测和模型计算差值的方式不太一样。它也是基于土壤水平衡公式。
+
+$$nZ\frac{dS(t)}{dt}=I(t)-g(t)-r(t)-e(t)$$
+
+n是土壤porosity，Z是soil layer depth，nZ或者表示为$Z^*$表示soil water capacity，S(t)是relative soil moisture，t是时间，I是total water entering into soil，即降雨+灌溉，g是drainage（deep percolation 和 subsurface runoff），r是surface runoff，e是实际蒸散发。
+
+计算的时候忽略r，令$g(t)=aS(t)^b$，$e(t)=ET_a$
+
+所以有：
+
+$$IR(t)=I(t)-P(t)=\frac{Z^*dS(t)}{dt}+aS(t)^b+ET_a(t)-P(t)$$
+
+根据降雨观测去率定这里面的参数，具体地说，是利用非灌溉期地数据来率定参数，然后再用于灌溉期地irrigation water use计算（因为灌溉数据太缺乏）。灌溉和非灌溉之间地bias估算后用来校正模型。
+
+结果显示在灌溉的pixels上平均相关系数可以达到0.86.不过分辨率低了些月尺度下50km。
 
 ## Evaluation of twelve evapotranspiration products from machine learning, remote sensing and land surface models over conterminous United States（2019）
 
@@ -252,7 +274,53 @@ machine learning的方法主要是将ET和一些变量建立起相关关系。�
 
 ## Estimating irrigation water use over the contiguous United States by combining satellite and reanalysis soil moisture data（2019）
 
-土壤含水量推测irrigation water use。
+这篇文章基于模型估计的soil moisture和遥感观测的soil moisture来计算irrigation water use（IWU）。基本的思路是模型计算的soil moisture是不考虑灌溉的，而遥感观测的是实际情况包含了灌溉的，所以结合两者可以推求IWU。作者计算的是CONUS上2013-2016年间的月尺度灌溉数据，后面数据部分介绍了都处理成0.25度网格，所以应该是这个分辨率了。这两年SMAP又积累了不少数据，所以不必太担心SMAP的数据问题，16-20年也有5年数据能用了。
+
+作者介绍了关于灌溉areas和water withdrawals以往的研究，指出了比如只在single year有数据，以往数据更多反映地是areas equipped for irrigation而不是areas actually irrigated等问题。
+
+还review了以往应用遥感数据到irrigation water use领域的文献。主要包括两类：Optical and thermal 遥感与 微波遥感。
+
+前者主要是Landsat/MODIS等卫星的应用，主要用来帮助生成irrigated/non-irrigated croplands，做irrigation map。在用水方面，主要是利用thermal 遥感计算蒸散发等来估算用水，但是这估算的是irrigation water requirement。
+
+后者主要是用来估算soil moisture。它的好处是它是直接与irrigation相关的一个观测，并且微波卫星全天气条件下可工作的。第一个用遥感土壤含水量做灌溉mapping的是Kumar等人2015年的一篇文章（但是我上面看到了一篇2014年就有的，其中方法还是引用的，所以就更早了）。用了多个卫星地表土壤含水量产品结合Noah LSM的土壤含水量估计来map irrigated areas in the CONUS。其中的关键假设是灌溉没有被考虑到LSM中，而卫星观测推求的土壤含水量是实际的，可以被认为是反映了灌溉导致的土壤含水量变化的。国内也有人研究了观测和reanalysis产品之间的差别，也发现了在灌溉区域，确实两者的差异会更大。SMAP数据2015年才有，所以研究多是近几年的。
+
+不过以上研究都没有用来估算actual irrigation water use的。此法的假设基础就是 模型是没有考虑人工供水的，而微波遥感数据是考虑了的。作者使用的数据是MERRA-2的reanalysis数据以及SMAP/AMSR2/ASCAT三种卫星的soil moisture数据。
+
+在CONUS上，东部不是特别缺水，所以灌溉并不多，西部则不同，很依赖灌溉。卫星土壤含水量应该是对灌溉效率更低的方式更敏感，对滴灌喷灌等技术应不敏感。
+
+方法思路是这样的。
+
+卫星观测下土壤水量平衡公式为：
+
+$$\frac{d \Theta ^{sat}}{dt}=P(t)+I(t)-ET(t)-R(t)-\triangle S_{rest}$$
+
+模型模拟下则为：
+
+$$\frac{d \Theta ^{mod}}{dt}=P(t)-ET(t)-R(t)-\triangle S_{rest}$$
+
+其中，P是降水，I是灌溉，ET是蒸散发，$\Theta ^{mod}$是模型计算的soil moisture，$\Theta ^{sat}$是卫星观测推算的soil moisture。$\triangle S_{rest}$描述的是surface layer下water storage的变化，包括drainage。
+
+所以:
+
+$$I(t)=\frac{d \Theta ^{sat}}{dt}-\frac{d \Theta ^{mod}}{dt}$$
+
+定义一个灌溉时间发生的时候是 $\frac{d \Theta ^{sat}}{dt}>0$ 且 $\frac{d \Theta ^{mod}}{dt}\leq 0$。这意味着不是降雨引发的soil moisture的增大，而是人工补水的结果。对每次事件，如果卫星上的变化是显著的（高于噪音水平），就计算上述差值来推求irrigation。
+
+$$IWU = \int _{i_{SOS}}^{i_{EOS}}(d\Theta _i^{sat}-d\Theta _i^{mod})dt\approx \sum _{SOS}^{i=EOS}\triangle \Theta _i^{sat-mod}$$
+$$\triangle\Theta _i^{sat-mod}=\left\{
+\begin{aligned}
+\triangle \Theta _i^{sat}-\triangle \Theta _i^{mod}, if \ \triangle \Theta _i^{sat}\geq \Theta _{thresh} \\
+0, otherwise
+\end{aligned}
+\right.$$
+$$\triangle \Theta _i^{sat}=\Theta _i^{sat}-\Theta _{i-n}^{sat}$$
+$$\triangle \Theta _i^{mod}=\Theta _i^{mod}-\Theta _{i-n}^{mod}$$
+
+其中，IWU是从季节开始到季节结束累计的灌溉用水。根据以往研究，CONUS上4月1日到9月30日能覆盖绝大多数的灌溉生长季节时间范围。$\Theta _i^{sat}$和 $\Theta _i^{mod}$是第i天 卫星和模型的估计值， $\Theta _{i-n}^{sat}$和 $\Theta _{i-n}^{mod}$是前面n天前（n天是观测的gap）的卫星和模型估计值。
+
+更多细节参考原文。
+
+结果上，作者和州一级的统计结果进行了比较。estimated irrigation water use和state-level reference water withdrawals相比，SMAP下推求的R能达到0.80.可以说是相当不错了。
 
 ## Estimating Net Irrigation Across the North China Plain Through Dual Modeling of Evapotranspiration（2020）
 
@@ -324,7 +392,7 @@ irrigation我们关注 识别灌溉发生的地方和量化灌溉用水。
 
 IWR的估计中重要的变量之一就是ETc，其受气候、作物生长等的影响。通常使用crop coefficient法来计算。也可根据能量平衡结合遥感数据计算。
 
-IWR是作物的需水，而实际的耗水是IWU。分析土壤含水量变化并考虑降水可以推测灌溉耗水IWU。这里值得查看下作者引用的文献，并关注下SMAP和GRACE数据的使用。
+IWR是作物的需水，而实际的耗水是IWU。分析土壤含水量变化并考虑降水可以推测灌溉耗水IWU。这里值得查看下作者引用的文献（Estimating irrigation water use over the contiguous United States by combining satellite and reanalysis soil moisture data（2019）），并关注下SMAP和GRACE数据的使用。
 
 ## Satellite-based global-scale irrigation water use and its contemporary trends（2020）
 
@@ -335,14 +403,17 @@ IWR是作物的需水，而实际的耗水是IWU。分析土壤含水量变化�
 
 ## Monitoring irrigation using landsat observations and climate data over regional scales in the Murray-Darling Basin（2020）
 
-利用landsat观测和气候数据来监测灌溉。
+利用landsat观测和气候数据在流域尺度来监测灌溉。用的是 Irr=AET-P的思路。从Landsat计算的NDVI可以利用几个简单的回归公式转换为Kc，然后结合ETo来计算ETc。从而推算irrigation。不过这一套其实不算是water use。
+
+几种不同的公式在文中分别对应 CMRSET/IrriSat/Kamble ，结果在表4。
 
 ## Connections between the hydrological cycle and crop yield in the rainfed U.S. Corn Belt（2020）
 
-注意下里面的数据量之间的相关性。
+注意下里面的数据量之间的相关性。VPD（vapor pressure deficit）/SSM（surface soil moisture）/fET（ratio of ET and PET）是和CROP FIELD高度相关的。
 
 ## Satellite‐Based Monitoring of Irrigation Water Use: Assessing Measurement Errors and Their Implications for Agricultural Water Management Policy（2020）
 
+这篇综述主要是讨论了 Satellite‐Based Monitoring of Irrigation Water Use 的不足，这里暂时不细看了。
 
 ## Mapping of 30-meter resolution tile-drained croplands using a geospatial modeling approach（2020）
 

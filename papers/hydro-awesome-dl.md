@@ -14,36 +14,35 @@
 
 ## streamflow prediction
 
-- [Including spatial distribution in a data-driven rainfall-runoff model to improve reservoir inflow forecasting in Taiwan](https://doi.org/10.1002/hyp.9559)：降雨空间分布对径流预测的帮助。
-- [A geomorphology-based ANFIS model for multi-station modeling of rainfall–runoff process](https://doi.org/10.1016/j.jhydrol.2013.03.024)：（1）加入地形地貌等属性有利于计算；（2）分类前处理对模型计算有益。
-- [Determination of Input for Artificial Neural Networks for Flood Forecasting Using the Copula Entropy Method](https://ascelibrary.org/doi/abs/10.1061/(ASCE)HE.1943-5584.0000932)：ANN可以做河道汇流。
-- [Prediction and Inference of Flow Duration Curves Using Multioutput Neural Networks](https://doi.org/10.1029/2018WR024463)：预测FDC（Flow Duration Curves）。
-- [Prediction of regional streamflow frequency using model tree ensembles](http://dx.doi.org/10.1016/j.jhydrol.2014.05.029)：一篇早期的用机器学习算法预测FDC（Flow Duration Curves）的文章。
-- [Geomorphology-based artificial neural networks (GANNs) for estimation of direct runoff over watersheds](https://doi.org/10.1016/S0022-1694(02)00313-X)：地貌单位线与神经网络的数学表达相近。
-- [Urban Water Flow and Water Level Prediction Based on Deep Learning](https://doi.org/10.1007/978-3-319-71273-4_26)：用cnn预测
-- [Rainfall-Runoff modelling using Long-Short-Term-Memory (LSTM) networks](https://doi.org/10.5194/hess-2018-247)：目前是LSTM径流预报引用很高的文献。
-- [Benchmarking a Catchment-Aware Long Short-Term Memory Network (LSTM) for Large-Scale Hydrological Modeling](https://doi.org/10.5194/hess-2019-368)：把属性值作LSTM的输入时，结构有变化。
-- [Toward Improved Predictions in Ungauged Basins: Exploiting the Power ofMachine Learning](https://doi.org/10.1029/2019WR026065)：LSTM在PUB问题上的一个应用
-- [Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets](https://doi.org/10.5194/hess-23-5089-2019)：big data 下数据有协同增强作用，这点和传统水文模型的regional好，universal会差一些相比是一点优势。
-- [Enhancing streamflow forecast and extracting insights using long short term memory networks that assimilate recent observations](https://arxiv.org/abs/1912.08949)：同化历史径流数据
+- [Including spatial distribution in a data-driven rainfall-runoff model to improve reservoir inflow forecasting in Taiwan](https://doi.org/10.1002/hyp.9559)
+- [A geomorphology-based ANFIS model for multi-station modeling of rainfall–runoff process](https://doi.org/10.1016/j.jhydrol.2013.03.024)
+- [Determination of Input for Artificial Neural Networks for Flood Forecasting Using the Copula Entropy Method](https://ascelibrary.org/doi/abs/10.1061/(ASCE)HE.1943-5584.0000932)
+- [Prediction and Inference of Flow Duration Curves Using Multioutput Neural Networks](https://doi.org/10.1029/2018WR024463)
+- [Prediction of regional streamflow frequency using model tree ensembles](http://dx.doi.org/10.1016/j.jhydrol.2014.05.029)
+- [Geomorphology-based artificial neural networks (GANNs) for estimation of direct runoff over watersheds](https://doi.org/10.1016/S0022-1694(02)00313-X)
+- [Urban Water Flow and Water Level Prediction Based on Deep Learning](https://doi.org/10.1007/978-3-319-71273-4_26)
+- [Rainfall-Runoff modelling using Long-Short-Term-Memory (LSTM) networks](https://doi.org/10.5194/hess-2018-247)
+- [Benchmarking a Catchment-Aware Long Short-Term Memory Network (LSTM) for Large-Scale Hydrological Modeling](https://doi.org/10.5194/hess-2019-368)
+- [Toward Improved Predictions in Ungauged Basins: Exploiting the Power ofMachine Learning](https://doi.org/10.1029/2019WR026065)
+- [Towards learning universal, regional, and local hydrological behaviors via machine learning applied to large-sample datasets](https://doi.org/10.5194/hess-23-5089-2019)
+- [Enhancing streamflow forecast and extracting insights using long short term memory networks that assimilate recent observations](https://arxiv.org/abs/1912.08949)
 - [A Rainfall-Runoff Model with LSTM-based Sequence-to-Sequence Learning](https://doi.org/10.1029/2019WR025326)
-- [An enhanced extreme learning machine model for river flow forecasting: State-of-the-art, practical applications in water resource engineering area and future research direction](https://doi.org/10.1016/j.jhydrol.2018.11.069)：一个review方法的文章
+- [An enhanced extreme learning machine model for river flow forecasting: State-of-the-art, practical applications in water resource engineering area and future research direction](https://doi.org/10.1016/j.jhydrol.2018.11.069)
 
 ## reservoir
 
-- [Modeling and simulating of reservoir operation using the artificial neural network, support vector regression, deep learning algorithm](https://doi.org/10.1016/j.jhydrol.2018.08.050)：神经网络等机器学习算法拟合水库调度规则的能力。
-- [Building more realistic reservoir optimization models using data mining – A case study of Shelbyville Reservoir](https://doi.org/10.1016/j.advwatres.2011.03.001)：一篇较早的从历史数据学习调度规则的文章。
-- [The role of hydrologic information in reservoir operation – Learning from historical releases](https://doi.org/10.1016/j.advwatres.2008.07.013)：一篇较早的从历史数据学习调度规则的文章。
-- [Integrated Design of Dam Size and Operations via Reinforcement Learning](https://ascelibrary.org/doi/full/10.1061/%28ASCE%29WR.1943-5452.0001182)：强化学习的应用。
-- [A Multiagent Q-Learning-Based Optimal Allocation Approach for Urban Water Resource Management System](https://ieeexplore.ieee.org/abstract/document/6410370)：一个经典强化学习算法在水资源分配中的例子
-- [Hydropower Optimization Using Deep Learning](https://doi.org/10.1007/978-3-030-22999-3_11)：deep learning和水库调度的较新的论文
-- [Modeling the behavior of water reservoir operators via eigenbehavior analysis](https://doi.org/10.1016/j.advwatres.2018.10.021)：利用机器学习从历史数据提取调度典型模式。
-- [Simulating California reservoir operation using the classification and regression-tree algorithm combined with a shuffled cross-validation scheme](https://doi.org/10.1002/2015WR017394)：不同的拟合调度规则的方法。
+- [Modeling and simulating of reservoir operation using the artificial neural network, support vector regression, deep learning algorithm](https://doi.org/10.1016/j.jhydrol.2018.08.050)
+- [Building more realistic reservoir optimization models using data mining – A case study of Shelbyville Reservoir](https://doi.org/10.1016/j.advwatres.2011.03.001)
+- [The role of hydrologic information in reservoir operation – Learning from historical releases](https://doi.org/10.1016/j.advwatres.2008.07.013)
+- [Integrated Design of Dam Size and Operations via Reinforcement Learning](https://ascelibrary.org/doi/full/10.1061/%28ASCE%29WR.1943-5452.0001182)
+- [A Multiagent Q-Learning-Based Optimal Allocation Approach for Urban Water Resource Management System](https://ieeexplore.ieee.org/abstract/document/6410370)
+- [Hydropower Optimization Using Deep Learning](https://doi.org/10.1007/978-3-030-22999-3_11)
+- [Modeling the behavior of water reservoir operators via eigenbehavior analysis](https://doi.org/10.1016/j.advwatres.2018.10.021)
+- [Simulating California reservoir operation using the classification and regression-tree algorithm combined with a shuffled cross-validation scheme](https://doi.org/10.1002/2015WR017394)
 - [A Statistical Graphical Model of the California Reservoir System](https://doi.org/10.1002/2017WR020412)
 - [Quantifying the roles of single stations within homogeneous regions using complex network analysis](https://doi.org/10.1016/j.jhydrol.2018.06.050)
 - [Tree-based reinforcement learning for optimal water reservoir operation](http://dx.doi.org/10.1029/2009WR008898)
 - [Deep Reinforcement Learning for Cascaded Hydropower Reservoirs Considering Inflow Forecasts](https://link.springer.com/article/10.1007/s11269-020-02600-w)
-
 
 ## river and water body
 
@@ -57,7 +56,6 @@
 
 - [Combining Physically Based Modeling and Deep Learning for Fusing GRACE Satellite Data: Can We Learn From Mismatch?](https://doi.org/10.1029/2018WR023333)
 - [Full-flow-regime storage-streamflow correlation patterns provide insights into hydrologic functioning over the continental US](https://doi.org/10.1002/2016WR020283)
-
 
 ## land cover
 
@@ -109,7 +107,7 @@
 ## theory-guided
 
 - [Theory-Guided Data Science: A New Paradigm for Scientific Discovery from Data](https://ieeexplore.ieee.org/abstract/document/7959606)
-- [Physics‐Constrained Machine Learning of Evapotranspiration](https://doi.org/10.1029/2019GL085291)：不直接去拟合x->y，而是思考x->$\theta$->y，预测$\theta$，而由$\theta$和y的关系来定义loss function，这样能得到更具外延性的模型，更有解释性的模型。
+- [Physics‐Constrained Machine Learning of Evapotranspiration](https://doi.org/10.1029/2019GL085291)
 - [Process‐Guided Deep Learning Predictions of Lake Water Temperature](https://doi.org/10.1029/2019WR024922)
 - [Prognostic Validation of a Neural Network Unified Physics Parameterization](https://doi.org/10.1029/2018GL078510)
 - [A physically based and machine learning hybrid approach for accurate rainfall-runoff modeling during extreme typhoon events](http://dx.doi.org/10.1016/j.asoc.2016.12.052)

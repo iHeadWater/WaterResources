@@ -233,7 +233,7 @@ conda deactivate
 ```Shell
 conda remove --name DUTWR --all
 ```
-然后在项目文件夹下执行以下语句就可以创建环境hydrus了，直接使用下列语句：
+然后在项目文件夹下执行以下语句就可以创建环境DUTWR了，直接使用下列语句：
 
 ```Shell
 conda env create -f environment.yml
@@ -252,7 +252,7 @@ conda env update --file environment.yml  --prune
 conda create --name DUTWR-clone --clone DUTWR
 ``` 
 
-除了前面说的手动写yml文件，还可以直接使用conda导出。在hydrus环境下，使用下列代码可以生成新的environment.yml文件：
+除了前面说的手动写yml文件，还可以直接使用conda导出。在DUTWR环境下，使用下列代码可以生成新的environment.yml文件：
 
 ```Shell
 conda env export > environment.yml
@@ -299,7 +299,7 @@ jupyter lab
 
 ![image](./image/picture.png) 
 
-可以看到启动的jupyter lab是hydrus环境下的，接下来就可以在jupyter lab中操作了，jupyter lab 导航页面如下所示：
+可以看到启动的jupyter lab是DUTWR环境下的，接下来就可以在jupyter lab中操作了，jupyter lab 导航页面如下所示：
 
 ![image](./image/FC.png)
 

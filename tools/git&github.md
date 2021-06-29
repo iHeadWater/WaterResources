@@ -301,7 +301,7 @@ jupyter lab
 
 可以看到启动的jupyter lab是hydrus环境下的，接下来就可以在jupyter lab中操作了，jupyter lab 导航页面如下所示：
 
-![image](FC.png)
+![image](./image/FC.png)
 
 可以看到，能打开终端，能新建notebook，txt文件等。以下没有特别说明，终端操作都是在jupyter lab中打开的终端上进行，打开一个终端,可以使用代码安装package，输入：
 

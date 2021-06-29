@@ -1,4 +1,4 @@
-# GITHUB
+# GIT & GITHUB
 和许多小白一样，刚接触github时是这样的  
 
 ![image](./image/56.png)    

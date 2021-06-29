@@ -1,7 +1,7 @@
 # GITHUB
 和许多小白一样，刚接触github时是这样的  
 
-![image](./image/ZJI(GY(~3SYX@RDC95~2G3O.jpg)    
+![image](./image/56.jpg)    
 
 经过几个月的摸索，现在觉得github  
 
@@ -29,12 +29,15 @@
 
 登录进去后，我们见到的页面分成三大版块，如下图所示，从左至右依次为：**自己的仓库(Repositories)、关注的人的动态、发现新的热门/有趣仓库。**     
 
-![](./image/ZJI(GY(~3SYX%40RDC95~2G3O.png)   
+![](./image/111.png)   
 
 中间的四个按钮：  
-**Pull requests**：你想参与别人的项目，或想改进别人的项目，改进后需要提交申请，用 pull requests。    
-**Issues**：你发现别人项目的 bug，或者有什么问题，怎么和作者交流呢？提一个 Issue ；别人也可以给你的项目提 Issue 反馈问题。Issue 追踪各种想法，增强功能，任务，bug，有点儿像评论功能。    
-**Marketplace**：应用商店，里面有免费/收费的开发工具。      
+**Pull requests**：你想参与别人的项目，或想改进别人的项目，改进后需要提交申请，用 pull requests。   
+
+**Issues**：你发现别人项目的 bug，或者有什么问题，怎么和作者交流呢？提一个 Issue ；别人也可以给你的项目提 Issue 反馈问题。Issue 追踪各种想法，增强功能，任务，bug，有点儿像评论功能。   
+
+**Marketplace**：应用商店，里面有免费/收费的开发工具。  
+
 **Explore**：你可以理解成软件里的发现页，点进去推荐一些和你相关的话题、项目、新闻等。      
 ### 2.2.2 个人界面
 点击头像旁边的箭头，会出现一个小页面  
@@ -81,7 +84,7 @@
 ![image](./image/gh.png)      
 
 
-当打开个人界面，就可以在**overview**看到创建的仓库了，点击个人界面```Responsitory```或者打开主页面也可以看到，之后就可以对仓库进行一系列的操作了.......  
+当打开个人界面，就可以在**overview**看到创建的仓库了，点击个人界面```Repository```或者打开主页面也可以看到，之后就可以对仓库进行一系列的操作了.......  
 ## 2.基本操作
 **仓库名称修改**：进入仓库，找到```Settings```按钮，点击进入，输入新名称，点击```Rename```按钮即可。 
 
@@ -420,7 +423,8 @@ git fetch origin 远程分支名x:本地分支名x
 
 你在 dev分支完成了你的部分，但是主分支还是原来那样，这个时候就需要把你的代码合并到主分支 master上来，执行**git merge**就是合并分支用到的命令。  
 
-需注意，合并分为两步！！！
+需注意，合并分为两步！！！  
+
 （1）切换到 master 分支，如果你已经在了就不用切换了;  
 （2）执行 git merge dev ，意思就是把dev 分支的代码合并过来，不出意外，这个时候 dev分支的代码就顺利合并到 master 分支来了。   
 
@@ -433,15 +437,15 @@ git fetch origin 远程分支名x:本地分支名x
 
 点击项目简介下的 **Pull Request** 按钮   
 
-![image](1.png)
+![image](./image/1.png)
 
 再点击**New Pull Request**    
 
-![image](2.png)
+![image](./image/2.png)
 
 点击**Create Pull Request**即可，自己的仓库默认设置为源仓库（head fork）、询问指定源分支（compare）、目标仓库（base fork）和目标分支（base）  
 
-![image](3.png)
+![image](./image/3.png)
 
 此时对方就会在在他自己的 GitHub 仓库下的**Pull Request**选项卡中看到所有的 **Pull Request**。点击  **Pull Request** 会显示这个Pull Request的简介、dev 分支的提交历史，以及包含的更改。    
 如果对方认为 dev 分支已经可以合并了，他只需点击 **Merge Pull Request**按钮来通过这个 Pull Request，将dev分支并入他的 master 分支。    

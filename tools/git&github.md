@@ -1,11 +1,11 @@
 # GIT & GITHUB
 和许多小白一样，刚接触github时是这样的  
 
-![image](./image/56.png )    
+![image](./image/56.png)    
 
 经过几个月的摸索，现在觉得github   
 
-![image](./image/Screenshot_20210628_143018.jpg =400*300)       
+![image](./image/JGIH.jpg)       
 
 下面记录一下自己学习github的历程     
 

@@ -1,7 +1,7 @@
 # GIT & GITHUB
 和许多小白一样，刚接触github时是这样的  
 
-![image](./image/56.png=400x300)    
+![image](./image/56.png 400x300)    
 
 经过几个月的摸索，现在觉得github  
 

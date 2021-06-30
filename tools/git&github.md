@@ -5,7 +5,7 @@
 
 经过几个月的摸索，现在觉得github   
 
-![image](./image/JGIH.jpg)       
+![image](./image/LV.png)       
 
 下面记录一下自己学习github的历程     
 

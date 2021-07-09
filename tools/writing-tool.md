@@ -47,7 +47,7 @@ markdown 是一个编写简单文档的语言，其通过简单的标记来实�
 
 markdown的语法非常简单，自己尝试写一个文档就基本上知道怎么回事了，具体可以参考这里：https://github.com/younghz/Markdown  
 
-在**markdown.md**中介绍了jupyterlab下markdown的使用，可点击[这里]([WaterResources/markdown.md at master · waterDLut/WaterResources (github.com)](https://github.com/waterDLut/WaterResources/blob/master/tools/markdown.md))。
+在**markdown.md**中介绍了jupyterlab下markdown的使用，可点击[这里](https://github.com/waterDLut/WaterResources/blob/master/tools/markdown.md)。
 ## 安装编辑工具
 
 本repo下面的文件主要是markdown，个人推荐使用 vscode + markdown插件。

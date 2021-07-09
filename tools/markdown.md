@@ -337,6 +337,50 @@ code指的是Jupyter环境下所进行的Python代码的编写，而markdown则�
 
 ![image](./image/p21.png)
 
+### 更改字体、大小、颜色
+
+```shell
+<font face="黑体">我是黑体字</font>  
+<font face="微软雅黑">我是微软雅黑</font>  
+<font face="STCAIYUN">我是华文彩云</font>  
+<font color=red>我是红色</font>  
+<font color=#008000>我是绿色</font>  
+<font color=Blue>我是蓝色</font>  
+<font size=5>我是尺寸</font>  
+<font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font>  
+```  
+显示效果：  
+
+![image](./image/p46.png)
+
+附：[RGB颜色名对照表](https://blog.csdn.net/heimu24/article/details/81192697)  
+
+### 为文字添加背景色
+由于 style 标签和标签的 style 属性不被支持，所以这里只能是借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色。故这里对于文字背景色的设置，只是将那一整行看作一个表格，更改了那个格子的背景色（bgcolor）。   
+
+```shell
+<table><tr><td bgcolor=yellow>背景色yellow</td></tr></table> 
+```  
+
+显示效果：   
+
+![image](./image/p47.png)
+
+### 换行
+在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行。或者用`<br>`实现换行。  
+
+```shell
+This is the first line.  
+And this is the second line.  
+或者  
+his is the first line. <br> And this is the second line.
+
+```
+
+显示效果：  
+
+![image](./image/p45.png)
+
 ### 超链接
 
 Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。
@@ -606,6 +650,8 @@ $$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}$$
 显示效果：
 
 ![image](./image/p35.png)
+
+附：[LaTex数学公式大全](https://blog.csdn.net/Mrx_Nh/article/details/73850354)
 
 ### 表格
 

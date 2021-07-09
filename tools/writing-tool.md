@@ -36,16 +36,18 @@ Github 是代码共享的网站，每个人可以将自己本地电脑由git控�
 那么这些功能如何具体操作呢？下面根据实际使用的情况慢慢简介一些git和github的具体使用方法。
 
 1. 关于github的使用，我还是推荐去这里看看：https://www.zhihu.com/question/20070065/answer/79557687 ，一个简单的使用是进入到自己想要下载的repo页面后，点击绿色的“Code”，然后把地址copy下来，接着使用 “git clone <刚刚copy的地址>”命令，就能把代码下载到本地了；
-2. 本地git常用的命令就是add/commit/push 三连了，相关具体操作可以参考：https://www.runoob.com/git/git-basic-operations.html
+2. 本地git常用的命令就是add/commit/push 三连了，相关具体操作可以参考：https://www.runoob.com/git/git-basic-operations.html  
 
+在**git&github.md**中记录了自己从小白到入门GitHub的历程，如果想要一起学习，可点击[这里](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md)。
 ### markdown
 
 markdown 是一个编写简单文档的语言，其通过简单的标记来实现对格式的控制，从而让内容创作者更关注于自己的写作而不用分心到格式的调整上。
 
 本文就是markdown编写的，非常简单地格式控制即可起到不错地视觉效果。
 
-markdown的语法非常简单，自己尝试写一个文档就基本上知道怎么回事了，具体可以参考这里：https://github.com/younghz/Markdown
+markdown的语法非常简单，自己尝试写一个文档就基本上知道怎么回事了，具体可以参考这里：https://github.com/younghz/Markdown  
 
+在**markdown.md**中介绍了jupyterlab下markdown的使用，可点击[这里](https://github.com/waterDLut/WaterResources/blob/master/tools/markdown)。
 ## 安装编辑工具
 
 本repo下面的文件主要是markdown，个人推荐使用 vscode + markdown插件。

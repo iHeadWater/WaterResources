@@ -10,13 +10,12 @@
 下面记录一下自己学习github的历程     
 
 主要参考了[GIThub入门](https://zhuanlan.zhihu.com/p/139494507)        
+  
 
-在进行这部分之前，可以先看[这里](http://localhost:8889/lab/tree/tools/writing-tool.md)    
-
-# (一)初识界面
-## 1.git和github
+# (一) 初识界面
+## 1. git和github
 先来区分下git和github：两者是不一样的两个东西；**git**是一个软件/工具/系统，**gitHub** 是一个网站/平台，gitHub 这个网站使用了 git 这个工具。  
-## 2.加入github
+## 2. 加入github
 ### 2.1 注册
 打开[Github官网](https://github.com/),首页如下图所示，点击右上角```Sign up```按钮，进入注册页面。使用电子邮件注册，设置好用户名和密码，即可生成账号。完成注册后，点击旁边的```Sign in```按钮登录。      
 
@@ -67,9 +66,9 @@
 
 以后你要建个仓库，为了方便别人了解，也要写这样的文件。   
 
-# (二)仓库操作
+# (二) 仓库操作
 在初识github界面之后，接下来是对仓库的创建、修改、删除等的基本操作。      
-## 1.创建仓库
+## 1. 创建仓库
 可以通过图片所示按钮创建仓库   
 
 ![image](./image/WK.png)  
@@ -85,16 +84,16 @@
 
 
 当打开个人界面，就可以在**overview**看到创建的仓库了，点击个人界面```Repository```或者打开主页面也可以看到，之后就可以对仓库进行一系列的操作了.......  
-## 2.基本操作
+## 2. 基本操作
 **仓库名称修改**：进入仓库，找到```Settings```按钮，点击进入，输入新名称，点击```Rename```按钮即可。 
 
 **删除仓库**：同样找到```Settings```按钮，点击进入，删除按钮在页面最下面，不过需要输入作者/仓库名，防止误删。    
 
 当然还有一些其他操作，详情可点击[这里](https://zhuanlan.zhihu.com/p/139767171)
 
-# (三)GIT的安装及使用
+# (三) GIT的安装及使用
 github是一个版本控制工具，那么我们怎么进行代码托管或者团队协作呢？ 这个时候就需要**git工具**大展身手了。  
-## 1.Git的安装
+## 1. Git的安装
 点击[Git下载](https://git-scm.com/downloads)找到自己操作系统对应的版本即可下载。     
 
 安装完成之后，在开始菜单找到下面这个图标，点击进入
@@ -110,7 +109,7 @@ git --version
 
 ![image](./image/3Z.png)
 
-## 2.配置用户信息
+## 2. 配置用户信息
 
 第一次使用git，通常需要配置用户名和邮箱信息：  
 
@@ -120,7 +119,7 @@ git config --global user.email Youremail@example.com
 ```
 配置好后，就可以开始使用git命令了。    
 
-## 3.clone项目
+## 3. clone项目
 
 进入到自己想要下载的repo页面后，以本项目为例，点击绿色的“Code”，然后把地址copy下来  
 
@@ -129,11 +128,11 @@ git config --global user.email Youremail@example.com
 在本地打开terminal，进入你想放置本项目的文件夹,鼠标右击选择**Git Bash here**，打开的 GitBash 可以看到自动定位到我们的仓库位置，如果在其他位置打开，还得再次定位，这就是我们选择在仓库/文件夹打开的原因。接着使用 “git clone <刚刚copy的地址>”命令，就能把代码下载到本地了。
 
 ```Shell
-git clone https://github.com/waterDLut/WaterResources.git
+git clone git@github.com:waterDLut/WaterResources.git
 ```
-需要注意的是，用 HTTPS 地址需要账户验证。使用 SSH 地址只需要第一次时提交 SSH Key 到 GitHub ，后续无需每次验证，很方便，接下来就会介绍如何配置 SSH Key。
+需要注意的是，如果用 HTTPS 地址需要账户验证。而使用 SSH 地址只需要第一次时提交 SSH Key 到 GitHub ，后续无需每次验证，很方便，所以推荐使用SSH 地址。接下来就会介绍如何配置 SSH Key。
 
-## 4.通过SSH链接Github
+## 4. 通过SSH链接Github
 
 上面是通过https来连接，这里补充下ssh方式，这种方式第一次配置相对麻烦一点，但是后续使用更加方便。
 
@@ -172,7 +171,7 @@ ssh下下载的方式和https下一样，在github中clone时选择SSH协议即�
 git clone git@github.com:waterDLut/WaterResources.git
 ```
 
-## 5.变化远程仓库地址
+## 5. 变化远程仓库地址
 
 使用下面语句先来查看一下远程仓库   
 
@@ -193,141 +192,14 @@ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 
 再次查看远程仓库，可以看到发生了如下变化
 
-![image](./image/B7.png)   
+![image](./image/B7.png) 
 
 
-## 6.为项目创建环境
+## 6. git一些基本操作
 
-可同时参考https://github.com/waterDLut/hydrus/blob/master/1-basic-envir/1-get-started.md  
+用git clone xxx将repo复制到本地做了修改，如何将本地修改后的代码推送到远程呢？非**git工具**莫属了！！！
 
-首先安装python，个人建议直接安装anaconda或者miniconda    
-
-在本项目文件夹下打开terminal，输入：
-
-```Shell
-conda create --name DUTWR  
-```  
-输入y即可创建。创建的环境存储在 anaconda3\envs 文件夹下。如果没有指定python环境，那么默认的使用的和安装的anaconda一样的python版本，这里指定使用的是python3.7。要创建一个特定的python版本环境可以使用如下代码：  
-
-```Shell
-conda create --name DUTWR python=3.7
-```
-
-根据提示可以看到执行以下语句可进入hydrus环境：
-
-```Shell
-conda activate DUTWR
-```
-
-如果你没能进入，那可能是terminal环境有点问题，如果你是windows那就重新打开终端试试，    
-进入DUTWR环境后，执行以下语句可以退出DUTWR环境。  
-
-```Shell
-conda deactivate
-```
-
-也可以通过environment.yml文件来创建环境。手动创建文件的方式可以参考：[Creating an environment file manually](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually)
-
-示例可直接看本项目的environment.yml文件。可以先删除刚刚创建的虚拟环境：
-
-```Shell
-conda remove --name DUTWR --all
-```
-然后在项目文件夹下执行以下语句就可以创建环境DUTWR了，直接使用下列语句：
-
-```Shell
-conda env create -f environment.yml
-```
-如果更改了environment.yml文件的内容后需要更新环境，则可以运行：
-
-```Shell
-conda env update --file environment.yml  --prune
-```
-
---prune参数表示删除不再需要的依赖包。
- 
-如果需要复制环境，则可以使用：
- 
-```Shell
-conda create --name DUTWR-clone --clone DUTWR
-``` 
-
-除了前面说的手动写yml文件，还可以直接使用conda导出。在DUTWR环境下，使用下列代码可以生成新的environment.yml文件：
-
-```Shell
-conda env export > environment.yml
-```
-
-这里注意一下，当重新在本项目下打开terminal时，输入命令
-
-```Shell
-conda env list 
-```
-可看到 * 在base处，表示处于默认base环境  
-
-![image](./image/GAGJ.png)   
-
-所以每次打开terminal须先执行下面语句切换到目标环境
-
-```Shell
-conda activate DUTWR
-```
-执行下面语句，可以看到已经处于DUTWR环境下了。
-
-```Shell
-conda env list
-```
-
-
-激活DUTWR环境后，就可以进入jupyter lab了。注意，如果直接进入cmd，输入jupyter lab，那么进入的还是外边安装的anaconda的jupyter lab，所以这里要在DUTWR环境下安装jupyter：
-
-```Shell
-conda install -c conda-forge jupyterlab
-```
-安装完成后，可以执行下面语句，检查一下在DUTWR环境下是否存在jupyter lab或者其它你需要的包
-```shell
-conda list
-```
-
-然后再执行：
-
-```Shell
-jupyter lab
-```
-
-现在可以在命令行里看到：  
-
-![image](./image/picture.png) 
-
-可以看到启动的jupyter lab是DUTWR环境下的，接下来就可以在jupyter lab中操作了，jupyter lab 导航页面如下所示：
-
-![image](./image/FC.png)
-
-可以看到，能打开终端，能新建notebook，txt文件等。以下没有特别说明，终端操作都是在jupyter lab中打开的终端上进行，打开一个终端,可以使用代码安装package，输入：
-
-```Shell
-conda install -n DUTWR scipy
-```
-
-如果需要指定版本，可以使用如下语句：
-
-```Shell
-conda install -n DUTWR scipy=0.15.0
-```
-
-如果在创建环境时，就指定安装包，可以使用类似如下语句：
-
-```Shell
-conda create -n DUTWR python=3.6 scipy=0.15.0 astroid babel
-```
-
-关于Jupyter lab的介绍可以参考https://github.com/waterDLut/hydrus/blob/master/1-basic-envir/1-get-started.md
-
-## 7.git一些基本操作
-
-我们在jupyter lab 上新建notebook，txt文件后，会自动保存在本地，接下来会介绍如何将本地代码推送到远程。
-
-### 7.1 add/commit/push
+### 6.1 add/commit/push
 
 本地git常用的命令就是add/commit/push 三连了   
 
@@ -353,7 +225,7 @@ git commit -m "本次提交想要说明的东西" //把文件提交到仓库
 git push -u origin master //把本地库的所有内容推送到远程库上
 ```
 
-### 7.2 创建分支并推送到远程分支
+### 6.2 创建分支并推送到远程分支
 
 参考了[git创建分支并推送到远程分支](https://blog.csdn.net/ljj_9/article/details/79386306)。
 
@@ -390,7 +262,7 @@ git push origin <你的分支名称>:<你的分支名称>
 使用git branch -a查看所有分支，会看到remotes/origin/<你的分支名称> 这个远程分支，说明新建远程分支成功。 
 
 
-### 7.3 拉取远程分支
+### 6.3 拉取远程分支
 
 
 参考：https://blog.csdn.net/tterminator/article/details/52225720
@@ -431,7 +303,7 @@ git fetch origin 远程分支名x:本地分支名x
 
 有添加就有删除，假如分支新建错了，或者dev分支的代码已经顺利合并到 master 分支来了，那么 dev 分支没用了，用 git branch -d 删除。删除分支dev 的语句为 git branch -d dev 。  
 
-### 7.4 pull request
+### 6.4 pull request
 
 我们在之前已经介绍过如何创建分支并且推送到远程，那么现在自己的github上已经有了创建的dev分支，这个分支将是随后发起 Pull Request 时要用到的源分支。   
 
@@ -452,7 +324,7 @@ git fetch origin 远程分支名x:本地分支名x
 最后，对方接受了这些修改，将 dev分支并入了 master 分支，关闭了这个 Pull Request。功能现在已经整合到了项目中，其他在 master 分支上工作的开发者可以使用标准的 git pull 命令将这些修改拉取到自己的本地仓库。 
 
 
-### 7.5 fork后同步源的新更新内容
+### 6.5 fork后同步源的新更新内容
 fork了别人的repo，一段时间后，别人更新了，想要同步过来最新的内容，应该怎么做？  
 
 参考：
@@ -504,7 +376,7 @@ git rebase upstream/main
 ```Shell
 git push
 ```
-### 7.6 查看历史版本
+### 6.6 查看历史版本
 使用命令：
 
 ```Shell
@@ -521,7 +393,7 @@ git checkout xxx（某个历史版本的哈希值，即git log下显示的每次
 
 即可回到xxx的那个版本。
 
-### 7.7 标签tag
+### 6.7 标签tag
 
 使用如下命令可以查看已有标签：
 
@@ -554,6 +426,33 @@ git tag -d v1.4
 ```Shell
 git push origin :refs/tags/v1.4 
 ```
+
+## 7. 使用github和git进行团队合作开发
+
+1. 首先确定一个项目拥有者，即你们一个团队的项目都上传到他的github下，这个owner需要做几件事情：  
+
+- 在github上创建一个组织：Create an organization，在这里邀请成员（注意team的成员是要先成为organization的成员）  
+
+- 在该组织下创建一个team，然后邀请你的团队成员  
+
+- 新建一个repository 
+
+- 对组员权限进行设置：默认情况下组员是没有权限进行push操作的,因为没有修改权限我们可以在项目主页(https://github.com/组名)找到`Settings->Member privileges` 把`Default repository permission`设置为`Write` 保存即可 ,这样组员就可以对仓库文件进行push操作了。我们也可以针对具体的仓库设置部署权限,进入到仓库主页,找到`Settings->Deploy keys` 添加组员的`ssh public key `即可赋予该组员该仓库的写权限
+
+2. 所有人与这个仓库的连接（在第6节中已经介绍过了，这里简单的叙述一下） 
+
+- 首先我们要在本机克隆这个项目（没有连接也可以的）：`git clone` 仓库的地址，然后初始化项目：`git init ` 
+
+- 现在将你的本地仓库与他的远程仓库连接起来：`git remote add` 远程仓库地址，然后可以使用`git remote -v`查看你连接上的仓库  
+
+- 连接仓库成功后，就可以添加要上传的文件了 `git add . `  (.表示添加所有文件，也可以直接跟文件名)  
+ 
+- 本地提交  `git commit  -m  "提示信息"  `
+  
+- 然后`pull`一下，这一步主要是确认你本地有没有更新成最新的，如果不成功的话就很有可能是没有连接上仓库，`git  pull` (这里有时候要跟远程仓库的地址，有时候直接git pull 也可以) 
+
+- 现在可以上传你的代码了`git push  `
+
 
 
 

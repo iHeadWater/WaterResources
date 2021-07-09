@@ -26,7 +26,12 @@ JupyterLab作为一种基于web的集成开发环境，你可以使用它编写n
 
 ## 1.2 JupyterLab启动
 
-首先安装python，个人建议直接安装 **Anaconda** 或者 **miniconda**，安装后在 **开始** 菜单栏会看到
+首先安装python，个人建议直接安装 **Anaconda** 或者 **miniconda**，如果你选择**Anaconda**，可以去[Anaconda官网](https://www.anaconda.com/products/individual)下载，安装过程基本一路默认就可以了。安装完成后，需要配置环境变量，这个非常重要！！！如果是windows的话需要去 控制面板—->系统和安全—->系统—->高级系统设置—->环境变量—->用户变量(或环境变量)—->PATH中添加，下面是我本地配置，实际看个人安装路径不同需要自己调整。
+
+![image](./image/p50.png)   
+
+
+安装后在 **开始** 菜单栏会看到
 
 ![image](./image/jupyter.png)  
 
@@ -51,8 +56,36 @@ JupyterLab作为一种基于web的集成开发环境，你可以使用它编写n
 ```Shell
 conda create --name DUTWR  
 ```  
+根据提示可以看到执行以下语句可进入DUTWR环境：
 
-输入y即可创建。创建的环境存储在 anaconda3\envs 文件夹下。如果没有指定python环境，那么默认的使用的和安装的anaconda一样的python版本，这里指定使用的是python3.7。要创建一个特定的python版本环境可以使用如下代码：  
+```Shell
+conda activate DUTWR
+```
+
+接下来要在DUTWR环境下安装jupyter：  
+
+```Shell
+conda install -c conda-forge jupyterlab
+```
+
+然后再执行：
+
+```Shell
+jupyter lab
+```
+
+现在可以在命令行里看到：  
+
+![image](./image/picture.jpg) 
+
+可以看到启动的jupyter lab是DUTWR环境下的，接下来就可以在jupyter lab中操作了，jupyter lab 导航页面如下所示：
+
+![image](./image/p5.png) 
+
+
+**如果你想了解关于创建环境的更多细节，可以继续向下看。**
+
+上述创建的DUTWR环境存储在 anaconda3\envs 文件夹下。如果没有指定python环境，那么默认的使用的和安装的anaconda一样的python版本，这里指定使用的是python3.7。要创建一个特定的python版本环境可以使用如下代码：  
 
 ```Shell
 conda create --name DUTWR python=3.7
@@ -127,31 +160,7 @@ conda activate DUTWR
 conda env list
 ```
 
-接下来要在DUTWR环境下安装jupyter：  
-
-```Shell
-conda install -c conda-forge jupyterlab
-```
-
-安装完成后，可以执行下面语句，检查一下在DUTWR环境下是否存在jupyter lab或者其它你需要的包
-
-```shell
-conda list
-```
-
-然后再执行：
-
-```Shell
-jupyter lab
-```
-
-现在可以在命令行里看到：  
-
-![image](./image/picture.jpg) 
-
-可以看到启动的jupyter lab是DUTWR环境下的，接下来就可以在jupyter lab中操作了，jupyter lab 导航页面如下所示：
-
-![image](./image/p5.png)  
+ 
 
 ### 启动器
 

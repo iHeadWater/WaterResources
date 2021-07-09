@@ -429,7 +429,7 @@ git push origin :refs/tags/v1.4
 
 ## 7. 使用github和git进行团队合作开发
 
-1. 首先确定一个项目拥有者，即你们一个团队的项目都上传到他的github下，这个owner需要做几件事情：  
+### 7.1 首先确定一个项目拥有者，即你们一个团队的项目都上传到他的github下，这个owner需要做几件事情：  
 
 - 在github上创建一个组织：Create an organization，在这里邀请成员（注意team的成员是要先成为organization的成员）  
 
@@ -439,7 +439,7 @@ git push origin :refs/tags/v1.4
 
 - 对组员权限进行设置：默认情况下组员是没有权限进行push操作的,因为没有修改权限我们可以在项目主页(https://github.com/组名)找到`Settings->Member privileges` 把`Default repository permission`设置为`Write` 保存即可 ,这样组员就可以对仓库文件进行push操作了。我们也可以针对具体的仓库设置部署权限,进入到仓库主页,找到`Settings->Deploy keys` 添加组员的`ssh public key `即可赋予该组员该仓库的写权限
 
-2. 所有人与这个仓库的连接（在第6节中已经介绍过了，这里简单的叙述一下） 
+### 7.2 所有人与这个仓库的连接（在第6节中已经介绍过了，这里简单的叙述一下） 
 
 - 首先我们要在本机克隆这个项目（没有连接也可以的）：`git clone` 仓库的地址，然后初始化项目：`git init ` 
 

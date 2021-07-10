@@ -379,7 +379,7 @@ git remote -v
 确定一个将被同步给 fork 远程的上游仓库:
 
 ```Shell
-git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+git remote add upstream git@github.com:waterDLut/WaterResources.git
 ```
 
 然后再次查看远程状态，已经可以看到upstream的信息了。  
@@ -505,7 +505,37 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 根据远程分支，我们可以用`git checkout -b dev origin/dev` 创建一个dev分支（-b），并把远程dev分支（origin/dev）的内容放在该分支内。接着切换到该分支（checkout）。    
 
-现在使用 git branch 可以查看两个分支，并且用 ls 或者 dir 就能看到dev分支的内容了。想切换回master分支的时候，再用 git checkout master 即可。  
+现在使用 `git branch` 可以查看两个分支，并且用 `ls `或者 `dir` 就能看到dev分支的内容了。想切换回master分支的时候，再用 `git checkout master` 即可。    
+
+![image](./image/p57.png) 
+
+上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。  
+
+### 和团队项目保持同步
+
+首先查看有没有设置upstream，使用` git remote -v` 命令来查看。    
+
+![image](./image/p58.png) 
+
+如果没有显示upstream，则使用 `git remote add upstream` 团队项目地址命令。接着再次使用 `git remote -v `，显示出了upstream，那么就设置好了。  
+
+![image](./image/p59.png)  
+
+开始同步。首先执行 `git fetch upstream` 获取团队项目最新版本。此时并没有把最新版本合并到你本地的分支上，因此还需要一步。 当前分支是dev分支，执行 `git merge upstream/dev` 命令后，会将源分支（upstream/dev）合并到当前分支（dev）。  
+
+![image](./image/p60.png)   
+
+如果你是在本地的master分支上开发，那么在使用该命令前，先切换到master分支。merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的操作。
+
+### push修改到自己的项目上
+
+解决冲突后，就可以使用 git push 命令将本地的修改同步到自己的GitHub仓库上了。注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。  
+
+![image](./image/p61.png) 
+
+### 请求合并到团队项目上
+
+首先到你的GitHub上，进入你Fork的仓库里。点击红框处的Pull request。  
 
 
 

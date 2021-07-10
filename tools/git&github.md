@@ -529,18 +529,47 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 ### push修改到自己的项目上
 
-解决冲突后，就可以使用 git push 命令将本地的修改同步到自己的GitHub仓库上了。注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。  
+解决冲突后，就可以使用 `git push` 命令将本地的修改同步到自己的GitHub仓库上了。注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。  
 
 ![image](./image/p61.png) 
 
 ### 请求合并到团队项目上
 
-首先到你的GitHub上，进入你Fork的仓库里。点击红框处的Pull request。  
+首先到你的GitHub上，进入你Fork的仓库里。点击红框处的`Pull request`。  
 
+![image](./image/p62.png)   
 
+下图左边红框，表示要合并到waterDLut/WaterResources项目的master分支。  
 
+下图右边红框，表示要从waterDLut/WaterResources的dev分支发起合并请求。  
+  
+点击` Create pull request`就可以发送合并请求了。
 
+![image](./image/p63.png)
 
+当然，在发送请求之前，你可以检查一下你都改了哪些东西。在上面那个页面往下拉，就可以看到两者的对比。
+
+以上操作结束后，团队成员的流程就结束了。最后一步交给团队项目负责人来完成。  
+
+### 团队项目负责人审核及同意合并请求
+
+首先进入GitHub的团队项目仓库中。此时右边的Pull requests显示当前项目有几个Pull request。点击进入查看。 
+
+![image](./image/p65.png)
+
+项目负责人审核有两个要注意的地方:  
+
+- 一个是下图的①。一定要看清楚是合并到哪个分支。这里是从waterDLut/WaterResources的dev分支合并到waterDLut/WaterResources的master分支。  
+
+- 另一个是下图的②。点击进去后，就可以查看该Pull request对项目做了哪些修改。这样如果有问题，可以及时发现，并关闭该Pull request。  
+
+如果关闭了，一定要告诉队友，否则他可能会不知道。虽然也可以直接在下面发布Comment告诉他，但队友不一定看到。
+
+![image](./image/p66.png)  
+
+如果没有问题，可以点击`Merge pull request`。这样就合并好了。
+
+ 
  
 
 （正在编辑中。。。，以下是预用版）

@@ -250,9 +250,18 @@ git commit -m "本次提交想要说明的东西" # 把文件提交到仓库
 git push -u origin master # 把本地库的所有内容推送到远程库上
 ```
 
+**一般我们在 push 之前都会用`git pull`命令 pull一下 ，这样不容易冲突。**
+
+- git push：翻译为推，当你的代码更新，需要把本地的推到远程仓库  
+
+- git pull：翻译为拉，当远程仓库有更新，你需要把远程的拉到本地进行合并  
+
+
 ### 创建分支并推送到远程分支
 
 参考了[git创建分支并推送到远程分支](https://blog.csdn.net/ljj_9/article/details/79386306)。
+
+branch 是分支的意思，多人合作时，你一个模块，别人一个模块，你们各建一个分支就能保证改动互不干扰，等最后做完，把你们的分支合并起来就好。    
 
 首先在master分支上，保证工作目标是干净的，也没有需要commit的：
 
@@ -455,9 +464,52 @@ git tag -d v1.4
 git push origin :refs/tags/v1.4 
 ```
 
+
+
 ## 5. 团队协作方式
 
 这里以和本repo的交互为例，简单小结一下前述内容，并介绍如何一起维护此repo。
+
+### 创建开发分支（团队项目负责人来完成）
+
+master分支一般用来发布稳定版本，dev分支（开发分支）用来发布开发版本。  
+
+输入分支名称后，下面会跳出Create branch，点击即可创建。    
+
+![image](./image/p51.png)  
+
+分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此内容与master分支一致。  
+
+![image](./image/p52.png)   
+  
+  
+### Fork项目到个人的仓库
+
+点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。  
+ 
+ ![image](./image/p53.png)  
+ 
+###  Clone项目到本地
+
+ ![image](./image/p54.png) 
+ 
+打开git命令行，输入指令和刚才复制的地址，回车即可克隆到本地。  
+
+此时你只能看到master分支，并没有把dev分支clone下来。使用` git branch` 命令查看本地分支，发现本地只有master分支。
+
+![image](./image/p55.png) 
+
+使用 `git branch -a `查看所有分支，就能看到远程分支。  
+ 
+![image](./image/p56.png)   
+
+根据远程分支，我们可以用`git checkout -b dev origin/dev` 创建一个dev分支（-b），并把远程dev分支（origin/dev）的内容放在该分支内。接着切换到该分支（checkout）。  
+
+
+
+
+
+ 
 
 （正在编辑中。。。，以下是预用版）
 

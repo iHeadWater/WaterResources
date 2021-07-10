@@ -47,7 +47,7 @@ JupyterLab作为一种基于web的集成开发环境，你可以使用它编写n
 
 ![image](./image/p4.png)     
 
-**注意，如果直接进入cmd，输入jupyter lab，那么进入的还是外边安装的anaconda的jupyter lab**。  
+**注意，如果直接进入terminal，输入jupyter lab，那么进入的还是外边安装的anaconda的jupyter lab**。  
  
 所以，我们需要先为**WaterResources**项目（本repo）创建环境，可参考[这里](https://github.com/waterDLut/hydrus/blob/master/1-basic-envir/1-get-started.md) 
 
@@ -83,84 +83,7 @@ jupyter lab
 ![image](./image/p5.png) 
 
 
-**如果你想了解关于创建环境的更多细节，可以继续向下看。**
-
-上述创建的DUTWR环境存储在 anaconda3\envs 文件夹下。如果没有指定python环境，那么默认的使用的和安装的anaconda一样的python版本，这里指定使用的是python3.7。要创建一个特定的python版本环境可以使用如下代码：  
-
-```Shell
-conda create --name DUTWR python=3.7
-```
-
-根据提示可以看到执行以下语句可进入DUTWR环境：
-
-```Shell
-conda activate DUTWR
-```
-
-如果你没能进入，那可能是terminal环境有点问题，如果你是windows那就重新打开终端试试，    
-进入DUTWR环境后，执行以下语句可以退出DUTWR环境。  
-
-```Shell
-conda deactivate
-```
-
-也可以通过environment.yml文件来创建环境。手动创建文件的方式可以参考：[Creating an environment file manually](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually)
-
-示例可直接看本项目的environment.yml文件。可以先删除刚刚创建的虚拟环境：
-
-```Shell
-conda remove --name DUTWR --all
-```
-
-然后在项目文件夹下执行以下语句就可以创建环境DUTWR了，直接使用下列语句：
-
-```Shell
-conda env create -f environment.yml
-```
-
-如果更改了environment.yml文件的内容后需要更新环境，则可以运行：
-
-```Shell
-conda env update --file environment.yml  --prune
-```
-
---prune参数表示删除不再需要的依赖包。
- 
-如果需要复制环境，则可以使用：
- 
-```Shell
-conda create --name DUTWR-clone --clone DUTWR
-``` 
-
-除了前面说的手动写yml文件，还可以直接使用conda导出。在DUTWR环境下，使用下列代码可以生成新的environment.yml文件：
-
-```Shell
-conda env export > environment.yml
-```
-
-这里注意一下，当重新在本项目下打开terminal时，输入命令
-
-```Shell
-conda env list 
-```
-
-可看到 * 在base处，表示处于默认base环境  
-
-![image](./image/GAGJ.png)   
-
-所以每次打开terminal须先执行下面语句切换到目标环境
-
-```Shell
-conda activate DUTWR
-```
-
-执行下面语句，可以看到已经处于DUTWR环境下了。
-
-```Shell
-conda env list
-```
-
- 
+**如果你想了解关于创建环境的更多细节，**可参考https://github.com/waterDLut/hydrus/blob/master/1-basic-envir/2-python-envir.md
 
 ### 启动器
 
@@ -764,8 +687,6 @@ Leanote 超级账号|120元/年
 这里就不展示了，感兴趣可以参考[流程图语法参考](http://flowchart.js.org/)
 
 ## 使用 Emoji 表情
-
-哈哈，开心一刻！！！😀  
 
 哈哈，开心一刻！！！😀  
 

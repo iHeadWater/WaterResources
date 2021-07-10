@@ -37,13 +37,13 @@ Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写�
 
 ## 快速入手版
 
-假如你对Git、github以及Jupyterlab、markdown这些都有所了解，并在本地安装好Anaconda、Git、terminal等工具，下面这些可帮助你快速实现整个流程的操作。**（后附每一步详细链接，如有需要可点击查看）**  
+假如你对Git、github以及Jupyterlab、markdown这些都有所了解，并在本地安装好Anaconda、Git、terminal等工具，下面这些可帮助你快速实现整个流程的操作。**（后附每一步详细链接，如有需要可点击👉查看）**  
 
-- 打开github,进入到自己想要下载的repo页面后,点击绿色的`Code`,点击`SSH`,将`git@github.com:xxx`开头的地址复制下来。在本地打开terminal，进入你想放置项目的文件夹,鼠标右击选择`Git Bash here`，接着使用 `git clone  <刚刚copy的地址>`命令，就能把代码下载到本地了，使用 SSH 地址需要第一次时提交 SSH Key 到 GitHub，所以不要忘了配置 `SSH Key`。  [1](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#3-clone%E9%A1%B9%E7%9B%AE)  
+- 打开github,进入到自己想要下载的repo页面后,点击绿色的`Code`,点击`SSH`,将`git@github.com:xxx`开头的地址复制下来。在本地打开terminal，进入你想放置项目的文件夹,鼠标右击选择`Git Bash here`，接着使用 `git clone  <刚刚copy的地址>`命令，就能把代码下载到本地了，使用 SSH 地址需要第一次时提交 SSH Key 到 GitHub，所以不要忘了配置 `SSH Key`。  [👉](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#3-clone%E9%A1%B9%E7%9B%AE)  
 
-- 为项目创建`conda env create -f environment.yml`并激活环境`conda activate XXX<你的环境名>`,启动jupyter lab。在jupyterlab中，你可以新建notebook、console、teminal或者text文本。选择Python3，就可以创建一个新的py文件，点击Text File可以创建普通文件，点击Terminal启动控制台。[2](https://github.com/waterDLut/WaterResources/blob/master/tools/jupyterlab%26markdown.md#1-jupyterlab%E4%BB%8B%E7%BB%8D)  
+- 为项目创建`conda env create -f environment.yml`并激活环境`conda activate XXX<你的环境名>`,启动jupyter lab。在jupyterlab中，你可以新建notebook、console、teminal或者text文本。选择Python3，就可以创建一个新的py文件，点击Text File可以创建普通文件，点击Terminal启动控制台。[👉](https://github.com/waterDLut/WaterResources/blob/master/tools/jupyterlab%26markdown.md#1-jupyterlab%E4%BB%8B%E7%BB%8D)  
     
-- 用`git add .`、`git commit -m "本次提交想要说明的东西"`、`git push -u origin master`将本地修改后的代码推送到远程,最后发起 **Pull Request** ，点击项目简介下的 `Pull Request` 按钮，再点击`New Pull Request`，`Create Pull Request`即可。 [4](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#4-%E6%8F%90%E4%BA%A4%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9)  
+- 用`git add .`、`git commit -m "本次提交想要说明的东西"`、`git push -u origin master`将本地修改后的代码推送到远程,最后发起 **Pull Request** ，点击项目简介下的 `Pull Request` 按钮，再点击`New Pull Request`，`Create Pull Request`即可。 [👉](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#4-%E6%8F%90%E4%BA%A4%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9)  
 
 
 

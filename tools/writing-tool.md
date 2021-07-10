@@ -37,59 +37,14 @@ Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写�
 
 ## 快速入手版
 
-假如你对Git、github以及Jupyterlab、markdown这些都有所了解，并在本地安装好Anaconda、Git、terminal等工具，下面这些可帮助你快速实现整个流程的操作。  
+假如你对Git、github以及Jupyterlab、markdown这些都有所了解，并在本地安装好Anaconda、Git、terminal等工具，下面这些可帮助你快速实现整个流程的操作。**（后附每一步详细链接，如有需要可点击查看）**  
 
+- 打开github,进入到自己想要下载的repo页面后,点击绿色的`Code`,点击`SSH`,将`git@github.com:xxx`开头的地址复制下来。在本地打开terminal，进入你想放置项目的文件夹,鼠标右击选择`Git Bash here`，接着使用 `git clone  <刚刚copy的地址>`命令，就能把代码下载到本地了，使用 SSH 地址需要第一次时提交 SSH Key 到 GitHub，所以不要忘了配置 `SSH Key`。  [1](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#3-clone%E9%A1%B9%E7%9B%AE)  
 
-1.打开github,进入到自己想要下载的repo页面后,点击绿色的`Code`,点击`SSH`,将`git@github.com:xxx`开头的地址复制下来。    
+- 为项目创建`conda env create -f environment.yml`并激活环境`conda activate XXX<你的环境名>`,启动jupyter lab。在jupyterlab中，你可以新建notebook、console、teminal或者text文本。选择Python3，就可以创建一个新的py文件，点击Text File可以创建普通文件，点击Terminal启动控制台。[2](https://github.com/waterDLut/WaterResources/blob/master/tools/jupyterlab%26markdown.md#1-jupyterlab%E4%BB%8B%E7%BB%8D)  
+    
+- 用`git add .`、`git commit -m "本次提交想要说明的东西"`、`git push -u origin master`将本地修改后的代码推送到远程,最后发起 **Pull Request** ，点击项目简介下的 `Pull Request` 按钮，再点击`New Pull Request`，`Create Pull Request`即可。 [4](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#4-%E6%8F%90%E4%BA%A4%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9)  
 
-2.在本地打开terminal，进入你想放置项目的文件夹,鼠标右击选择`Git Bash here`，接着使用 `git clone  <刚刚copy的地址>`命令，就能把代码下载到本地了，使用 SSH 地址需要第一次时提交 SSH Key 到 GitHub，所以不要忘了配置 `SSH Key`。  
-
-3.为项目创建环境
-
-```
-conda env create -f environment.yml
-
-```
-
-4.激活环境
-
-```
-conda activate XXX<你的环境名>
-
-```
-5.输入
-
-```
-jupyter lab
-
-```
-
-6.在jupyterlab中，你可以新建notebook、console、teminal或者text文本。选择Python3，就可以创建一个新的py文件，点击Text File可以创建普通文件，点击Terminal启动控制台。  
-
-7.将本地修改后的代码推送到远程，首先输入
-
-``` Shell
-git status 
-```
-
-查看仓库状态，可以看到项目文件夹下做的更改，且默认进入 Git 仓库的 master分支，即主分支。 
-
-
-接着依次输入
-
-``` Shell 
-git add -A  # 不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
-```
-
-``` Shell
-git commit -m "本次提交想要说明的东西" # 把文件提交到仓库
-```
-
-``` Shell
-git push -u origin master # 把本地库的所有内容推送到远程库上
-```
-
-8.最后可以发起 **Pull Request** ，点击项目简介下的 `Pull Request` 按钮，再点击`New Pull Request`，`Create Pull Request`即可    
 
 
 ## 参考资料

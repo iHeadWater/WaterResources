@@ -4,7 +4,10 @@ Jupyterlab工具中既能创建jupyter文件来编写代码和文本（就是用
 
 # 1. JupyterLab介绍
 
-先来简单认识一下 **jupyter lab**。  
+先来简单认识一下 **jupyter lab**。   
+
+![image](./image/P000.png)   
+
 
 ## 1.1 JupyterLab简介
 

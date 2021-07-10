@@ -31,7 +31,7 @@
 
 ### 2.2 登录 GitHub，浏览页面
 
-### 2.2.1 主界面
+#### 2.2.1 主界面
 
 注册完成后，输入账号密码就能进入github了！！！  
 
@@ -48,7 +48,7 @@
 
 **Explore**：你可以理解成软件里的发现页，点进去推荐一些和你相关的话题、项目、新闻等。  
 
-### 2.2.2 个人界面
+#### 2.2.2 个人界面
 
 点击头像旁边的箭头，会出现一个小页面  
 
@@ -58,7 +58,7 @@
 
 ![image](./image/JCDF.png)  
 
-### 2.2.3 项目界面
+#### 2.2.3 项目界面
 
 我们使用 GitHub ，无论存放东西，还是查资料，主要都是看自己或别人的项目/仓库，所以这个界面一定要熟悉。   
 
@@ -220,7 +220,7 @@ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 
 以下是我们在修改repo之后，推送自己的贡献到github上时经常会用到的操作，用到时来查询即可。
 
-### add/commit/push
+### 4.1 add/commit/push
 
 用git clone xxx将repo复制到本地做了修改，如何将本地修改后的代码推送到远程呢？
 
@@ -257,7 +257,7 @@ git push -u origin master # 把本地库的所有内容推送到远程库上
 - git pull：翻译为拉，当远程仓库有更新，你需要把远程的拉到本地进行合并  
 
 
-### 创建分支并推送到远程分支
+### 4.2 创建分支并推送到远程分支
 
 参考了[git创建分支并推送到远程分支](https://blog.csdn.net/ljj_9/article/details/79386306)。
 
@@ -298,7 +298,7 @@ git push origin <你的分支名称>:<你的分支名称>
 
 使用git branch -a查看所有分支，会看到remotes/origin/<你的分支名称> 这个远程分支，说明新建远程分支成功。 
 
-### 拉取远程分支
+### 4.3 拉取远程分支
 
 参考：https://blog.csdn.net/tterminator/article/details/52225720
 
@@ -338,7 +338,7 @@ git fetch origin 远程分支名x:本地分支名x
 
 有添加就有删除，假如分支新建错了，或者dev分支的代码已经顺利合并到 master 分支来了，那么 dev 分支没用了，用 git branch -d 删除。删除分支dev 的语句为 git branch -d dev 。  
 
-### pull request
+### 4.4 pull request
 
 我们在之前已经介绍过如何创建分支并且推送到远程，那么现在自己的github上已经有了创建的dev分支，这个分支将是随后发起 Pull Request 时要用到的源分支。   
 
@@ -358,7 +358,7 @@ git fetch origin 远程分支名x:本地分支名x
 如果对方认为 dev 分支已经可以合并了，他只需点击 **Merge Pull Request**按钮来通过这个 Pull Request，将dev分支并入他的 master 分支。    
 最后，对方接受了这些修改，将 dev分支并入了 master 分支，关闭了这个 Pull Request。功能现在已经整合到了项目中，其他在 master 分支上工作的开发者可以使用标准的 git pull 命令将这些修改拉取到自己的本地仓库。 
 
-### fork后同步源的新更新内容
+### 4.5 fork后同步源的新更新内容
 
 fork了别人的repo，一段时间后，别人更新了，想要同步过来最新的内容，应该怎么做？  
 
@@ -412,7 +412,7 @@ git rebase upstream/main
 git push
 ```
 
-### 查看历史版本
+### 4.6 查看历史版本
 
 使用命令：
 
@@ -430,7 +430,7 @@ git checkout xxx（某个历史版本的哈希值，即git log下显示的每次
 
 即可回到xxx的那个版本。
 
-### 标签tag
+### 4.7 标签tag
 
 使用如下命令可以查看已有标签：
 
@@ -479,7 +479,7 @@ git push origin :refs/tags/v1.4
 ![image](./image/p0.png)  
 
 
-### 创建开发分支（团队项目负责人来完成）
+### 5.1 创建开发分支（团队项目负责人来完成）
 
 master分支一般用来发布稳定版本，dev分支（开发分支）用来发布开发版本。  
 
@@ -492,13 +492,13 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 ![image](./image/p52.png)   
   
   
-### Fork项目到个人的仓库
+### 5.2 Fork项目到个人的仓库
 
 点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。  
  
  ![image](./image/p53.png)  
  
-###  Clone项目到本地
+### 5.3 Clone项目到本地
 
  ![image](./image/p54.png) 
  
@@ -520,7 +520,7 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。  
 
-### 和团队项目保持同步
+### 5.4 和团队项目保持同步
 
 首先查看有没有设置upstream，使用` git remote -v` 命令来查看。    
 
@@ -536,13 +536,13 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 如果你是在本地的master分支上开发，那么在使用该命令前，先切换到master分支。merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的操作。
 
-### push修改到自己的项目上
+### 5.5 push修改到自己的项目上
 
 解决冲突后，就可以使用 `git push` 命令将本地的修改同步到自己的GitHub仓库上了。注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。  
 
 ![image](./image/p61.png) 
 
-### 请求合并到团队项目上
+### 5.6 请求合并到团队项目上
 
 首先到你的GitHub上，进入你Fork的仓库里。点击红框处的`Pull request`。  
 
@@ -560,7 +560,7 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 以上操作结束后，团队成员的流程就结束了。最后一步交给团队项目负责人来完成。  
 
-### 团队项目负责人审核及同意合并请求
+### 5.7 团队项目负责人审核及同意合并请求
 
 首先进入GitHub的团队项目仓库中。此时右边的Pull requests显示当前项目有几个Pull request。点击进入查看。 
 

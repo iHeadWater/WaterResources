@@ -531,8 +531,11 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 解决冲突后，就可以使用 git push 命令将本地的修改同步到自己的GitHub仓库上了。注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。  
 
+![image](./image/p61.png) 
 
+### 请求合并到团队项目上
 
+首先到你的GitHub上，进入你Fork的仓库里。点击红框处的Pull request。  
 
 
  

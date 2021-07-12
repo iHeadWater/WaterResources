@@ -1,0 +1,6 @@
+name: DUTWR
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyterlab

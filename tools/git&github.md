@@ -154,6 +154,8 @@ git clone https://github.com/waterDLut/WaterResources.git
 
 需要注意的是，如果用 HTTPS 地址需要输入用户名密码进行账户验证。而使用 SSH 地址只需要第一次时提交 SSH Key 到 GitHub ，后续无需每次验证，很方便，所以推荐使用SSH 地址。接下来就会介绍如何配置 SSH Key。
 
+## 4.配置SSH Key
+
 这种方式第一次配置相对麻烦一点，但是后续使用更加方便。
 
 首先，使用如下命令创建密钥文件
@@ -216,11 +218,11 @@ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
 ![image](./image/B7.png) 
 
 
-## 4. 提交你的修改
+## 5. 提交你的修改
 
 以下是我们在修改repo之后，推送自己的贡献到github上时经常会用到的操作，用到时来查询即可。
 
-### 4.1 add/commit/push
+### 5.1 add/commit/push
 
 用git clone xxx将repo复制到本地做了修改，如何将本地修改后的代码推送到远程呢？
 
@@ -257,7 +259,7 @@ git push -u origin master # 把本地库的所有内容推送到远程库上
 - git pull：翻译为拉，当远程仓库有更新，你需要把远程的拉到本地进行合并  
 
 
-### 4.2 创建分支并推送到远程分支
+### 5.2 创建分支并推送到远程分支
 
 参考了[git创建分支并推送到远程分支](https://blog.csdn.net/ljj_9/article/details/79386306)。
 
@@ -298,7 +300,7 @@ git push origin <你的分支名称>:<你的分支名称>
 
 使用git branch -a查看所有分支，会看到remotes/origin/<你的分支名称> 这个远程分支，说明新建远程分支成功。 
 
-### 4.3 拉取远程分支
+### 5.3 拉取远程分支
 
 参考：https://blog.csdn.net/tterminator/article/details/52225720
 
@@ -338,7 +340,7 @@ git fetch origin 远程分支名x:本地分支名x
 
 有添加就有删除，假如分支新建错了，或者dev分支的代码已经顺利合并到 master 分支来了，那么 dev 分支没用了，用 git branch -d 删除。删除分支dev 的语句为 git branch -d dev 。  
 
-### 4.4 pull request
+### 5.4 pull request
 
 我们在之前已经介绍过如何创建分支并且推送到远程，那么现在自己的github上已经有了创建的dev分支，这个分支将是随后发起 Pull Request 时要用到的源分支。   
 
@@ -354,11 +356,13 @@ git fetch origin 远程分支名x:本地分支名x
 
 ![image](./image/3.png)
 
-此时对方就会在在他自己的 GitHub 仓库下的**Pull Request**选项卡中看到所有的 **Pull Request**。点击  **Pull Request** 会显示这个Pull Request的简介、dev 分支的提交历史，以及包含的更改。    
-如果对方认为 dev 分支已经可以合并了，他只需点击 **Merge Pull Request**按钮来通过这个 Pull Request，将dev分支并入他的 master 分支。    
+此时对方就会在在他自己的 GitHub 仓库下的**Pull Request**选项卡中看到所有的 **Pull Request**。点击  **Pull Request** 会显示这个Pull Request的简介、dev 分支的提交历史，以及包含的更改。   
+
+如果对方认为 dev 分支已经可以合并了，他只需点击 **Merge Pull Request**按钮来通过这个 Pull Request，将dev分支并入他的 master 分支。  
+
 最后，对方接受了这些修改，将 dev分支并入了 master 分支，关闭了这个 Pull Request。功能现在已经整合到了项目中，其他在 master 分支上工作的开发者可以使用标准的 git pull 命令将这些修改拉取到自己的本地仓库。 
 
-### 4.5 fork后同步源的新更新内容
+### 5.5 fork后同步源的新更新内容
 
 fork了别人的repo，一段时间后，别人更新了，想要同步过来最新的内容，应该怎么做？  
 
@@ -412,7 +416,7 @@ git rebase upstream/main
 git push
 ```
 
-### 4.6 查看历史版本
+### 5.6 查看历史版本
 
 使用命令：
 
@@ -430,7 +434,7 @@ git checkout xxx（某个历史版本的哈希值，即git log下显示的每次
 
 即可回到xxx的那个版本。
 
-### 4.7 标签tag
+### 5.7 标签tag
 
 使用如下命令可以查看已有标签：
 
@@ -464,9 +468,7 @@ git tag -d v1.4
 git push origin :refs/tags/v1.4 
 ```
 
-
-
-## 5. 团队协作方式
+## 6. 团队协作方式
 
 这里以和本repo的交互为例，简单小结一下前述内容，并介绍如何一起维护此repo。
 
@@ -479,7 +481,7 @@ git push origin :refs/tags/v1.4
 ![image](./image/p0.png)  
 
 
-### 5.1 创建开发分支（团队项目负责人来完成）
+### 6.1 创建开发分支（团队项目负责人来完成）
 
 master分支一般用来发布稳定版本，dev分支（开发分支）用来发布开发版本。  
 
@@ -492,13 +494,13 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 ![image](./image/p52.png)   
   
   
-### 5.2 Fork项目到个人的仓库
+### 6.2 Fork项目到个人的仓库
 
 点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。  
  
  ![image](./image/p53.png)  
  
-### 5.3 Clone项目到本地
+### 6.3 Clone项目到本地
 
  ![image](./image/p54.png) 
  
@@ -518,9 +520,11 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 ![image](./image/p57.png) 
 
+**注意：如果您发现现有文档上有一些小问题，可以快速修改掉，那么请直接在 dev 分支上编辑更新现有内容；如果有较大改变，那么请创建新的特性分支(feature_xxx)，然后再在此分支上编辑，这样可以避免混乱。如果是一个 feature_xxx 完成，那么请将其合并到dev分支上。 **   
+
 上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。  
 
-### 5.4 和团队项目保持同步
+### 6.4 和团队项目保持同步
 
 首先查看有没有设置upstream，使用` git remote -v` 命令来查看。    
 
@@ -536,47 +540,26 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 如果你是在本地的master分支上开发，那么在使用该命令前，先切换到master分支。merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的操作。
 
-### 5.5 push修改到自己的项目上
+### 6.5 push修改到自己的项目上
 
-解决冲突后，就可以使用 `git push` 命令将本地的修改同步到自己的GitHub仓库上了。注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。  
-
+解决冲突后，就可以使用 `git push` 命令将本地的修改同步到自己的GitHub仓库上了。注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。
 ![image](./image/p61.png) 
-
-### 5.6 请求合并到团队项目上
-
-首先到你的GitHub上，进入你Fork的仓库里。点击红框处的`Pull request`。  
-
-![image](./image/p62.png)   
-
-下图左边红框，表示要合并到waterDLut/WaterResources项目的master分支。  
-
-下图右边红框，表示要从waterDLut/WaterResources的dev分支发起合并请求。  
-  
-点击` Create pull request`就可以发送合并请求了。
-
-![image](./image/p63.png)
-
-当然，在发送请求之前，你可以检查一下你都改了哪些东西。在上面那个页面往下拉，就可以看到两者的对比。
 
 以上操作结束后，团队成员的流程就结束了。最后一步交给团队项目负责人来完成。  
 
-### 5.7 团队项目负责人审核及同意合并请求
+### 6.6 团队项目负责人审核同意后合并到master分支
 
-首先进入GitHub的团队项目仓库中。此时右边的Pull requests显示当前项目有几个Pull request。点击进入查看。 
+首先在本地将修改后的dev分支pull下来,查看对项目做了哪些修改。如果没有问题，需要把代码合并到主分支 master上来，执行**git merge**就是合并分支用到的命令。  
 
-![image](./image/p65.png)
+需注意，合并分为两步！！！  
 
-项目负责人审核有两个要注意的地方:  
+- 切换到 master 分支;  
 
-- 一个是下图的①。一定要看清楚是合并到哪个分支。这里是从waterDLut/WaterResources的dev分支合并到waterDLut/WaterResources的master分支。  
+- 执行 git merge dev ，意思就是把dev 分支的代码合并过来，不出意外，这个时候 dev分支的代码就顺利合并到 master 分支来了。   
 
-- 另一个是下图的②。点击进去后，就可以查看该Pull request对项目做了哪些修改。这样如果有问题，可以及时发现，并关闭该Pull request。  
+最后，将master分支push到远程即可。
 
-如果关闭了，一定要告诉队友，否则他可能会不知道。虽然也可以直接在下面发布Comment告诉他，但队友不一定看到。
 
-![image](./image/p66.png)  
-
-如果没有问题，可以点击`Merge pull request`。这样就合并好了。
 
  
  

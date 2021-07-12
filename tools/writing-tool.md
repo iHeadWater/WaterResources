@@ -37,13 +37,13 @@ Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写�
 
 ## 快速入手版
 
-假如你对Git、github以及Jupyterlab、markdown这些都有所了解，并在本地安装好Anaconda、Git、terminal等工具，下面这些可帮助你快速实现整个流程的操作。**（后附每一步详细链接，如有需要可点击👉查看）**  
+假如你对Git、github以及Jupyterlab、markdown这些都有所了解，并在本地安装好Anaconda、Git、terminal等工具，下面这些可帮助你快速实现整个流程的操作。
 
-- 打开github,进入到自己想要下载的repo页面。点击绿色的`Code`,点击`SSH`,将`git@github.com:xxx`开头的地址复制下来。在本地打开terminal，进入你想放置项目的文件夹,鼠标右击选择`Git Bash here`，接着使用 `git clone  <刚刚copy的地址>`命令，就能把代码下载到本地了，注意第一次使用 SSH 时，需要配置 `SSH Key`。[👉](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#3-clone%E9%A1%B9%E7%9B%AE)  
+- 打开github,进入到自己想要下载的repo页面。点击绿色的`Code`,点击`SSH`,将`git@github.com:xxx`开头的地址复制下来。在本地打开terminal，进入你想放置项目的文件夹,鼠标右击选择`Git Bash here`，接着使用 `git clone  <刚刚copy的地址>`命令，就能把代码下载到本地了，注意第一次使用 SSH 时，需要配置 `SSH Key`。
 
-- 为项目创建`conda env create -f environment.yml`并激活环境`conda activate XXX<你的环境名>`,启动jupyter lab。在jupyterlab中，您可以新建notebook、console、teminal或者text文本。如果您发现现有文档上有一些小问题，可以快速修改掉，那么请直接在 dev 分支上编辑更新现有内容；如果有较大改变，那么请创建新的特性分支（feature_xxx），然后再在此分支上编辑，这样可以避免混乱。[👉](https://github.com/waterDLut/WaterResources/blob/master/tools/jupyterlab%26markdown.md#1-jupyterlab%E4%BB%8B%E7%BB%8D)  
+- 用`conda env create -f environment.yml`为项目创建环境，并用`conda activate XXX<你的环境名>`激活环境,启动jupyter lab。在jupyterlab中，您可以新建notebook、console、teminal或者text文本。如果您发现现有文档上有一些小问题，可以快速修改掉，那么请直接在 dev 分支上编辑更新现有内容；如果有较大改变，那么请创建新的特性分支（feature_xxx）[创建分支并推送到远程分支](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#42-%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF%E5%B9%B6%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF)，然后再在此分支上编辑，这样可以避免混乱。  
     
-- 用`git add .`、`git commit -m "本次提交想要说明的东西"`、`git push -u origin xxx` 将本地修改后的代码推送到远程xxx分支。如果是一个 feature_xxx 完成，那么请将其合并到dev分支上，最后由 support 小组成员审核后合并到主干master分支上。[👉](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#4-%E6%8F%90%E4%BA%A4%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9)  
+- 用`git add .`、`git commit -m "本次提交想要说明的东西"`、`git push -u origin xxx` 将本地修改后的代码推送到远程xxx分支。如果是一个 feature_xxx 完成，那么请将其合并到dev分支上，最后由 support 小组成员审核后合并到主干master分支上。
 
 
 

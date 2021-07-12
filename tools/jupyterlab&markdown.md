@@ -86,7 +86,7 @@ jupyter lab
 ![image](./image/p5.png) 
 
 
-**如果你想了解关于创建环境的更多细节，**可参考https://github.com/waterDLut/hydrus/blob/master/1-basic-envir/2-python-envir.md
+**如果你想了解关于创建环境的更多细节，** 可参考[这里](https://github.com/waterDLut/hydrus/blob/master/1-basic-envir/2-python-envir.md)
 
 ### 1.2.1 启动器
 

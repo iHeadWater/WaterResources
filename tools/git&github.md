@@ -149,7 +149,7 @@ git config --global user.email Youremail@example.com
 在本地打开terminal，进入你想放置本项目的文件夹,鼠标右击选择**Git Bash here**，打开的 GitBash 可以看到自动定位到我们的仓库位置，如果在其他位置打开，还得再次定位。接着使用 “git clone <刚刚copy的地址>”命令，就能把代码下载到本地了。
 
 ```Shell
-git clone https://github.com/waterDLut/WaterResources.git
+git clone git@github.com:waterDLut/WaterResources.git
 ```
 
 需要注意的是，如果用 HTTPS 地址需要输入用户名密码进行账户验证。而使用 SSH 地址只需要第一次时提交 SSH Key 到 GitHub ，后续无需每次验证，很方便，所以推荐使用SSH 地址。接下来就会介绍如何配置 SSH Key。
@@ -187,10 +187,10 @@ Are you sure you want to continue connecting (yes/no)?
 
 输入yes，然后回车即可，这时候结果为 “ …You’ve successfully authenticated, but GitHub does not provide shell access”，则说明成功。
 
-ssh下下载的方式和https下一样，在github中clone时选择SSH协议即可，比如下载本repo：
+https下下载的方式和ssh下一样，在github中clone时选择HTTPS即可，比如下载本repo：
 
 ```Shell
-git clone git@github.com:waterDLut/WaterResources.git
+git clone https://github.com/waterDLut/WaterResources.git
 ```
 
 如果已经使用了https，想要切换成ssh 变化远程仓库地址 可以按照下面方式操作（参考了[这里](https://docs.github.com/cn/github/getting-started-with-github/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)）。
@@ -520,11 +520,11 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 ![image](./image/p57.png) 
 
-**注意：  
+注意：  
 
 - 如果您发现现有文档上有一些小问题，可以快速修改掉，那么请直接在 dev 分支上编辑更新现有内容；   
   
-- 如果有较大改变，那么请创建新的特性分支(feature_xxx)，然后再在此分支上编辑，这样可以避免混乱。如果是一个 feature_xxx 完成，那么请将其合并到dev分支上。**     
+- 如果有较大改变，那么请创建新的特性分支(feature_xxx)，然后再在此分支上编辑，这样可以避免混乱。如果是一个 feature_xxx 完成，那么请将其合并到dev分支上。    
 
 上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。  
 
@@ -553,15 +553,9 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 ### 6.6 团队项目负责人审核同意后合并到master分支
 
-首先在本地将修改后的远程dev分支pull下来,查看对项目做了哪些修改。如果没有问题，需要把代码合并到主分支 master上来，执行**git merge**就是合并分支用到的命令。  
+首先在本地将修改后的远程dev分支pull下来,查看对项目做了哪些修改。如果没有问题，需要把代码合并到主分支 master上来，用`git checkout master` 切换到master分支，执行 `git merge dev` ，意思就是把dev 分支的代码合并过来，不出意外，这个时候 dev分支的代码就顺利合并到 master 分支来了，最后，将master分支push到远程即可。
 
-需注意，合并分为两步！！！  
 
-- 切换到 master 分支;  
-
-- 执行 git merge dev ，意思就是把dev 分支的代码合并过来，不出意外，这个时候 dev分支的代码就顺利合并到 master 分支来了。   
-
-最后，将master分支push到远程即可。
 
 
 

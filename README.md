@@ -16,13 +16,6 @@ DUTWR 目前包括水资源综合调控、流域水文、流域水生态、城�
 
 ## 一起贡献
 
-如果你想直接参与贡献，请：
+如果您想参与贡献，但不知道怎么使用 git/github/jupyterlab/markdown 等基本工具来完成编辑工作，请参考[这里](https://github.com/waterDLut/WaterResources/blob/master/tools/writing-tool.md)
 
-1. Fork 本项目
-2. 新建 xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-如果你想参与贡献，但不知道怎么使用git/github/markdown等基本工具来完成编辑工作，请参考[这里](https://github.com/waterDLut/WaterResources/blob/master/tools/writing-tool.md)
-
-如果你想提供一些建议，可直接在本repo的[Issue栏](https://github.com/fsjwlf/WaterResources/issues)添加问题。
+如果您想提供一些建议，可直接联系 [waterDLut](https://github.com/waterDLut) 任意成员。

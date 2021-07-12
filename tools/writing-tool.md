@@ -45,7 +45,10 @@ Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写�
     
 - [提交你的修改](https://github.com/waterDLut/WaterResources/blob/master/tools/git%26github.md#5-%E6%8F%90%E4%BA%A4%E4%BD%A0%E7%9A%84%E4%BF%AE%E6%94%B9)：用`git add .`、`git commit -m "本次提交想要说明的东西"`、`git push -u origin xxx` 将本地修改后的代码推送到远程xxx分支。如果是一个 feature_xxx 完成，那么请将其合并到dev分支上，最后由 support 小组成员审核后合并到主干master分支上。
 
+注：
 
+- 链接由于某些原因可能没有直接定位到具体的段落，直接在点击链接打开的github页面上通过目录查询即可；
+- **如果有任何问题，请联系[这里](https://github.com/orgs/waterDLut/teams/support)的成员咨询**
 
 ## 参考资料
 

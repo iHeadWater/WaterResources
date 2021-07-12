@@ -263,7 +263,7 @@ git push -u origin master # 把本地库的所有内容推送到远程库上
 
 参考了[git创建分支并推送到远程分支](https://blog.csdn.net/ljj_9/article/details/79386306)。
 
-branch 是分支的意思，多人合作时，你一个模块，别人一个模块，你们各建一个分支就能保证改动互不干扰，等最后做完，把你们的分支合并起来就好。    
+branch 是分支的意思，多人合作时，你一个模块，别人一个模块，你们各建一个分支就能保证改动互不干扰，等最后做完，把你们的分支合并起来就好。如果想了解更多分支相关的基本概念，可以参考 [这里](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%AE%80%E4%BB%8B) 。
 
 首先在master分支上，保证工作目标是干净的，也没有需要commit的：
 
@@ -470,39 +470,33 @@ git push origin :refs/tags/v1.4
 
 ## 6. 团队协作方式
 
-这里以和本repo的交互为例，简单小结一下前述内容，并介绍如何一起维护此repo。
+这里以和本repo的交互为例，简单介绍下 **waterDLut organization** 下的repo，以及如何一起维护它。
 
-本repo和**waterDLut organization**中的其他repo一起由**study-group**和**support**两个team共同管理维护。    
+本repo和 **waterDLut organization** 中的其他repo一起由 **study-group** 和 **support** 两个team共同管理维护。    
 
 - study-group：主要由团队开发人员构成，负责分享基础知识、参与项目贡献，具有read、clone、push的权限。  
 
-- support：主要由项目负责人员构成，除了和study-group人员一起参与项目贡献外，还包括对项目的维护，审核pull request或者添加成员等操作。 
+- support：主要由项目服务人员构成，除了和study-group人员一起参与项目贡献外，还包括对项目的维护，审核pull request或者添加成员等操作。 
  
 ![image](./image/p0.png)  
 
+如果您在 waterDLut 内，直接在本repo下pull和push即可，不必fork到个人仓库（当然想fork的话也行）。
 
-### 6.1 创建开发分支（团队项目负责人来完成）
+一般repo都有master分支和dev分支。master用来发布稳定版本，dev分支（开发分支）用来发布开发版本。
 
-master分支一般用来发布稳定版本，dev分支（开发分支）用来发布开发版本。  
-
-输入分支名称后，下面会跳出Create branch，点击即可创建。    
+如果新建了一个repo还没有dev分支，那么由repo创建者在本地新建一个dev分支推送上去即可，或者如下图所示直接在github页面上点击输入分支名称后，下面会跳出Create branch，点击即可创建。
 
 ![image](./image/p51.png)  
 
-分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此内容与master分支一致。  
+分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此刚建成时，内容与master分支一致。  
 
 ![image](./image/p52.png)   
-  
-  
-### 6.2 Fork项目到个人的仓库
 
-点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。  
+下面是一起维护的基本流程。
  
- ![image](./image/p53.png)  
- 
-### 6.3 Clone项目到本地
+### 6.1 Clone项目到本地
 
- ![image](./image/p54.png) 
+![image](./image/p54.png) 
  
 打开git命令行，输入指令和刚才复制的地址，回车即可克隆到本地。  
 
@@ -528,7 +522,7 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。  
 
-### 6.4 和团队项目保持同步
+### 6.2 和团队项目保持同步
 
 首先查看有没有设置upstream，使用` git remote -v` 命令来查看。    
 
@@ -544,14 +538,14 @@ master分支一般用来发布稳定版本，dev分支（开发分支）用来�
 
 如果你是在本地的master分支上开发，那么在使用该命令前，先切换到master分支。merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的操作。
 
-### 6.5 push修改到自己的项目上
+### 6.3 push修改到自己的项目上
 
 解决冲突后，就可以使用 `git push` 命令将本地的修改同步到自己的GitHub仓库上了。注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。
 ![image](./image/p61.png) 
 
-以上操作结束后，团队成员的流程就结束了。最后一步交给团队项目负责人来完成。  
+以上操作结束后，流程基本就结束了。最后一步交给 support小组 来完成。  
 
-### 6.6 团队项目负责人审核同意后合并到master分支
+### 6.4 support小组审核后合并到master分支
 
 首先在本地将修改后的远程dev分支pull下来,查看对项目做了哪些修改。如果没有问题，需要把代码合并到主分支 master上来，用`git checkout master` 切换到master分支，执行 `git merge dev` ，意思就是把dev 分支的代码合并过来，不出意外，这个时候 dev分支的代码就顺利合并到 master 分支来了，最后，将master分支push到远程即可。
 

@@ -1,20 +1,17 @@
 <h1 align="center">水资源与防洪研究所资源共享</h1>
 <div align="center">
   <a href="https://github.com/kaixindelele/ChatPaper">
-    <img src="1.jpg" alt="Logo" height="210">
+    <img src="1.jpg" height="310">
   </a>
  
   <p align="center">
+      <a href="https://github.com/iHeadWater/WaterResources/forks">
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/iHeadWATER/WaterResources?style=social" />
+      <a href="https://github.com/iHeadWater/WaterResources/stargazers">
+        <img alt="GitHub stars" src="https://img.shields.io/github/stars/iHeadWater/WaterResources?style=social" />
+      </a>
       <a href="https://github.com/iHeadWater/WaterResources/graphs/contributors">
-        <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/kaixindelele/ChatPaper" />
-      </a>
-      <a href="https://github.com/kaixindelele/ChatPaper/issues">
-        <img alt="Issues" src="https://img.shields.io/github/issues/kaixindelele/ChatPaper?color=0088ff" />
-      </a>
-      <a href="https://github.com/kaixindelele/ChatPaper/pulls">
-        <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/kaixindelele/ChatPaper?color=0088ff" />
-      <a href="https://github.com/kaixindelele/ChatPaper/stargazers">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/kaixindelele/ChatPaper?color=ccf" />
+        <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/iHeadWater/WaterResources?style=social" />
       </a>
      </p>
 

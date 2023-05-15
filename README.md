@@ -1,7 +1,7 @@
 <h1 align="center">水资源与防洪研究所资源共享</h1>
 <div align="center">
   <a href="https://github.com/kaixindelele/ChatPaper">
-    <img src="1.jpg" height="310">
+    <img src="1.png" height="310">
   </a>
  
   <p align="center">

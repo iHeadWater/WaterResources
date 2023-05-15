@@ -28,19 +28,18 @@
 - [通用模型和算法](#通用模型和算法)
   - [station-simulator](#station-simulator)
   - [seq2seq_streamflow_prediction](#seq2seq_streamflow_prediction)
-- [国内外的流行或经典模型](#国内外的流行或经典模型)
+- [自主研发的专业模型](#自主研发的专业模型) 
   - [Hydro-model-xaj](#Hydro-model-xaj)
+- [国内外的流行或经典模型](#国内外的流行或经典模型)
   - [eWaterCycle](#eWaterCycle)
 - [外部与内部数据建设](#外部与内部数据建设)
   - [hydro-opendata](#hydro-opendata)
 - [教程与文献系列](#教程与文献系列)
-  - [DUTWR-文献概述](#DUTWR-文献概述)
   - [d2l-zh](#d2l-zh)
   - [hydroGIS](#hydroGIS)
   - [hydrus](#hydrus)
   - [hydro-dl-tutorials](#hydro-dl-tutorials)
   - [iheadwater_hackweek_tutorials](#iheadwater_hackweek_tutorials)
-  - [科研随笔](#科研随笔)
 - [典型研究与工程案例](#典型研究与工程案例)
   - [PA4Water](#PA4Water)
 
@@ -52,7 +51,7 @@
 ### [seq2seq_streamflow_prediction](https://github.com/iHeadWater/seq2seq_streamflow_prediction)
 *更新中*
 
-## 国内外的流行或经典模型
+## 自主研发的专业模型
 ### [Hydro-model-xaj](https://github.com/iHeadWater/hydro-model-xaj)
 Hydro-model-xaj is a python implementation for the XinAnJiang (XAJ) model, which is one of the most famous conceptual hydrological models, especially in Southern China.
 
@@ -63,6 +62,8 @@ Other implementations for XAJ:
 - Java: https://github.com/wfxr/xaj-hydrological-model
 - R, C++: https://github.com/Sibada/XAJ
 
+
+## 国内外的流行或经典模型
 ### [eWaterCycle](https://github.com/iHeadWater/ewatercycle)
 A Python package for running hydrological models.
 The eWaterCycle package makes it easier to use hydrological models without having intimate knowledge about how to install and run the models.
@@ -80,9 +81,6 @@ The eWaterCycle package makes it easier to use hydrological models without havin
 - [数据下载](https://github.com/iHeadWater/hydro-opendata/tree/main/data_downloader)- 提供通用下载器和部分数据的下载功能。
 
 ## 教程与文献系列
-
-### DUTWR 文献概述
-本部分不完全按照研究方向分类，主要以每篇博客的主题分类，*仍在开发中*，可查看[这里](https://github.com/waterDLut/WaterResources/tree/master/papers); 
 
 ### [d2l-zh](https://github.com/iHeadWater/d2l-zh)
 有关深度学习的一本书，包含概念、背景知识和代码；并阐述剖析问题所需的批判性思维、解决问题所需的数学知识，以及实现解决方案所需的工程技能。在此列举部分章节内容，更多内容可参阅[d2l-zh](https://github.com/iHeadWater/d2l-zh)。
@@ -137,9 +135,6 @@ The eWaterCycle package makes it easier to use hydrological models without havin
 - [deep_learning_review](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp6_deep_learning_review) - 初识深度学习（水文）。
 - [intro_to_pytorch](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp7_intro_to_pytorch) - 使用深度学习工具Pytorch。
 - [lstm_camels](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp8_lstm_camels) - 复现基于CAMELS数据集和LSTM模型的研究论文。
-
-### 科研随笔
-本部分记录科研方式方法等一些比较个人经验化的内容，分享对学习、研究中面临的各类问题的看法、想法，*仍在开发中*，可查看[这里](https://github.com/waterDLut/WaterResources/tree/master/notes)；
 
 ## 典型研究与工程案例
 ### [PA4Water](https://github.com/iHeadWater/PA4Water)

@@ -110,12 +110,27 @@ Hydro-model-xaj 是新安江 (XAJ) 模型的 Python 实现，该模型是最著�
 
 ### [iheadwater_hackweek_tutorials](https://github.com/iHeadWater/iheadwater_hackweek_tutorials)
 水资源科研编程入门教程，网页在这里：https://iheadwater.github.io/iheadwater_hackweek_tutorials
+- [open_science_workflow](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp1_open_science_workflow) - 了解可复现科研并学会使用一般工作流中用到的编程相关工具。
+- [file_formats](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp2_file_formats) - 认识我们日常科研经常处理的数据文件。
+- [version_control](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp3_version_control) - 掌握版本控制工具的基本操作方法。
+- [intro_to_python](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp4_intro_to_python) - 熟悉Python最基础语法内容。
+- [python_data_science](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp5_python_data_science) - 了解Python数据分析常用包。
+- [deep_learning_review](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp6_deep_learning_review) - 初识深度学习（水文）。
+- [intro_to_pytorch](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp7_intro_to_pytorch) - 使用深度学习工具Pytorch。
+- [lstm_camels](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp8_lstm_camels) - 复现基于CAMELS数据集和LSTM模型的研究论文。
+
 ### 科研随笔
 本部分记录科研方式方法等一些比较个人经验化的内容，分享对学习、研究中面临的各类问题的看法、想法，*仍在开发中*，可查看[这里](https://github.com/waterDLut/WaterResources/tree/master/notes)；
 
 ## 典型研究与工程案例
 ### [PA4Water](https://github.com/iHeadWater/PA4Water)
-尝试利用AI工具构建一个水利科研和工程的私人助手。
+这部分是一个使用人工智能工具来帮助水科学和工程研究和项目的开发项目。初步设想打造一个水科学与工程的个人助理，就像这个领域的专家一样。
+
+期望实现以下功能：
+- 做一些日常科研工作，如总结文献（PDF文件）
+- 做一些复杂性工作，如做一个软件接口，可以在需要的时候调用一些与水资源相关的模型做一些计算。
+- 
+目前可以实现第一部分内容，即总结文献（PDF文件）。
 
 ## 一起贡献
 

@@ -54,10 +54,23 @@
 
 ## 国内外的流行或经典模型
 ### [Hydro-model-xaj](https://github.com/iHeadWater/hydro-model-xaj)
-Hydro-model-xaj 是新安江 (XAJ) 模型的 Python 实现，该模型是最著名的概念水文模型之一。非正式版，仅供学习（因作者技术水平和时间紧迫的客观条件，可能存在错误）
+Hydro-model-xaj is a python implementation for the XinAnJiang (XAJ) model, which is one of the most famous conceptual hydrological models, especially in Southern China.
+
+When we want to learn about the rainfall-runoff process and make forecasts for floods, etc. We often use classic hydrological models such as XAJ as a baseline because it is trusted by many engineers and researchers. However, after searching the website very few repositories could be found. One day I happened to start learning Python, so I decided to implement the model with Python. Previous commits for hydro-model-xaj have some errors, but now at least one executable version is provided.
+
+Other implementations for XAJ:
+- Matlab: https://github.com/wknoben/MARRMoT/blob/master/MARRMoT/Models/Model%20files/m_28_xinanjiang_12p_4s.m
+- Java: https://github.com/wfxr/xaj-hydrological-model
+- R, C++: https://github.com/Sibada/XAJ
 
 ### [eWaterCycle](https://github.com/iHeadWater/ewatercycle)
-用于运行水文模型的 Python 包，eWaterCycle 软件包使使用水文模型变得更加容易，而无需深入了解如何安装和运行模型。
+A Python package for running hydrological models.
+The eWaterCycle package makes it easier to use hydrological models without having intimate knowledge about how to install and run the models.
+
+- Uses container for running models in an isolated and portable way with [grpc4bmi](https://github.com/eWaterCycle/grpc4bmi).
+- Generates rain and sunshine required for the model using [ESMValTool](https://esmvaltool.org/).
+- Supports observation data from [GRDC or USGS](https://ewatercycle.readthedocs.io/en/latest/observations.html).
+- Exposes simple interface to quickly get up and running.
 
 ## 外部与内部数据建设
 ### [hydro-opendata](https://github.com/iHeadWater/hydro-opendata/tree/main)
@@ -72,7 +85,13 @@ Hydro-model-xaj 是新安江 (XAJ) 模型的 Python 实现，该模型是最著�
 本部分不完全按照研究方向分类，主要以每篇博客的主题分类，*仍在开发中*，可查看[这里](https://github.com/waterDLut/WaterResources/tree/master/papers); 
 
 ### [d2l-zh](https://github.com/iHeadWater/d2l-zh)
-有关深度学习的一本书，包含概念、背景知识和代码；并阐述剖析问题所需的批判性思维、解决问题所需的数学知识，以及实现解决方案所需的工程技能。
+有关深度学习的一本书，包含概念、背景知识和代码；并阐述剖析问题所需的批判性思维、解决问题所需的数学知识，以及实现解决方案所需的工程技能。在此列举部分章节内容，更多内容可参阅[d2l-zh](https://github.com/iHeadWater/d2l-zh)。
+
+- [preface](https://github.com/iHeadWater/d2l-zh/blob/master/chapter_preface) - 前言。
+- [introduction](https://github.com/iHeadWater/d2l-zh/tree/master/chapter_introduction) - 深度学习的入门课程。
+- [installation](https://github.com/iHeadWater/d2l-zh/blob/master/chapter_installation) - 配置一个环境来运行 Python、Jupyter Notebook、相关库以及运行本书所需的代码。
+- [preliminaries](https://github.com/iHeadWater/d2l-zh/tree/master/chapter_preliminaries) - 快速介绍实践深度学习所需的前提条件，例如如何存储和处理数据，以及如何应用基于线性代数、微积分和概率基本概念的各种数值运算。
+- [linear-networks](https://github.com/iHeadWater/d2l-zh/tree/master/chapter_linear-networks) - 介绍神经网络的整个训练过程，包括：定义简单的神经网络架构、数据处理、指定损失函数和如何训练模型。
 
 ### [hydroGIS](https://github.com/iHeadWater/hydroGIS)
 水文水资源的科研和工程实践中一定缺不了GIS工具的使用，熟悉一些常用GIS工具十分有必要，这里记录平时一些实践备查。
@@ -125,11 +144,10 @@ Hydro-model-xaj 是新安江 (XAJ) 模型的 Python 实现，该模型是最著�
 ## 典型研究与工程案例
 ### [PA4Water](https://github.com/iHeadWater/PA4Water)
 这部分是一个使用人工智能工具来帮助水科学和工程研究和项目的开发项目。初步设想打造一个水科学与工程的个人助理，就像这个领域的专家一样。
-
 期望实现以下功能：
 - 做一些日常科研工作，如总结文献（PDF文件）
 - 做一些复杂性工作，如做一个软件接口，可以在需要的时候调用一些与水资源相关的模型做一些计算。
-- 
+
 目前可以实现第一部分内容，即总结文献（PDF文件）。
 
 ## 一起贡献

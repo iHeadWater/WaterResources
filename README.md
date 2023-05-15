@@ -25,26 +25,24 @@
 
 ## 目录
 
-- 通用模型和算法
-  - [station-simulator](https://github.com/iHeadWater/station-simulator)
-  - [seq2seq_streamflow_prediction](https://github.com/iHeadWater/seq2seq_streamflow_prediction)
-- 国内外的流行或经典模型
-  - [Hydro-model-xaj](https://github.com/iHeadWater/hydro-model-xaj)
-  - [eWaterCycle](https://github.com/iHeadWater/ewatercycle)
-- 外部与内部数据建设
-  - [hydro-opendata](https://github.com/iHeadWater/hydro-opendata/tree/main)
-- 教程与文献系列
-  - [水资源图书馆](https://github.com/waterDLut/WaterResources/blob/master/WaterResourcesBooks.md)
-  - [水资源云课堂](https://github.com/waterDLut/WaterResources/blob/master/WaterResourcesWeb.md)
-  - [DUTWR 文献概述](https://github.com/waterDLut/WaterResources/tree/master/papers)
-  - [d2l-zh](https://github.com/iHeadWater/d2l-zh)
-  - [hydroGIS](https://github.com/iHeadWater/hydroGIS)
-  - [hydrus](https://github.com/waterDLut/hydrus)
-  - [hydro-dl-tutorials](https://github.com/waterDLut/hydro-dl-basic)
-  - [iheadwater_hackweek_tutorials](https://github.com/iHeadWater/iheadwater_hackweek_tutorials)
-  - [科研随笔](https://github.com/waterDLut/WaterResources/tree/master/notes)
-- 典型研究与工程案例
-  - [PA4Water](https://github.com/iHeadWater/PA4Water)
+- [通用模型和算法](#通用模型和算法)
+  - [station-simulator](#station-simulator)
+  - [seq2seq_streamflow_prediction](#seq2seq_streamflow_prediction)
+- [国内外的流行或经典模型](#国内外的流行或经典模型)
+  - [Hydro-model-xaj](#Hydro-model-xaj)
+  - [eWaterCycle](#eWaterCycle)
+- [外部与内部数据建设](#外部与内部数据建设)
+  - [hydro-opendata](#hydro-opendata)
+- [教程与文献系列](#教程与文献系列)
+  - [DUTWR-文献概述](#DUTWR-文献概述)
+  - [d2l-zh](#d2l-zh)
+  - [hydroGIS](#hydroGIS)
+  - [hydrus](#hydrus)
+  - [hydro-dl-tutorials](#hydro-dl-tutorials)
+  - [iheadwater_hackweek_tutorials](#iheadwater_hackweek_tutorials)
+  - [科研随笔](#科研随笔)
+- [典型研究与工程案例](#典型研究与工程案例)
+  - [PA4Water](#PA4Water)
 
 ## 通用模型和算法
 本部分内容包括也由多位来自这些不同研究或研发方向的同学（目前主要是利用机器学习解决水相关问题的[学习小组](https://github.com/waterDLut)成员）贡献，目前主要包括以下内容（逐步更新中）
@@ -69,11 +67,6 @@ Hydro-model-xaj 是新安江 (XAJ) 模型的 Python 实现，该模型是最著�
 - [数据下载](https://github.com/iHeadWater/hydro-opendata/tree/main/data_downloader)- 提供通用下载器和部分数据的下载功能。
 
 ## 教程与文献系列
-### 水资源图书馆
-本部分推荐各方向及相关领域的优秀专著，*仍在开发中*，可查看[这里](https://github.com/waterDLut/WaterResources/blob/master/WaterResourcesBooks.md)
-
-### 水资源云课堂
-推荐各方向研究所需基础技术栈的相关资料，*仍在开发中*，可查看[这里](https://github.com/waterDLut/WaterResources/blob/master/WaterResourcesWeb.md)；
 
 ### DUTWR 文献概述
 本部分不完全按照研究方向分类，主要以每篇博客的主题分类，*仍在开发中*，可查看[这里](https://github.com/waterDLut/WaterResources/tree/master/papers); 

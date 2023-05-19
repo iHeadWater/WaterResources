@@ -39,7 +39,7 @@
 ## 相关列表
 - [open-sustainable-technology](https://github.com/iHeadWater/open-sustainable-technology) - 精选的开放技术项目列表，旨在维持稳定的气候、能源供应、生物多样性和自然资源
 - [awesome-open-hydrology](https://github.com/iHeadWater/awesome-open-hydrology) - 开放的水文相关项目列表
-
+- [public-apis](https://github.com/public-apis/public-apis) - 用于软件和 Web 开发的免费 API 的汇总列表
 ## 书籍
 - [水资源图书馆](https://github.com/iHeadWater/WaterResources/blob/master/WaterResourcesBooks.md) - 推荐各方向及相关领域的优秀专著
 - [d2l-zh](https://github.com/iHeadWater/d2l-zh) - 有关深度学习的一本书，包含概念、背景知识和代码

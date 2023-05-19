@@ -1,6 +1,6 @@
 <h1 align="center">水资源与防洪研究所资源共享</h1>
 <div align="center">
-  <a href="https://github.com/kaixindelele/ChatPaper">
+  <a>
     <img src="1.png" height="310">
   </a>
  
@@ -17,134 +17,61 @@
 
   </p>
 </div>    
-本项目仓库（以下简称repo）主要由大连理工大学水资源与防洪研究所（Dalian University of Technology institute of Water Resources and flood control）模型源平台组负责维护与更新，并定期为研究所成员推送最新资源信息，旨在分享本研究所模型与数据的研究以及应用成果，可在此基础上，构建符合大规模数据处理分析与复杂计算需求的通用以及专业模型算法，在增加模型源平台内容建设的同时，为各方向产品及服务的完整解决方案构建提供必要技术支撑。
+本项目仓库主要由大连理工大学水资源与防洪研究所（Dalian University of Technology institute of Water Resources and flood control）模型源平台组负责维护与更新，并定期为研究所成员推送最新资源信息，旨在分享本研究所模型与数据的研究以及应用成果，可在此基础上，构建符合大规模数据处理分析与复杂计算需求的通用以及专业模型算法，在增加模型源平台内容建设的同时，为各方向产品及服务的完整解决方案构建提供必要技术支撑。
   
 ## 项目简介
 
-本项目是研究所学生培养、科学研究以及工程应用的大本营。研究所目前包括水资源综合调控、流域水文、流域水生态、城市水务四大研究方向，并有专门的水利数字化团队提供技术支持，相应地，本repo内容也由多位来自这些研发方向的研究室老师和同学贡献，汇集了各方向的通用模型和算法、自主研发的专业模型、国内外的流行或经典模型、外部与内部数据建设、教程与文献系列、典型研究与工程案例，有助于研究所成员快速了解模型与数据的研究以及应用成果，并基于提供的各方向研究和开发中常用以及典型案例的数据与模型访问接口，快速构建实际项目和论文选题的模型解决方案。
+本项目是研究所学生培养、科学研究以及工程应用的大本营。研究所目前包括水资源综合调控、流域水文、流域水生态、城市水务四大研究方向，并有专门的水利数字化团队提供技术支持，相应地，本项目仓库内容也由多位来自这些研发方向的研究室老师和同学贡献，汇集了各方向的通用模型和算法、自主研发的专业模型、国内外的流行或经典模型、外部与内部数据建设、教程与文献系列、典型研究与工程案例，有助于研究所成员快速了解模型与数据的研究以及应用成果，并基于提供的各方向研究和开发中常用以及典型案例的数据与模型访问接口，快速构建实际项目和论文选题的模型解决方案。
 
 ## 目录
 
-- [通用模型和算法](#通用模型和算法)
-  - [station-simulator](#station-simulator)
-  - [seq2seq_streamflow_prediction](#seq2seq_streamflow_prediction)
-- [自主研发的专业模型](#自主研发的专业模型) 
-  - [Hydro-model-xaj](#Hydro-model-xaj)
-- [国内外的流行或经典模型](#国内外的流行或经典模型)
-  - [eWaterCycle](#eWaterCycle)
-- [外部与内部数据建设](#外部与内部数据建设)
-  - [hydro-opendata](#hydro-opendata)
-- [教程与文献系列](#教程与文献系列)
-  - [d2l-zh](#d2l-zh)
-  - [hydroGIS](#hydroGIS)
-  - [hydrus](#hydrus)
-  - [hydro-dl-tutorials](#hydro-dl-tutorials)
-  - [iheadwater_hackweek_tutorials](#iheadwater_hackweek_tutorials)
-- [典型研究与工程案例](#典型研究与工程案例)
-  - [PA4Water](#PA4Water)
+- [相关列表](#相关列表)
+- [书籍](#书籍)
+- [软件](#软件)
+  - [模型](#模型)
+  - [数据](#数据)
+  - [APP](#APP)
+- [教程](#教程)
+- [视频](#视频)
+- [文献](#文献)
+- [博客](#博客)
 
-## 通用模型和算法
-本部分内容包括也由多位来自这些不同研究或研发方向的同学（目前主要是利用机器学习解决水相关问题的[学习小组](https://github.com/waterDLut)成员）贡献，目前主要包括以下内容（逐步更新中）
-### [station-simulator](https://github.com/iHeadWater/station-simulator)
-一种从模拟站点和河网图层文件（SHP）中判断站点上下游关系的简单办法。
+## 相关列表
+- [open-sustainable-technology](https://github.com/iHeadWater/open-sustainable-technology) - 精选的开放技术项目列表，旨在维持稳定的气候、能源供应、生物多样性和自然资源
+- [awesome-open-hydrology](https://github.com/iHeadWater/awesome-open-hydrology) - 开放的水文相关项目列表
 
-### [seq2seq_streamflow_prediction](https://github.com/iHeadWater/seq2seq_streamflow_prediction)
-*更新中*
+## 书籍
+- [水资源图书馆](https://github.com/iHeadWater/WaterResources/blob/master/WaterResourcesBooks.md) - 推荐各方向及相关领域的优秀专著
+- [d2l-zh](https://github.com/iHeadWater/d2l-zh) - 有关深度学习的一本书，包含概念、背景知识和代码
 
-## 自主研发的专业模型
-### [Hydro-model-xaj](https://github.com/iHeadWater/hydro-model-xaj)
-Hydro-model-xaj is a python implementation for the XinAnJiang (XAJ) model, which is one of the most famous conceptual hydrological models, especially in Southern China.
+## 软件
 
-When we want to learn about the rainfall-runoff process and make forecasts for floods, etc. We often use classic hydrological models such as XAJ as a baseline because it is trusted by many engineers and researchers. However, after searching the website very few repositories could be found. One day I happened to start learning Python, so I decided to implement the model with Python. Previous commits for hydro-model-xaj have some errors, but now at least one executable version is provided.
+### 模型
+- [station-simulator](https://github.com/iHeadWater/station-simulator) - 一种从模拟站点和河网图层文件（SHP）中判断站点上下游关系的简单办法
+- [seq2seq_streamflow_prediction](https://github.com/iHeadWater/seq2seq_streamflow_prediction) - 利用seq2seq模型实现降雨径流预报
+- [Hydro-model-xaj](https://github.com/iHeadWater/hydro-model-xaj) - 新安江模型的 Python 实现
+- [eWaterCycle](https://github.com/iHeadWater/ewatercycle) - 用于运行水文模型的 Python 包
 
-Other implementations for XAJ:
-- Matlab: https://github.com/wknoben/MARRMoT/blob/master/MARRMoT/Models/Model%20files/m_28_xinanjiang_12p_4s.m
-- Java: https://github.com/wfxr/xaj-hydrological-model
-- R, C++: https://github.com/Sibada/XAJ
+### 数据
+- [hydro-opendata](https://github.com/iHeadWater/hydro-opendata/tree/main) - 可用于水文学科学计算的开放数据的获取、管理和使用路径及方法
+
+### APP
+- [PA4Water](https://github.com/iHeadWater/PA4Water) - 使用人工智能工具来帮助水科学和工程研究和项目的开发项目
+
+## 教程
+- [hydroGIS](https://github.com/iHeadWater/hydroGIS) - GIS工具的使用，包括ArcGIS、AutoGIS、GEE、QGIS
+- [hydrus](https://github.com/waterDLut/hydrus) - 水文水资源研究和应用中使用Python的基础教程
+- [hydro-dl-tutorials](https://github.com/waterDLut/hydro-dl-basic) - 介绍深度学习的基础概念等
+- [iheadwater_hackweek_tutorials](https://github.com/iHeadWater/iheadwater_hackweek_tutorials) - 水资源科研编程入门教程
+
+## 视频
 
 
-## 国内外的流行或经典模型
-### [eWaterCycle](https://github.com/iHeadWater/ewatercycle)
-A Python package for running hydrological models.
-The eWaterCycle package makes it easier to use hydrological models without having intimate knowledge about how to install and run the models.
+## 文献
+- [papers](https://github.com/iHeadWater/WaterResources/tree/master/papers) - 以主题的形式分享记录一些文献简述
 
-- Uses container for running models in an isolated and portable way with [grpc4bmi](https://github.com/eWaterCycle/grpc4bmi).
-- Generates rain and sunshine required for the model using [ESMValTool](https://esmvaltool.org/).
-- Supports observation data from [GRDC or USGS](https://ewatercycle.readthedocs.io/en/latest/observations.html).
-- Exposes simple interface to quickly get up and running.
-
-## 外部与内部数据建设
-### [hydro-opendata](https://github.com/iHeadWater/hydro-opendata/tree/main)
-可用于水文学科学计算的开放数据的获取、管理和使用路径及方法。
-- [数据获取](https://github.com/iHeadWater/hydro-opendata/tree/main/data_api) - 获取遥感数据的示例。
-- [数据目录](https://github.com/iHeadWater/hydro-opendata/tree/main/data_catalog) - 部分开放数据的数据来源、空间范围和时间范围等信息。
-- [数据下载](https://github.com/iHeadWater/hydro-opendata/tree/main/data_downloader)- 提供通用下载器和部分数据的下载功能。
-
-## 教程与文献系列
-
-### [d2l-zh](https://github.com/iHeadWater/d2l-zh)
-有关深度学习的一本书，包含概念、背景知识和代码；并阐述剖析问题所需的批判性思维、解决问题所需的数学知识，以及实现解决方案所需的工程技能。在此列举部分章节内容，更多内容可参阅[d2l-zh](https://github.com/iHeadWater/d2l-zh)。
-
-- [preface](https://github.com/iHeadWater/d2l-zh/blob/master/chapter_preface) - 前言。
-- [introduction](https://github.com/iHeadWater/d2l-zh/tree/master/chapter_introduction) - 深度学习的入门课程。
-- [installation](https://github.com/iHeadWater/d2l-zh/blob/master/chapter_installation) - 配置一个环境来运行 Python、Jupyter Notebook、相关库以及运行本书所需的代码。
-- [preliminaries](https://github.com/iHeadWater/d2l-zh/tree/master/chapter_preliminaries) - 快速介绍实践深度学习所需的前提条件，例如如何存储和处理数据，以及如何应用基于线性代数、微积分和概率基本概念的各种数值运算。
-- [linear-networks](https://github.com/iHeadWater/d2l-zh/tree/master/chapter_linear-networks) - 介绍神经网络的整个训练过程，包括：定义简单的神经网络架构、数据处理、指定损失函数和如何训练模型。
-
-### [hydroGIS](https://github.com/iHeadWater/hydroGIS)
-水文水资源的科研和工程实践中一定缺不了GIS工具的使用，熟悉一些常用GIS工具十分有必要，这里记录平时一些实践备查。
-- [ArcGIS](https://github.com/iHeadWater/hydroGIS/tree/master/ArcGIS) - ArcGIS使用介绍。
-- [AutoGIS](https://github.com/iHeadWater/hydroGIS/tree/master/AutoGIS) - 了解Python GIS 常用的开源库以及实例计算。
-- [GEE](https://github.com/iHeadWater/hydroGIS/tree/master/GEE) - GEE python接口尤其是geemap的使用。
-- [QGIS](https://github.com/iHeadWater/hydroGIS/tree/master/QGIS) - 免费版ArcGIS。
-
-### [hydrus](https://github.com/waterDLut/hydrus)
-水文水资源（Hydrology and Water Resources）研究和应用中使用Python的基础教程。
-- Python基础
-  - [基础环境配置](https://github.com/iHeadWater/hydrus/tree/master/1-basic-envir) - 了解python前的准备。
-  - [python基础](https://github.com/iHeadWater/hydrus/tree/master/1-learn-python) - 熟悉python语法、调试等。
-- 常用科学计算库  
-  - [NumPy](https://github.com/iHeadWater/hydrus/tree/master/2-numpy-examples) - 存储和处理大型矩阵的科学计算库--N维数组容器。
-  - [pandas](https://github.com/iHeadWater/hydrus/tree/master/2-pandas-examples) - 基于 NumPy 的一种工具，强大而高效的数据分析环境--表格容器。
-  - [scipy](https://github.com/iHeadWater/hydrus/tree/master/2-scipy-example) - 用于数学、科学、工程领域的常用软件包--科学计算函数库。
-  - [xarray](https://github.com/iHeadWater/hydrus/tree/master/2-xarray-example) - 结合了NumPy多维数据和pandas标记的一个工具。
-- 可视化
-  - [静态可视化](https://github.com/iHeadWater/hydrus/tree/master/3-basic-pyviz) - matplotlib和seaborn的使用。
-  - [GIS数据可视化](https://github.com/iHeadWater/hydrus/tree/master/3-gis-pyviz) - Cartopy和geoplot工具的使用。
-  - [交互式可视化](https://github.com/iHeadWater/hydrus/tree/master/3-interactive-pyviz) - bokeh和plotly的使用。
-
-### [hydro-dl-tutorials](https://github.com/waterDLut/hydro-dl-basic)
-本部分介绍深度学习的基础概念等，后续根据[学习小组](https://github.com/waterDLut)实际推进情况逐步更新。 
- - [基本常识](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/0-common-sense) - 人工智能、机器学习、深度学习等基本概念。
- - [常见基本神经网络](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/1-simple-NN) - ANN、RNN、CNN等常见结构。
- - [常用深度学习工具](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/2-tool-pytorch) - PyTorch。
- - [更多基本概念](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/3-more-knowledge) - 权重初始化、自动微分等概念。
- - [更多常用神经网络](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/4-more-NN) - 更复杂的RNN、CNN等结构。
- - [其他深度学习范式](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/5-more-pattern) - 强化学习、迁移学习等。
- - [模型解释方法](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/6-XAI-methods) - 解释深度学习模型的方法。
- - [模型不确定性](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/7-DL-uncertainty) - 概率预报等。
- - [更多工具使用](https://github.com/iHeadWater/hydro_dl_tutorials/tree/main/8-more-tools) - 模型解释工具、超参数优化工具等。
-
-### [iheadwater_hackweek_tutorials](https://github.com/iHeadWater/iheadwater_hackweek_tutorials)
-水资源科研编程入门教程，网页在这里：https://iheadwater.github.io/iheadwater_hackweek_tutorials
-- [open_science_workflow](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp1_open_science_workflow) - 了解可复现科研并学会使用一般工作流中用到的编程相关工具。
-- [file_formats](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp2_file_formats) - 认识我们日常科研经常处理的数据文件。
-- [version_control](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp3_version_control) - 掌握版本控制工具的基本操作方法。
-- [intro_to_python](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp4_intro_to_python) - 熟悉Python最基础语法内容。
-- [python_data_science](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp5_python_data_science) - 了解Python数据分析常用包。
-- [deep_learning_review](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp6_deep_learning_review) - 初识深度学习（水文）。
-- [intro_to_pytorch](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp7_intro_to_pytorch) - 使用深度学习工具Pytorch。
-- [lstm_camels](https://github.com/iHeadWater/iheadwater_hackweek_tutorials/tree/main/iheadwater_hackweek_tutorials/chp8_lstm_camels) - 复现基于CAMELS数据集和LSTM模型的研究论文。
-
-## 典型研究与工程案例
-### [PA4Water](https://github.com/iHeadWater/PA4Water)
-这部分是一个使用人工智能工具来帮助水科学和工程研究和项目的开发项目。初步设想打造一个水科学与工程的个人助理，就像这个领域的专家一样。
-期望实现以下功能：
-- 做一些日常科研工作，如总结文献（PDF文件）
-- 做一些复杂性工作，如做一个软件接口，可以在需要的时候调用一些与水资源相关的模型做一些计算。
-
-目前可以实现第一部分内容，即总结文献（PDF文件）。
-
+## 博客
+- [水资源云课堂](https://github.com/iHeadWater/WaterResources/blob/be1024c24cf5956bc5a3a4d6ff5aab2b22d1fe9b/WaterResourcesWeb.md) - 推荐各方向研究所需基础技术栈的相关资料
 ## 一起贡献
 
 如果您想参与贡献，但不知道怎么使用 git/github/jupyterlab/markdown 等基本工具来完成编辑工作，请参考[这里](https://github.com/waterDLut/WaterResources/blob/master/tools/writing-tool.md)
